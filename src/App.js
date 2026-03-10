@@ -9,7 +9,7 @@ import allClientsRaw from "./data/allClients";
 import "./App.css";
 
 function App() {
-  const [view, setView] = useState("interviews");
+  const [view, setView] = useState("summary");
   const [selectedClient, setSelectedClient] = useState(null);
 
   // Add default NPS and upsell fields to all clients, merge interview data
@@ -63,14 +63,14 @@ function App() {
           <span className="header-subtitle">M&A Due Diligence</span>
         </div>
         <nav className="header-nav">
+          <button className={view === "summary" ? "active" : ""} onClick={() => setView("summary")}>
+            Summary
+          </button>
           <button className={view === "interviews" ? "active" : ""} onClick={() => setView("interviews")}>
             Interviews
           </button>
           <button className={view === "clients" ? "active" : ""} onClick={() => setView("clients")}>
             All Customers
-          </button>
-          <button className={view === "summary" ? "active" : ""} onClick={() => setView("summary")}>
-            Summary
           </button>
           <button className={view === "upsell" ? "active" : ""} onClick={() => setView("upsell")}>
             Crehana Cross-sell

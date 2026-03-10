@@ -72,26 +72,22 @@ export default function Dashboard({ data, onSelectClient }) {
         {completed.length} of {interviews.length} interviews completed &middot; {fmtUSD(interviewedARR)} ARR covered
       </p>
 
-      <div className="kpi-grid" style={{ gridTemplateColumns: "repeat(4, 1fr)" }}>
+      <div className="kpi-grid" style={{ gridTemplateColumns: "repeat(3, 1fr)" }}>
         <div className="kpi-card">
           <div className="label">Interviews Completed</div>
           <div className="value green">{completed.length}/{interviews.length}</div>
           <div className="sub">{pctCustomersInterviewed}% of {totalCustomers} total customers</div>
-          <div className="sub" style={{ fontSize: 10, marginTop: 2 }}>Target: {pctCustomersTarget}% of base</div>
           <div className="progress-bar">
             <div className="progress-fill purple" style={{ width: `${(completed.length / interviews.length) * 100}%` }} />
           </div>
         </div>
         <div className="kpi-card">
           <div className="label">ARR Interviewed</div>
-          <div className="value purple">{fmtUSD(interviewedARR)}</div>
-          <div className="sub">{pctARRofTarget}% of target ({fmtUSD(targetARR)})</div>
-          <div className="sub" style={{ fontSize: 10, marginTop: 2 }}>{pctARRofBase}% of total base ({fmtUSD(totalBaseARR)})</div>
-        </div>
-        <div className="kpi-card">
-          <div className="label">% of Total Customer Base</div>
-          <div className="value blue">{pctARRofBase}%</div>
-          <div className="sub">{fmtUSD(interviewedARR)} of {fmtUSD(totalBaseARR)} total ARR</div>
+          <div className="value purple">{fmtUSD(interviewedARR)}/{fmtUSD(targetARR)}</div>
+          <div className="sub">{pctARRofBase}% of {fmtUSD(totalBaseARR)} total customer base</div>
+          <div className="progress-bar">
+            <div className="progress-fill purple" style={{ width: `${pctARRofTarget}%` }} />
+          </div>
         </div>
         <div className="kpi-card">
           <div className="label">Avg. Satisfaction</div>
