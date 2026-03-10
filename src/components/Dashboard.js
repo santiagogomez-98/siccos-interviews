@@ -1,227 +1,251 @@
 import React from "react";
+import allClientsRaw from "../data/allClients";
 
-const formatCurrency = (n) =>
-  "$" + (n / 1000000).toFixed(1) + "M";
-
-const formatDate = (d) => {
+const fmtUSD = (n) => "$" + Math.round(n / 1000).toLocaleString("en-US") + "K";
+const fmtDate = (d) => {
   if (!d) return "—";
-  const date = new Date(d + "T00:00:00");
-  return date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  return new Date(d + "T00:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric" });
 };
-
 const daysUntil = (d) => {
   if (!d) return Infinity;
-  const diff = new Date(d + "T00:00:00") - new Date("2026-03-10T00:00:00");
-  return Math.ceil(diff / (1000 * 60 * 60 * 24));
+  return Math.ceil((new Date(d + "T00:00:00") - new Date("2026-03-10T00:00:00")) / 86400000);
 };
 
-const statusLabel = {
-  completed: "Completed",
-  scheduled: "Scheduled",
-  scheduling: "Scheduling",
-  not_contacted: "Not Contacted",
+const getSatisfaction = (summary) => {
+  if (!summary) return null;
+  const pos = summary.positives?.length || 0;
+  const neg = summary.negatives?.length || 0;
+  const total = pos + neg;
+  if (total === 0) return null;
+  return Math.round((pos / total) * 100) / 10;
+};
+
+const satisfactionColor = (score) => {
+  if (score >= 7) return "var(--green)";
+  if (score >= 5) return "var(--yellow)";
+  return "var(--red)";
+};
+
+const crossHighlights = {
+  strengths: [
+    { theme: "Fast payroll calculation & multi-user", clients: ["Merco", "Criogas", "Galdisa"] },
+    { theme: "Integrated platform (payroll + SUA + timbrado)", clients: ["Criogas", "Galdisa", "Whirlpool", "Merco"] },
+    { theme: "User-friendly interface vs legacy systems", clients: ["Merco", "Criogas"] },
+    { theme: "Improved support after management change", clients: ["Merco", "Galdisa", "Criogas"] },
+  ],
+  painPoints: [
+    { theme: "Slow timbrado/confronta at scale", clients: ["Merco", "Whirlpool"], severity: "high" },
+    { theme: "Support quality & advisor rotation", clients: ["Merco", "Whirlpool", "Galdisa"], severity: "high" },
+    { theme: "Bugs after system updates without root cause", clients: ["Criogas"], severity: "medium" },
+    { theme: "SUA report format discrepancies vs IMSS", clients: ["Galdisa"], severity: "medium" },
+  ],
+  opportunities: [
+    { theme: "Performance optimization at scale", clients: ["Merco", "Whirlpool"], priority: "critical" },
+    { theme: "SLA framework with urgency levels", clients: ["Merco"], priority: "high" },
+    { theme: "API / integration layer", clients: ["Criogas", "Galdisa"], priority: "medium" },
+    { theme: "Analytics & HR dashboards", clients: ["Merco"], priority: "high" },
+  ],
 };
 
 export default function Dashboard({ data, onSelectClient }) {
-  const { interviews, baseStats } = data;
+  const { interviews } = data;
+  const completed = interviews.filter((i) => i.interviewStatus === "completed" && i.summary);
+  const toComplete = interviews.filter((i) => i.interviewStatus !== "completed" || !i.summary);
 
-  const completed = interviews.filter((i) => i.interviewStatus === "completed");
-  const scheduled = interviews.filter((i) => i.interviewStatus === "scheduled");
-  const scheduling = interviews.filter((i) => i.interviewStatus === "scheduling");
-  const notContacted = interviews.filter((i) => i.interviewStatus === "not_contacted");
+  const totalBaseBillingUSD = allClientsRaw.reduce((s, c) => s + (c.billingUSD || 0), 0);
+  const interviewedBillingUSD = completed.reduce((s, c) => s + (c.billingUSD || 0), 0);
+  const targetBillingUSD = interviews.reduce((s, c) => s + (c.billingUSD || 0), 0);
 
-  const completedBilling = completed.reduce((s, c) => s + c.facturacion2025, 0);
-  const targetBilling = interviews.reduce((s, c) => s + c.facturacion2025, 0);
+  const pctOfBase = totalBaseBillingUSD > 0 ? ((interviewedBillingUSD / totalBaseBillingUSD) * 100).toFixed(1) : 0;
+  const pctOfTarget = targetBillingUSD > 0 ? ((interviewedBillingUSD / targetBillingUSD) * 100).toFixed(0) : 0;
 
-  const urgentRenewals = interviews
-    .filter((i) => daysUntil(i.vigencia) <= 90 && daysUntil(i.vigencia) >= 0)
-    .sort((a, b) => daysUntil(a.vigencia) - daysUntil(b.vigencia));
+  const scores = completed.map((c) => getSatisfaction(c.summary)).filter(Boolean);
+  const avgSatisfaction = scores.length > 0 ? (scores.reduce((a, b) => a + b, 0) / scores.length).toFixed(1) : "—";
 
   return (
     <div>
-      {/* KPIs */}
-      <div className="kpi-grid">
+      <h2 style={{ fontSize: 20, fontWeight: 600, marginBottom: 4 }}>Interview Progress</h2>
+      <p style={{ fontSize: 13, color: "var(--text-muted)", marginBottom: 20 }}>
+        {completed.length} of {interviews.length} interviews completed &middot; {fmtUSD(interviewedBillingUSD)} revenue covered
+      </p>
+
+      <div className="kpi-grid" style={{ gridTemplateColumns: "repeat(4, 1fr)" }}>
         <div className="kpi-card">
           <div className="label">Interviews Completed</div>
-          <div className="value green">{completed.length}</div>
-          <div className="sub">of {interviews.length} target clients</div>
+          <div className="value green">{completed.length}/{interviews.length}</div>
           <div className="progress-bar">
-            <div
-              className="progress-fill green"
-              style={{ width: `${(completed.length / interviews.length) * 100}%` }}
-            />
+            <div className="progress-fill purple" style={{ width: `${(completed.length / interviews.length) * 100}%` }} />
           </div>
         </div>
         <div className="kpi-card">
-          <div className="label">Revenue Covered</div>
-          <div className="value blue">{formatCurrency(completedBilling)}</div>
-          <div className="sub">
-            {((completedBilling / targetBilling) * 100).toFixed(0)}% of interview target base
-          </div>
-          <div className="progress-bar">
-            <div
-              className="progress-fill blue"
-              style={{ width: `${(completedBilling / targetBilling) * 100}%` }}
-            />
-          </div>
+          <div className="label">Revenue Interviewed</div>
+          <div className="value purple">{fmtUSD(interviewedBillingUSD)}</div>
+          <div className="sub">{pctOfTarget}% of interview target base</div>
         </div>
         <div className="kpi-card">
-          <div className="label">Total Client Base</div>
-          <div className="value">{baseStats.totalClients}</div>
-          <div className="sub">
-            {baseStats.sharedHosting} shared hosting (Crehana)
-          </div>
+          <div className="label">% of Total Client Base</div>
+          <div className="value blue">{pctOfBase}%</div>
+          <div className="sub">{fmtUSD(interviewedBillingUSD)} of {fmtUSD(totalBaseBillingUSD)} total</div>
         </div>
         <div className="kpi-card">
-          <div className="label">Total Billing 2025</div>
-          <div className="value">{formatCurrency(baseStats.totalBilling2025)}</div>
-          <div className="sub">{baseStats.activeClients} active contracts</div>
-        </div>
-        <div className="kpi-card">
-          <div className="label">Urgent Renewals (90d)</div>
-          <div className="value red">{urgentRenewals.length}</div>
-          <div className="sub">from interview targets</div>
+          <div className="label">Avg. Satisfaction</div>
+          <div className="value" style={{ color: satisfactionColor(parseFloat(avgSatisfaction)) }}>{avgSatisfaction}/10</div>
+          <div className="sub">across {completed.length} interviews</div>
         </div>
       </div>
 
-      <div className="two-col">
-        {/* Interview Pipeline */}
-        <div className="section">
-          <div className="section-title">Interview Pipeline</div>
-          <div className="table-container">
-            <table>
-              <thead>
-                <tr>
-                  <th>Client</th>
-                  <th>Status</th>
-                  <th>Date</th>
-                  <th>Contact</th>
-                  <th>Billing 2025</th>
-                  <th>Renewal</th>
-                  <th>Crehana</th>
-                </tr>
-              </thead>
-              <tbody>
-                {interviews
-                  .sort((a, b) => {
-                    const order = { completed: 0, scheduled: 1, scheduling: 2, not_contacted: 3 };
-                    return order[a.interviewStatus] - order[b.interviewStatus];
-                  })
-                  .map((client) => (
-                    <tr
-                      key={client.id}
-                      className="clickable"
-                      onClick={() => onSelectClient(client)}
-                    >
-                      <td style={{ fontWeight: 500 }}>{client.cliente}</td>
+      {/* Completed Interviews */}
+      <div className="section">
+        <div className="section-title" style={{ color: "var(--green)" }}>Completed Interviews</div>
+        <div className="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Client</th>
+                <th>Product</th>
+                <th>Hosting</th>
+                <th>Billing (USD)</th>
+                <th>Renewal</th>
+                <th>Satisfaction</th>
+                <th>Sentiment</th>
+                <th>Risk</th>
+              </tr>
+            </thead>
+            <tbody>
+              {completed
+                .sort((a, b) => (b.billingUSD || 0) - (a.billingUSD || 0))
+                .map((c) => {
+                  const score = getSatisfaction(c.summary);
+                  return (
+                    <tr key={c.id} className="clickable" onClick={() => onSelectClient(c)}>
                       <td>
-                        <span className={`badge ${client.interviewStatus}`}>
-                          {statusLabel[client.interviewStatus]}
-                        </span>
+                        <div style={{ fontWeight: 500, fontSize: 13 }}>{c.cliente}</div>
+                        <div style={{ fontSize: 11, color: "var(--text-dim)" }}>{c.id}</div>
                       </td>
-                      <td style={{ fontSize: 13 }}>
-                        {client.fechaReunion
-                          ? `${formatDate(client.fechaReunion)} ${client.horario || ""}`
-                          : "—"}
-                      </td>
-                      <td style={{ fontSize: 13 }}>{client.keyContact || "—"}</td>
-                      <td style={{ fontWeight: 600 }}>
-                        {formatCurrency(client.facturacion2025)}
-                      </td>
+                      <td style={{ fontSize: 12 }}>{c.producto}</td>
+                      <td style={{ fontSize: 12 }}>{c.hosting}</td>
+                      <td style={{ fontWeight: 600, fontSize: 13 }}>{fmtUSD(c.billingUSD || 0)}</td>
                       <td>
-                        <span
-                          style={{
-                            color:
-                              daysUntil(client.vigencia) <= 30
-                                ? "#f85149"
-                                : daysUntil(client.vigencia) <= 90
-                                ? "#d29922"
-                                : "#8b949e",
-                            fontSize: 13,
-                          }}
-                        >
-                          {formatDate(client.vigencia)}
-                          {daysUntil(client.vigencia) <= 90 && (
-                            <span style={{ fontSize: 11, marginLeft: 4 }}>
-                              ({daysUntil(client.vigencia)}d)
-                            </span>
-                          )}
+                        <span style={{
+                          color: daysUntil(c.vigencia) <= 30 ? "var(--red)" : daysUntil(c.vigencia) <= 90 ? "var(--yellow)" : "var(--text-muted)",
+                          fontSize: 12,
+                        }}>
+                          {fmtDate(c.vigencia)}
+                          {daysUntil(c.vigencia) <= 90 && <span style={{ fontSize: 10, marginLeft: 3 }}>({daysUntil(c.vigencia)}d)</span>}
                         </span>
                       </td>
                       <td>
-                        {client.crehanaShared && (
-                          <span className="badge crehana">Shared</span>
+                        {score && (
+                          <span style={{ fontWeight: 700, fontSize: 14, color: satisfactionColor(score) }}>
+                            {score}
+                          </span>
                         )}
                       </td>
+                      <td><span className={`badge ${c.summary?.sentiment}`}>{c.summary?.sentiment}</span></td>
+                      <td><span className={`badge ${c.summary?.riskLevel}`}>{c.summary?.riskLevel}</span></td>
                     </tr>
-                  ))}
-              </tbody>
-            </table>
-          </div>
+                  );
+                })}
+            </tbody>
+          </table>
         </div>
+      </div>
 
-        {/* Sidebar */}
-        <div>
-          {/* Sentiment summary */}
-          <div className="section">
-            <div className="section-title">Interview Sentiment</div>
-            {completed.map((c) => (
-              <div
-                key={c.id}
-                className="renewal-item clickable"
-                onClick={() => onSelectClient(c)}
-                style={{ cursor: "pointer" }}
-              >
-                <span className={`badge ${c.interviewSummary?.sentiment}`}>
-                  {c.interviewSummary?.sentiment}
-                </span>
-                <span className="renewal-name">{c.cliente}</span>
-                <span className={`badge ${c.interviewSummary?.riskLevel}`}>
-                  {c.interviewSummary?.riskLevel} risk
-                </span>
-              </div>
-            ))}
-            {completed.length === 0 && (
-              <div style={{ color: "#8b949e", fontSize: 13 }}>
-                No interviews completed yet
-              </div>
-            )}
-          </div>
+      {/* To Be Completed */}
+      <div className="section">
+        <div className="section-title" style={{ color: "var(--text-muted)" }}>To Be Completed ({toComplete.length})</div>
+        <div className="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Client</th>
+                <th>Status</th>
+                <th>Product</th>
+                <th>Hosting</th>
+                <th>Billing (USD)</th>
+                <th>Renewal</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              {toComplete
+                .sort((a, b) => (b.billingUSD || 0) - (a.billingUSD || 0))
+                .map((c) => (
+                  <tr key={c.id} className="clickable" onClick={() => onSelectClient(c)}>
+                    <td>
+                      <div style={{ fontWeight: 500, fontSize: 13 }}>{c.cliente}</div>
+                      <div style={{ fontSize: 11, color: "var(--text-dim)" }}>{c.id}</div>
+                    </td>
+                    <td><span className={`badge ${c.interviewStatus}`}>
+                      {c.interviewStatus === "scheduled" ? "Scheduled" : c.interviewStatus === "scheduling" ? "Scheduling" : "Not Contacted"}
+                    </span></td>
+                    <td style={{ fontSize: 12 }}>{c.producto}</td>
+                    <td style={{ fontSize: 12 }}>{c.hosting}</td>
+                    <td style={{ fontWeight: 600, fontSize: 13 }}>{fmtUSD(c.billingUSD || 0)}</td>
+                    <td>
+                      <span style={{
+                        color: daysUntil(c.vigencia) <= 30 ? "var(--red)" : daysUntil(c.vigencia) <= 90 ? "var(--yellow)" : "var(--text-muted)",
+                        fontSize: 12,
+                      }}>
+                        {fmtDate(c.vigencia)}
+                        {daysUntil(c.vigencia) <= 90 && daysUntil(c.vigencia) >= 0 && <span style={{ fontSize: 10, marginLeft: 3 }}>({daysUntil(c.vigencia)}d)</span>}
+                      </span>
+                    </td>
+                    <td style={{ fontSize: 11, color: "var(--text-muted)" }}>
+                      {c.notas || (c.fechaReunion ? `${fmtDate(c.fechaReunion)} ${c.horario || ""}` : "—")}
+                    </td>
+                  </tr>
+                ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
 
-          {/* Urgent renewals */}
-          <div className="section">
-            <div className="section-title">Upcoming Renewals</div>
-            <div
-              style={{
-                background: "#161b22",
-                border: "1px solid #21262d",
-                borderRadius: 12,
-                padding: 16,
-              }}
-            >
-              {urgentRenewals.map((c) => (
-                <div key={c.id} className="renewal-item">
-                  <span
-                    className="renewal-date"
-                    style={{
-                      color:
-                        daysUntil(c.vigencia) <= 30 ? "#f85149" : "#d29922",
-                    }}
-                  >
-                    {formatDate(c.vigencia)}
-                  </span>
-                  <span className="renewal-name">{c.cliente}</span>
-                  <span className="renewal-amount">
-                    {formatCurrency(c.facturacion2025)}
-                  </span>
-                </div>
+      {/* Cross-Interview Highlights */}
+      <div className="section">
+        <h2 style={{ fontSize: 18, fontWeight: 600, marginBottom: 16 }}>Cross-Interview Highlights</h2>
+        <p style={{ fontSize: 13, color: "var(--text-muted)", marginBottom: 20 }}>
+          Patterns that repeat across {completed.length} completed interviews
+        </p>
+        <div className="insight-grid">
+          <div className="insight-card pos">
+            <h3 className="positive">Common Strengths</h3>
+            <ul>
+              {crossHighlights.strengths.map((t, i) => (
+                <li key={i}>
+                  <strong>{t.theme}</strong>
+                  <div style={{ fontSize: 10, color: "var(--text-muted)", marginTop: 2 }}>{t.clients.join(", ")}</div>
+                </li>
               ))}
-              {urgentRenewals.length === 0 && (
-                <div style={{ color: "#8b949e", fontSize: 13 }}>
-                  No renewals in the next 90 days
-                </div>
-              )}
-            </div>
+            </ul>
+          </div>
+          <div className="insight-card neg">
+            <h3 className="negative">Common Pain Points</h3>
+            <ul>
+              {crossHighlights.painPoints.map((t, i) => (
+                <li key={i}>
+                  <strong>{t.theme}</strong>
+                  <div style={{ display: "flex", gap: 6, alignItems: "center", marginTop: 2 }}>
+                    <span className={`badge ${t.severity}`} style={{ fontSize: 10 }}>{t.severity}</span>
+                    <span style={{ fontSize: 10, color: "var(--text-muted)" }}>{t.clients.join(", ")}</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="insight-card opp">
+            <h3 className="opportunity">Key Opportunities</h3>
+            <ul>
+              {crossHighlights.opportunities.map((t, i) => (
+                <li key={i}>
+                  <strong>{t.theme}</strong>
+                  <div style={{ display: "flex", gap: 6, alignItems: "center", marginTop: 2 }}>
+                    <span className={`badge ${t.priority}`} style={{ fontSize: 10 }}>{t.priority}</span>
+                    <span style={{ fontSize: 10, color: "var(--text-muted)" }}>{t.clients.join(", ")}</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
