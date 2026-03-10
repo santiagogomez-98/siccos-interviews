@@ -1,16 +1,75 @@
-import React from 'react';
-import { Router } from 'react-router-dom';
+import React, { useState } from "react";
+import Dashboard from "./components/Dashboard";
+import ClientDetail from "./components/ClientDetail";
+import ClientList from "./components/ClientList";
+import CrossAnalysis from "./components/CrossAnalysis";
+import clientData from "./data/clientData";
+import "./App.css";
 
-import GlobalStyles from './assets/styles/global';
-import Routes from './routes';
-import history from './routes/history';
+function App() {
+  const [view, setView] = useState("dashboard");
+  const [selectedClient, setSelectedClient] = useState(null);
 
-export default function App() {
+  const handleSelectClient = (client) => {
+    setSelectedClient(client);
+    setView("detail");
+  };
+
+  const renderView = () => {
+    switch (view) {
+      case "dashboard":
+        return (
+          <Dashboard data={clientData} onSelectClient={handleSelectClient} />
+        );
+      case "list":
+        return (
+          <ClientList
+            interviews={clientData.interviews}
+            onSelectClient={handleSelectClient}
+          />
+        );
+      case "detail":
+        return (
+          <ClientDetail client={selectedClient} onBack={() => setView("list")} />
+        );
+      case "analysis":
+        return <CrossAnalysis data={clientData} />;
+      default:
+        return null;
+    }
+  };
+
   return (
-    <Router history={history}>
-      <GlobalStyles />
-
-      <Routes />
-    </Router>
+    <div className="app">
+      <header className="app-header">
+        <div className="header-left">
+          <h1>Siccos — Client Interview Tracker</h1>
+          <span className="header-subtitle">M&A Due Diligence</span>
+        </div>
+        <nav className="header-nav">
+          <button
+            className={view === "dashboard" ? "active" : ""}
+            onClick={() => setView("dashboard")}
+          >
+            Overview
+          </button>
+          <button
+            className={view === "list" ? "active" : ""}
+            onClick={() => setView("list")}
+          >
+            Client Base
+          </button>
+          <button
+            className={view === "analysis" ? "active" : ""}
+            onClick={() => setView("analysis")}
+          >
+            Cross-Analysis
+          </button>
+        </nav>
+      </header>
+      <main className="app-main">{renderView()}</main>
+    </div>
   );
 }
+
+export default App;
