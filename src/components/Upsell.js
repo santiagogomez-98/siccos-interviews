@@ -6,103 +6,126 @@ const fmtDate = (d) => {
   return new Date(d + "T00:00:00").toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 };
 
+// Detect Crehana cross-sell signals from interview data
+const detectCrehanaSignals = (summary) => {
+  if (!summary) return [];
+  const signals = [];
+  const all = [
+    ...(summary.opportunities || []),
+    ...(summary.negatives || []),
+    ...(summary.positives || []),
+    summary.executive || "",
+  ];
+  const text = all.join(" ").toLowerCase();
+
+  // HCM signals
+  if (text.includes("hr") || text.includes("rrhh") || text.includes("recursos humanos") || text.includes("gestión de personas")) {
+    signals.push({ type: "HCM", signal: "HR / People management needs identified", strength: "high" });
+  }
+  if (text.includes("talent") || text.includes("ats") || text.includes("reclutamiento")) {
+    signals.push({ type: "HCM", signal: "Talent acquisition / ATS needs — uses external tool", strength: "high" });
+  }
+  if (text.includes("rotación") || text.includes("finiquito")) {
+    signals.push({ type: "HCM", signal: "High turnover — needs retention & workforce analytics", strength: "high" });
+  }
+  if (text.includes("dashboard") && (text.includes("analítico") || text.includes("analyt"))) {
+    signals.push({ type: "HCM", signal: "Wants HR analytics dashboards", strength: "high" });
+  }
+  if (text.includes("vacaciones") || text.includes("incidencias")) {
+    signals.push({ type: "HCM", signal: "Leave / absence management gaps", strength: "medium" });
+  }
+  if (text.includes("módulo rrhh") || text.includes("modulo rrhh")) {
+    signals.push({ type: "HCM", signal: "Explicitly needs expanded HR module", strength: "high" });
+  }
+
+  // L&D signals
+  if (text.includes("capacitación") || text.includes("training") || text.includes("desarrollo")) {
+    signals.push({ type: "L&D", signal: "Training / development needs mentioned", strength: "high" });
+  }
+  if (text.includes("onboarding") || (text.includes("rotación") && text.includes("alta"))) {
+    signals.push({ type: "L&D", signal: "High turnover → onboarding & training opportunity", strength: "medium" });
+  }
+
+  // General enterprise readiness
+  if (text.includes("api") || text.includes("integra")) {
+    signals.push({ type: "Platform", signal: "Integration-ready — open to connected ecosystem", strength: "medium" });
+  }
+  if (text.includes("automatización") || text.includes("automat")) {
+    signals.push({ type: "Platform", signal: "Automation appetite — ready for platform expansion", strength: "medium" });
+  }
+
+  // Deduplicate by signal text
+  const seen = new Set();
+  return signals.filter((s) => {
+    if (seen.has(s.signal)) return false;
+    seen.add(s.signal);
+    return true;
+  });
+};
+
 export default function Upsell({ clients, onSelectClient }) {
   const [filter, setFilter] = useState("all");
 
-  // Identify upsell/cross-sell opportunities
-  const opportunities = clients.map((c) => {
-    const signals = [];
-    let potential = null;
+  // Only customers with completed interviews
+  const withSignals = clients
+    .filter((c) => c.summary)
+    .map((c) => ({
+      ...c,
+      crehanaSignals: detectCrehanaSignals(c.summary),
+    }))
+    .filter((c) => c.crehanaSignals.length > 0);
 
-    // Seg. Social only → cross-sell to Integral
-    if (c.producto === "Seguridad Social") {
-      signals.push("Cross-sell: Seg. Social only — potential for full Integral migration");
-      potential = "high";
-    }
+  let filtered = withSignals;
+  if (filter === "hcm") filtered = withSignals.filter((c) => c.crehanaSignals.some((s) => s.type === "HCM"));
+  if (filter === "ld") filtered = withSignals.filter((c) => c.crehanaSignals.some((s) => s.type === "L&D"));
+  if (filter === "high") filtered = withSignals.filter((c) => c.crehanaSignals.some((s) => s.strength === "high"));
 
-    // Not hosted → upsell to hosting
-    if (c.hosting === "NO" && c.producto === "Integral") {
-      signals.push("Upsell: Not on hosted — migrate to cloud hosting");
-      potential = potential || "medium";
-    }
+  filtered.sort((a, b) => b.crehanaSignals.length - a.crehanaSignals.length);
 
-    // From interview insights
-    if (c.summary) {
-      const opps = c.summary.opportunities || [];
-      opps.forEach((o) => {
-        if (o.toLowerCase().includes("api") || o.toLowerCase().includes("integra")) {
-          signals.push("Upsell: API/Integration needs identified in interview");
-        }
-        if (o.toLowerCase().includes("hr") || o.toLowerCase().includes("talent") || o.toLowerCase().includes("rrhh")) {
-          signals.push("Upsell: HR/Talent module expansion opportunity");
-        }
-        if (o.toLowerCase().includes("dashboard") || o.toLowerCase().includes("analyt")) {
-          signals.push("Upsell: Analytics/Dashboard add-on opportunity");
-        }
-        if (o.toLowerCase().includes("migrar") || o.toLowerCase().includes("migra") || o.toLowerCase().includes("payroll migration")) {
-          signals.push("Cross-sell: Full payroll migration potential");
-          potential = "high";
-        }
-      });
-    }
+  const totalARR = withSignals.reduce((s, c) => s + (c.billingUSD || 0), 0);
+  const hcmCount = withSignals.filter((c) => c.crehanaSignals.some((s) => s.type === "HCM")).length;
+  const ldCount = withSignals.filter((c) => c.crehanaSignals.some((s) => s.type === "L&D")).length;
+  const highCount = withSignals.filter((c) => c.crehanaSignals.some((s) => s.strength === "high")).length;
 
-    // High billing + basic product = high potential
-    if ((c.billingUSD || 0) > 30000 && c.producto === "Seguridad Social") {
-      potential = "high";
-    }
-
-    return { ...c, upsellSignals: signals, upsellPotential: potential || (signals.length > 0 ? "low" : null) };
-  }).filter((c) => c.upsellSignals.length > 0);
-
-  let filtered = opportunities;
-  if (filter === "high") filtered = opportunities.filter((c) => c.upsellPotential === "high");
-  if (filter === "medium") filtered = opportunities.filter((c) => c.upsellPotential === "medium");
-  if (filter === "cross_sell") filtered = opportunities.filter((c) => c.producto === "Seguridad Social");
-  if (filter === "hosting_upsell") filtered = opportunities.filter((c) => c.hosting === "NO" && c.producto === "Integral");
-
-  filtered.sort((a, b) => (b.billingUSD || 0) - (a.billingUSD || 0));
-
-  const totalPotentialBilling = filtered.reduce((s, c) => s + (c.billingUSD || 0), 0);
-  const highCount = opportunities.filter((c) => c.upsellPotential === "high").length;
-  const crossSellCount = opportunities.filter((c) => c.producto === "Seguridad Social").length;
-  const hostingUpsellCount = opportunities.filter((c) => c.hosting === "NO" && c.producto === "Integral").length;
+  const typeColor = { HCM: "var(--primary-lt)", "L&D": "var(--green)", Platform: "var(--blue)" };
+  const strengthColor = { high: "var(--red)", medium: "var(--yellow)", low: "var(--text-muted)" };
 
   return (
     <div>
-      <h2 style={{ fontSize: 20, fontWeight: 600, marginBottom: 4 }}>Upsell / Cross-sell Potential</h2>
+      <h2 style={{ fontSize: 20, fontWeight: 600, marginBottom: 4 }}>Crehana Cross-sell Potential</h2>
       <p style={{ fontSize: 13, color: "var(--text-muted)", marginBottom: 20 }}>
-        {opportunities.length} clients with identified opportunities &middot; {fmtUSD(totalPotentialBilling)} in current billing
+        HCM &amp; L&D opportunities identified from {withSignals.length} completed interviews
       </p>
 
       <div className="kpi-grid" style={{ gridTemplateColumns: "repeat(4, 1fr)" }}>
         <div className="kpi-card">
-          <div className="label">Total Opportunities</div>
-          <div className="value purple">{opportunities.length}</div>
-          <div className="sub">of {clients.length} total clients</div>
+          <div className="label">Customers with Signals</div>
+          <div className="value purple">{withSignals.length}</div>
+          <div className="sub">{fmtUSD(totalARR)} current ARR</div>
         </div>
         <div className="kpi-card">
-          <div className="label">High Potential</div>
+          <div className="label">HCM Opportunity</div>
+          <div className="value" style={{ color: "var(--primary-lt)" }}>{hcmCount}</div>
+          <div className="sub">HR, Talent, Analytics needs</div>
+        </div>
+        <div className="kpi-card">
+          <div className="label">L&D Opportunity</div>
+          <div className="value green">{ldCount}</div>
+          <div className="sub">Training, Onboarding needs</div>
+        </div>
+        <div className="kpi-card">
+          <div className="label">High Strength</div>
           <div className="value red">{highCount}</div>
-          <div className="sub">cross-sell or major upsell</div>
-        </div>
-        <div className="kpi-card">
-          <div className="label">Cross-sell (Seg. Social → Integral)</div>
-          <div className="value yellow">{crossSellCount}</div>
-          <div className="sub">currently Seg. Social only</div>
-        </div>
-        <div className="kpi-card">
-          <div className="label">Hosting Upsell</div>
-          <div className="value blue">{hostingUpsellCount}</div>
-          <div className="sub">Integral not hosted</div>
+          <div className="sub">explicit need mentioned</div>
         </div>
       </div>
 
       <div className="filters">
         {[
-          ["all", "All Opportunities"],
-          ["high", "High Potential"],
-          ["cross_sell", "Cross-sell (Seg. Social)"],
-          ["hosting_upsell", "Hosting Upsell"],
+          ["all", "All Signals"],
+          ["hcm", "HCM"],
+          ["ld", "L&D"],
+          ["high", "High Strength"],
         ].map(([key, label]) => (
           <button key={key} className={`filter-btn ${filter === key ? "active" : ""}`} onClick={() => setFilter(key)}>
             {label}
@@ -110,43 +133,68 @@ export default function Upsell({ clients, onSelectClient }) {
         ))}
       </div>
 
-      <div className="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>Client</th>
-              <th>Current Product</th>
-              <th>Hosting</th>
-              <th>Billing (USD)</th>
-              <th>Renewal</th>
-              <th>Potential</th>
-              <th>Opportunity Signals</th>
-            </tr>
-          </thead>
-          <tbody>
-            {filtered.map((c) => (
-              <tr key={c.id} className="clickable" onClick={() => onSelectClient(c)}>
-                <td>
-                  <div style={{ fontWeight: 500, fontSize: 13 }}>{c.cliente}</div>
-                  <div style={{ fontSize: 11, color: "var(--text-dim)" }}>{c.id}</div>
-                </td>
-                <td style={{ fontSize: 12 }}>{c.producto}</td>
-                <td style={{ fontSize: 12 }}>{c.hosting}</td>
-                <td style={{ fontWeight: 600, fontSize: 13 }}>{fmtUSD(c.billingUSD || 0)}</td>
-                <td style={{ fontSize: 12, color: "var(--text-muted)" }}>{fmtDate(c.vigencia)}</td>
-                <td>
-                  <span className={`badge ${c.upsellPotential}`}>{c.upsellPotential}</span>
-                </td>
-                <td style={{ fontSize: 11, color: "#CBD5E1", maxWidth: 300 }}>
-                  {c.upsellSignals.map((s, i) => (
-                    <div key={i} style={{ padding: "2px 0" }}>{s}</div>
-                  ))}
-                </td>
-              </tr>
+      {filtered.map((c) => (
+        <div key={c.id} className="theme-card" style={{ marginBottom: 16, cursor: "pointer" }} onClick={() => onSelectClient(c)}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
+            <div>
+              <h3 style={{ marginBottom: 2 }}>{c.cliente}</h3>
+              <div style={{ display: "flex", gap: 8, fontSize: 11, color: "var(--text-muted)" }}>
+                <span>{c.producto}</span>
+                <span>&middot; Hosting: {c.hosting}</span>
+                <span>&middot; {fmtUSD(c.billingUSD || 0)} ARR</span>
+                <span>&middot; Renewal: {fmtDate(c.vigencia)}</span>
+              </div>
+            </div>
+            <div style={{ display: "flex", gap: 4 }}>
+              {c.crehanaSignals.some((s) => s.type === "HCM") && (
+                <span style={{ background: "rgba(124,58,237,0.2)", color: "var(--primary-lt)", padding: "3px 8px", borderRadius: 4, fontSize: 11, fontWeight: 600 }}>HCM</span>
+              )}
+              {c.crehanaSignals.some((s) => s.type === "L&D") && (
+                <span style={{ background: "rgba(16,185,129,0.2)", color: "var(--green)", padding: "3px 8px", borderRadius: 4, fontSize: 11, fontWeight: 600 }}>L&D</span>
+              )}
+            </div>
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+            {c.crehanaSignals.map((s, i) => (
+              <div key={i} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 12 }}>
+                <span style={{
+                  background: `${typeColor[s.type]}22`,
+                  color: typeColor[s.type],
+                  padding: "2px 6px",
+                  borderRadius: 3,
+                  fontSize: 10,
+                  fontWeight: 600,
+                  minWidth: 48,
+                  textAlign: "center",
+                }}>{s.type}</span>
+                <span style={{ color: "#CBD5E1", flex: 1 }}>{s.signal}</span>
+                <span style={{
+                  color: strengthColor[s.strength],
+                  fontSize: 10,
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                }}>{s.strength}</span>
+              </div>
             ))}
-          </tbody>
-        </table>
-      </div>
+          </div>
+
+          {/* Interview context */}
+          <div style={{ marginTop: 10, padding: "8px 0 0", borderTop: "1px solid var(--border)" }}>
+            <div style={{ fontSize: 11, color: "var(--text-muted)", marginBottom: 4 }}>From interview:</div>
+            <div style={{ fontSize: 11, color: "#94A3B8", lineHeight: 1.5 }}>
+              {c.summary.executive}
+            </div>
+          </div>
+        </div>
+      ))}
+
+      {filtered.length === 0 && (
+        <div className="no-data">
+          <h3>No signals match this filter</h3>
+          <p>Try a different filter or complete more interviews to identify Crehana cross-sell opportunities.</p>
+        </div>
+      )}
     </div>
   );
 }

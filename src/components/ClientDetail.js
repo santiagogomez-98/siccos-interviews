@@ -49,12 +49,12 @@ export default function ClientDetail({ client, onBack }) {
           <div className="meta-value">{client.id}</div>
         </div>
         <div className="meta-item">
-          <div className="meta-label">Billing (USD)</div>
+          <div className="meta-label">ARR (USD)</div>
           <div className="meta-value">{fmtUSD(client.billingUSD || 0)}</div>
         </div>
         {client.billingMXN > 0 && (
           <div className="meta-item">
-            <div className="meta-label">Billing (MXN)</div>
+            <div className="meta-label">ARR (MXN)</div>
             <div className="meta-value">${client.billingMXN.toLocaleString("en-US", { maximumFractionDigits: 0 })}</div>
           </div>
         )}

@@ -29,7 +29,7 @@ export default function CrossAnalysis({ data }) {
   }
 
   // Build themes dynamically from filtered interviews
-  const clientNames = completed.map((c) => c.cliente.split(",")[0].split(" ").slice(0, 2).join(" "));
+  const customerNames = completed.map((c) => c.cliente.split(",")[0].split(" ").slice(0, 2).join(" "));
 
   // Aggregate all positives, negatives, opportunities
   const allPositives = {};

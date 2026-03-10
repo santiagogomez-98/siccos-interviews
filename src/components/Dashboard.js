@@ -52,12 +52,15 @@ export default function Dashboard({ data, onSelectClient }) {
   const completed = interviews.filter((i) => i.interviewStatus === "completed" && i.summary);
   const toComplete = interviews.filter((i) => i.interviewStatus !== "completed" || !i.summary);
 
-  const totalBaseBillingUSD = allClientsRaw.reduce((s, c) => s + (c.billingUSD || 0), 0);
-  const interviewedBillingUSD = completed.reduce((s, c) => s + (c.billingUSD || 0), 0);
-  const targetBillingUSD = interviews.reduce((s, c) => s + (c.billingUSD || 0), 0);
+  const totalCustomers = allClientsRaw.length;
+  const totalBaseARR = allClientsRaw.reduce((s, c) => s + (c.billingUSD || 0), 0);
+  const interviewedARR = completed.reduce((s, c) => s + (c.billingUSD || 0), 0);
+  const targetARR = interviews.reduce((s, c) => s + (c.billingUSD || 0), 0);
 
-  const pctOfBase = totalBaseBillingUSD > 0 ? ((interviewedBillingUSD / totalBaseBillingUSD) * 100).toFixed(1) : 0;
-  const pctOfTarget = targetBillingUSD > 0 ? ((interviewedBillingUSD / targetBillingUSD) * 100).toFixed(0) : 0;
+  const pctCustomersInterviewed = ((completed.length / totalCustomers) * 100).toFixed(1);
+  const pctCustomersTarget = ((interviews.length / totalCustomers) * 100).toFixed(1);
+  const pctARRofBase = totalBaseARR > 0 ? ((interviewedARR / totalBaseARR) * 100).toFixed(1) : 0;
+  const pctARRofTarget = targetARR > 0 ? ((interviewedARR / targetARR) * 100).toFixed(0) : 0;
 
   const scores = completed.map((c) => getSatisfaction(c.summary)).filter(Boolean);
   const avgSatisfaction = scores.length > 0 ? (scores.reduce((a, b) => a + b, 0) / scores.length).toFixed(1) : "—";
@@ -66,26 +69,29 @@ export default function Dashboard({ data, onSelectClient }) {
     <div>
       <h2 style={{ fontSize: 20, fontWeight: 600, marginBottom: 4 }}>Interview Progress</h2>
       <p style={{ fontSize: 13, color: "var(--text-muted)", marginBottom: 20 }}>
-        {completed.length} of {interviews.length} interviews completed &middot; {fmtUSD(interviewedBillingUSD)} revenue covered
+        {completed.length} of {interviews.length} interviews completed &middot; {fmtUSD(interviewedARR)} ARR covered
       </p>
 
       <div className="kpi-grid" style={{ gridTemplateColumns: "repeat(4, 1fr)" }}>
         <div className="kpi-card">
           <div className="label">Interviews Completed</div>
           <div className="value green">{completed.length}/{interviews.length}</div>
+          <div className="sub">{pctCustomersInterviewed}% of {totalCustomers} total customers</div>
+          <div className="sub" style={{ fontSize: 10, marginTop: 2 }}>Target: {pctCustomersTarget}% of base</div>
           <div className="progress-bar">
             <div className="progress-fill purple" style={{ width: `${(completed.length / interviews.length) * 100}%` }} />
           </div>
         </div>
         <div className="kpi-card">
-          <div className="label">Revenue Interviewed</div>
-          <div className="value purple">{fmtUSD(interviewedBillingUSD)}</div>
-          <div className="sub">{pctOfTarget}% of interview target base</div>
+          <div className="label">ARR Interviewed</div>
+          <div className="value purple">{fmtUSD(interviewedARR)}</div>
+          <div className="sub">{pctARRofTarget}% of target ({fmtUSD(targetARR)})</div>
+          <div className="sub" style={{ fontSize: 10, marginTop: 2 }}>{pctARRofBase}% of total base ({fmtUSD(totalBaseARR)})</div>
         </div>
         <div className="kpi-card">
-          <div className="label">% of Total Client Base</div>
-          <div className="value blue">{pctOfBase}%</div>
-          <div className="sub">{fmtUSD(interviewedBillingUSD)} of {fmtUSD(totalBaseBillingUSD)} total</div>
+          <div className="label">% of Total Customer Base</div>
+          <div className="value blue">{pctARRofBase}%</div>
+          <div className="sub">{fmtUSD(interviewedARR)} of {fmtUSD(totalBaseARR)} total ARR</div>
         </div>
         <div className="kpi-card">
           <div className="label">Avg. Satisfaction</div>
@@ -101,10 +107,10 @@ export default function Dashboard({ data, onSelectClient }) {
           <table>
             <thead>
               <tr>
-                <th>Client</th>
+                <th>Customer</th>
                 <th>Product</th>
                 <th>Hosting</th>
-                <th>Billing (USD)</th>
+                <th>ARR (USD)</th>
                 <th>Renewal</th>
                 <th>Satisfaction</th>
                 <th>Sentiment</th>
@@ -158,11 +164,11 @@ export default function Dashboard({ data, onSelectClient }) {
           <table>
             <thead>
               <tr>
-                <th>Client</th>
+                <th>Customer</th>
                 <th>Status</th>
                 <th>Product</th>
                 <th>Hosting</th>
-                <th>Billing (USD)</th>
+                <th>ARR (USD)</th>
                 <th>Renewal</th>
                 <th>Notes</th>
               </tr>

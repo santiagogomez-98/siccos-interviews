@@ -67,13 +67,13 @@ function App() {
             Interviews
           </button>
           <button className={view === "clients" ? "active" : ""} onClick={() => setView("clients")}>
-            All Clients
+            All Customers
           </button>
           <button className={view === "summary" ? "active" : ""} onClick={() => setView("summary")}>
             Summary
           </button>
           <button className={view === "upsell" ? "active" : ""} onClick={() => setView("upsell")}>
-            Upsell / Cross-sell
+            Crehana Cross-sell
           </button>
         </nav>
       </header>

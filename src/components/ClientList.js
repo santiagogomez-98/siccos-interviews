@@ -35,27 +35,27 @@ export default function ClientList({ clients, onSelectClient }) {
 
   // Base summary stats
   const totalLogos = filtered.length;
-  const totalBilling = filtered.reduce((s, c) => s + (c.billingUSD || 0), 0);
+  const totalARR = filtered.reduce((s, c) => s + (c.billingUSD || 0), 0);
   const integralCount = filtered.filter((c) => c.producto === "Integral").length;
   const segSocialCount = filtered.filter((c) => c.producto === "Seguridad Social").length;
   const hostingCount = filtered.filter((c) => c.hosting === "SI").length;
   const noHostingCount = filtered.filter((c) => c.hosting === "NO").length;
-  const integralBilling = filtered.filter((c) => c.producto === "Integral").reduce((s, c) => s + (c.billingUSD || 0), 0);
-  const segSocialBilling = filtered.filter((c) => c.producto === "Seguridad Social").reduce((s, c) => s + (c.billingUSD || 0), 0);
-  const hostingBilling = filtered.filter((c) => c.hosting === "SI").reduce((s, c) => s + (c.billingUSD || 0), 0);
+  const integralARR = filtered.filter((c) => c.producto === "Integral").reduce((s, c) => s + (c.billingUSD || 0), 0);
+  const segSocialARR = filtered.filter((c) => c.producto === "Seguridad Social").reduce((s, c) => s + (c.billingUSD || 0), 0);
+  const hostingARR = filtered.filter((c) => c.hosting === "SI").reduce((s, c) => s + (c.billingUSD || 0), 0);
 
   return (
     <div>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
         <div>
-          <h2 style={{ fontSize: 20, fontWeight: 600 }}>Active Client Base</h2>
+          <h2 style={{ fontSize: 20, fontWeight: 600 }}>Active Customer Base</h2>
           <div style={{ fontSize: 13, color: "var(--text-muted)", marginTop: 2 }}>
-            {totalLogos} logos &middot; {fmtUSD(totalBilling)} total billing
+            {totalLogos} logos &middot; {fmtUSD(totalARR)} total ARR
           </div>
         </div>
         <input
           className="search-input"
-          placeholder="Search clients..."
+          placeholder="Search customers..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
@@ -68,23 +68,23 @@ export default function ClientList({ clients, onSelectClient }) {
           <div className="value purple">{totalLogos}</div>
         </div>
         <div className="kpi-card">
-          <div className="label">Total Billing</div>
-          <div className="value">{fmtUSD(totalBilling)}</div>
+          <div className="label">Total ARR</div>
+          <div className="value">{fmtUSD(totalARR)}</div>
         </div>
         <div className="kpi-card">
           <div className="label">Integral</div>
           <div className="value blue">{integralCount}</div>
-          <div className="sub">{fmtUSD(integralBilling)}</div>
+          <div className="sub">{fmtUSD(integralARR)}</div>
         </div>
         <div className="kpi-card">
           <div className="label">Seg. Social</div>
           <div className="value yellow">{segSocialCount}</div>
-          <div className="sub">{fmtUSD(segSocialBilling)}</div>
+          <div className="sub">{fmtUSD(segSocialARR)}</div>
         </div>
         <div className="kpi-card">
           <div className="label">Hosted</div>
           <div className="value green">{hostingCount}</div>
-          <div className="sub">{fmtUSD(hostingBilling)}</div>
+          <div className="sub">{fmtUSD(hostingARR)}</div>
         </div>
         <div className="kpi-card">
           <div className="label">Not Hosted</div>
@@ -107,7 +107,7 @@ export default function ClientList({ clients, onSelectClient }) {
         ))}
         <div style={{ marginLeft: "auto", display: "flex", gap: 4 }}>
           {[
-            ["billing", "$ Billing"],
+            ["billing", "$ ARR"],
             ["renewal", "Renewal"],
             ["name", "Name"],
           ].map(([key, label]) => (
@@ -122,11 +122,11 @@ export default function ClientList({ clients, onSelectClient }) {
         <table>
           <thead>
             <tr>
-              <th>Client</th>
+              <th>Customer</th>
               <th>Product</th>
               <th>Hosting</th>
-              <th>Billing (USD)</th>
-              <th>Billing (MXN)</th>
+              <th>ARR (USD)</th>
+              <th>ARR (MXN)</th>
               <th>Renewal</th>
               <th>NPS</th>
               <th>Upsell</th>
