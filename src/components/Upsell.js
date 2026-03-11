@@ -87,7 +87,8 @@ export default function Upsell({ clients, onSelectClient }) {
   const ldCount = withSignals.filter((c) => c.crehanaSignals.some((s) => s.type === "L&D")).length;
   const highCount = withSignals.filter((c) => c.crehanaSignals.some((s) => s.strength === "high")).length;
 
-  const typeColor = { HCM: "var(--primary-lt)", "L&D": "var(--green)", Platform: "var(--blue)" };
+  const typeColor = { HCM: "var(--primary)", "L&D": "var(--green)", Platform: "var(--blue)" };
+  const typeBg = { HCM: "var(--primary-bg)", "L&D": "var(--green-bg)", Platform: "var(--blue-bg)" };
   const strengthColor = { high: "var(--red)", medium: "var(--yellow)", low: "var(--text-muted)" };
 
   return (
@@ -147,10 +148,10 @@ export default function Upsell({ clients, onSelectClient }) {
             </div>
             <div style={{ display: "flex", gap: 4 }}>
               {c.crehanaSignals.some((s) => s.type === "HCM") && (
-                <span style={{ background: "rgba(124,58,237,0.2)", color: "var(--primary-lt)", padding: "3px 8px", borderRadius: 4, fontSize: 11, fontWeight: 600 }}>HCM</span>
+                <span style={{ background: "var(--primary-bg)", color: "var(--primary-lt)", padding: "3px 8px", borderRadius: 4, fontSize: 11, fontWeight: 600 }}>HCM</span>
               )}
               {c.crehanaSignals.some((s) => s.type === "L&D") && (
-                <span style={{ background: "rgba(16,185,129,0.2)", color: "var(--green)", padding: "3px 8px", borderRadius: 4, fontSize: 11, fontWeight: 600 }}>L&D</span>
+                <span style={{ background: "var(--green-bg)", color: "var(--green)", padding: "3px 8px", borderRadius: 4, fontSize: 11, fontWeight: 600 }}>L&D</span>
               )}
             </div>
           </div>
@@ -159,7 +160,7 @@ export default function Upsell({ clients, onSelectClient }) {
             {c.crehanaSignals.map((s, i) => (
               <div key={i} style={{ display: "flex", alignItems: "center", gap: 8, fontSize: 12 }}>
                 <span style={{
-                  background: `${typeColor[s.type]}22`,
+                  background: typeBg[s.type],
                   color: typeColor[s.type],
                   padding: "2px 6px",
                   borderRadius: 3,
@@ -168,7 +169,7 @@ export default function Upsell({ clients, onSelectClient }) {
                   minWidth: 48,
                   textAlign: "center",
                 }}>{s.type}</span>
-                <span style={{ color: "#CBD5E1", flex: 1 }}>{s.signal}</span>
+                <span style={{ color: "var(--text)", flex: 1 }}>{s.signal}</span>
                 <span style={{
                   color: strengthColor[s.strength],
                   fontSize: 10,
@@ -182,7 +183,7 @@ export default function Upsell({ clients, onSelectClient }) {
           {/* Interview context */}
           <div style={{ marginTop: 10, padding: "8px 0 0", borderTop: "1px solid var(--border)" }}>
             <div style={{ fontSize: 11, color: "var(--text-muted)", marginBottom: 4 }}>From interview:</div>
-            <div style={{ fontSize: 11, color: "#94A3B8", lineHeight: 1.5 }}>
+            <div style={{ fontSize: 11, color: "var(--text-muted)", lineHeight: 1.5 }}>
               {c.summary.executive}
             </div>
           </div>

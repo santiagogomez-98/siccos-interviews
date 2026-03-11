@@ -5,25 +5,25 @@
 }
 
 :root {
-  --primary: #7C3AED;
-  --primary-lt: #A78BFA;
-  --primary-bg: #2D1B69;
-  --accent: #F59E0B;
-  --bg: #0D0B1E;
-  --surface: #1A1635;
-  --surface-2: #221D45;
-  --border: #2D2654;
-  --text: #F8FAFC;
-  --text-muted: #94A3B8;
-  --text-dim: #64748B;
-  --green: #10B981;
-  --green-bg: #064E3B;
-  --red: #F43F5E;
-  --red-bg: #4C0519;
-  --yellow: #F59E0B;
-  --yellow-bg: #451A03;
-  --blue: #60A5FA;
-  --blue-bg: #1E3A5F;
+  --primary: #4F46E5;
+  --primary-lt: #6366F1;
+  --primary-bg: #EEF2FF;
+  --accent: #D97706;
+  --bg: #F9FAFB;
+  --surface: #FFFFFF;
+  --surface-2: #F3F4F6;
+  --border: #E5E7EB;
+  --text: #111827;
+  --text-muted: #6B7280;
+  --text-dim: #9CA3AF;
+  --green: #059669;
+  --green-bg: #ECFDF5;
+  --red: #DC2626;
+  --red-bg: #FEF2F2;
+  --yellow: #D97706;
+  --yellow-bg: #FFFBEB;
+  --blue: #2563EB;
+  --blue-bg: #EFF6FF;
 }
 
 body {
@@ -48,6 +48,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 .header-left {
@@ -69,11 +70,11 @@ body {
 
 .header-subtitle {
   font-size: 12px;
-  color: var(--primary-lt);
+  color: var(--primary);
   background: var(--primary-bg);
   padding: 2px 10px;
   border-radius: 12px;
-  border: 1px solid #3D2B7A;
+  border: 1px solid #C7D2FE;
   font-weight: 500;
 }
 
@@ -123,6 +124,7 @@ body {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 18px 20px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
 }
 
 .kpi-card .label {
@@ -143,7 +145,7 @@ body {
 .kpi-card .value.yellow { color: var(--yellow); }
 .kpi-card .value.red { color: var(--red); }
 .kpi-card .value.blue { color: var(--blue); }
-.kpi-card .value.purple { color: var(--primary-lt); }
+.kpi-card .value.purple { color: var(--primary); }
 
 .kpi-card .sub {
   font-size: 12px;
@@ -172,6 +174,7 @@ body {
   border: 1px solid var(--border);
   border-radius: 12px;
   overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
 }
 
 table {
@@ -249,7 +252,7 @@ tr.clickable {
 }
 
 .back-btn {
-  background: var(--surface-2);
+  background: var(--surface);
   color: var(--text);
   border: 1px solid var(--border);
   padding: 8px 16px;
@@ -260,7 +263,7 @@ tr.clickable {
 }
 
 .back-btn:hover {
-  background: var(--border);
+  background: var(--surface-2);
 }
 
 .detail-meta {
@@ -275,6 +278,7 @@ tr.clickable {
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 12px 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
 }
 
 .meta-item .meta-label {
@@ -304,6 +308,7 @@ tr.clickable {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: 18px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
 }
 
 .insight-card h3 {
@@ -323,7 +328,7 @@ tr.clickable {
 
 .insight-card li {
   font-size: 12px;
-  color: #CBD5E1;
+  color: var(--text);
   padding: 5px 0;
   border-bottom: 1px solid var(--border);
   padding-left: 14px;
@@ -356,11 +361,12 @@ tr.clickable {
   border-radius: 12px;
   padding: 18px;
   margin-bottom: 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
 }
 
 .summary-box p {
   font-size: 13px;
-  color: #CBD5E1;
+  color: var(--text);
   line-height: 1.7;
 }
 
@@ -394,7 +400,7 @@ tr.clickable {
 }
 
 .filter-btn {
-  background: var(--surface-2);
+  background: var(--surface);
   border: 1px solid var(--border);
   color: var(--text-muted);
   padding: 6px 14px;
@@ -405,7 +411,7 @@ tr.clickable {
 }
 
 .filter-btn:hover {
-  background: var(--border);
+  background: var(--surface-2);
   color: var(--text);
 }
 
@@ -417,7 +423,7 @@ tr.clickable {
 
 /* Search */
 .search-input {
-  background: var(--bg);
+  background: var(--surface);
   border: 1px solid var(--border);
   color: var(--text);
   padding: 8px 14px;
@@ -430,7 +436,7 @@ tr.clickable {
 .search-input:focus {
   outline: none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.2);
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.15);
 }
 
 /* Two column layout */
@@ -461,7 +467,7 @@ tr.clickable {
 
 .renewal-name {
   font-size: 12px;
-  color: #CBD5E1;
+  color: var(--text);
   flex: 1;
 }
 
@@ -481,7 +487,7 @@ tr.clickable {
 .no-data h3 {
   font-size: 16px;
   margin-bottom: 8px;
-  color: #CBD5E1;
+  color: var(--text);
 }
 
 /* Theme cards (cross analysis) */
@@ -491,6 +497,7 @@ tr.clickable {
   border-radius: 12px;
   padding: 18px;
   margin-bottom: 12px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
 }
 
 .theme-card h3 {
@@ -522,6 +529,7 @@ tr.clickable {
   border-radius: 10px;
   padding: 14px 16px;
   margin-bottom: 10px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
 }
 
 .signal-card h4 {
@@ -538,7 +546,7 @@ tr.clickable {
 
 .signal-list li {
   font-size: 12px;
-  color: #CBD5E1;
+  color: var(--text);
   padding: 3px 0;
   padding-left: 14px;
   position: relative;

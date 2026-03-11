@@ -187,26 +187,26 @@ export default function CrossAnalysis({ data }) {
                     <span className={`badge ${c.summary.riskLevel}`}>{c.summary.riskLevel} risk</span>
                   </div>
                 </div>
-                <p style={{ fontSize: 12, color: "#CBD5E1", lineHeight: 1.6, marginBottom: 10 }}>
+                <p style={{ fontSize: 12, color: "var(--text)", lineHeight: 1.6, marginBottom: 10 }}>
                   {c.summary.executive}
                 </p>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 10 }}>
                   <div>
                     <div style={{ fontSize: 11, fontWeight: 600, color: "var(--green)", marginBottom: 4 }}>Positives</div>
                     {c.summary.positives.map((p, i) => (
-                      <div key={i} style={{ fontSize: 11, color: "#CBD5E1", padding: "2px 0", borderBottom: "1px solid var(--border)" }}>{p}</div>
+                      <div key={i} style={{ fontSize: 11, color: "var(--text)", padding: "2px 0", borderBottom: "1px solid var(--border)" }}>{p}</div>
                     ))}
                   </div>
                   <div>
                     <div style={{ fontSize: 11, fontWeight: 600, color: "var(--red)", marginBottom: 4 }}>Pain Points</div>
                     {c.summary.negatives.map((n, i) => (
-                      <div key={i} style={{ fontSize: 11, color: "#CBD5E1", padding: "2px 0", borderBottom: "1px solid var(--border)" }}>{n}</div>
+                      <div key={i} style={{ fontSize: 11, color: "var(--text)", padding: "2px 0", borderBottom: "1px solid var(--border)" }}>{n}</div>
                     ))}
                   </div>
                   <div>
                     <div style={{ fontSize: 11, fontWeight: 600, color: "var(--blue)", marginBottom: 4 }}>Opportunities</div>
                     {c.summary.opportunities.map((o, i) => (
-                      <div key={i} style={{ fontSize: 11, color: "#CBD5E1", padding: "2px 0", borderBottom: "1px solid var(--border)" }}>{o}</div>
+                      <div key={i} style={{ fontSize: 11, color: "var(--text)", padding: "2px 0", borderBottom: "1px solid var(--border)" }}>{o}</div>
                     ))}
                   </div>
                 </div>
