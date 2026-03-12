@@ -28,22 +28,30 @@ const satisfactionColor = (score) => {
 
 const crossHighlights = {
   strengths: [
-    { theme: "Fast payroll calculation & multi-user", clients: ["Merco", "Criogas", "Galdisa"] },
-    { theme: "Integrated platform (payroll + SUA + timbrado)", clients: ["Criogas", "Galdisa", "Whirlpool", "Merco"] },
-    { theme: "User-friendly interface vs legacy systems", clients: ["Merco", "Criogas"] },
+    { theme: "Integrated platform (payroll + SUA + timbrado) — all-in-one", clients: ["Criogas", "Galdisa", "Merco", "Corp. Admin. Sur", "Milano"] },
+    { theme: "Fast payroll calculation & multi-user", clients: ["Merco", "Criogas", "Galdisa", "Corp. Admin. Sur"] },
+    { theme: "User-friendly interface — easy to learn", clients: ["Merco", "Criogas", "Milano"] },
+    { theme: "Automatic regulatory updates without manual intervention", clients: ["Criogas", "Corp. Admin. Sur", "Milano"] },
+    { theme: "Independence from IT/systems team", clients: ["Milano", "Corp. Admin. Sur"] },
     { theme: "Improved support after management change", clients: ["Merco", "Galdisa", "Criogas"] },
   ],
   painPoints: [
-    { theme: "Slow timbrado/confronta at scale", clients: ["Merco", "Whirlpool"], severity: "high" },
+    { theme: "Slow timbrado/confronta/processing at scale", clients: ["Merco", "Whirlpool", "Milano"], severity: "high" },
     { theme: "Support quality & advisor rotation", clients: ["Merco", "Whirlpool", "Galdisa"], severity: "high" },
-    { theme: "Bugs after system updates without root cause", clients: ["Criogas"], severity: "medium" },
-    { theme: "SUA report format discrepancies vs IMSS", clients: ["Galdisa"], severity: "medium" },
+    { theme: "No 24/7 support — blocking for night operations", clients: ["Milano"], severity: "high" },
+    { theme: "SUA module outdated (per-register vs per-RFC)", clients: ["Milano", "Galdisa"], severity: "medium" },
+    { theme: "Bugs after system updates / unresolved tickets", clients: ["Criogas", "Corp. Admin. Sur"], severity: "medium" },
+    { theme: "Parameter replication across entities not automated", clients: ["Corp. Admin. Sur"], severity: "medium" },
+    { theme: "Bajas don't auto-update calculated payroll", clients: ["Milano"], severity: "medium" },
   ],
   opportunities: [
-    { theme: "Performance optimization at scale", clients: ["Merco", "Whirlpool"], priority: "critical" },
+    { theme: "Performance optimization at scale (calc, timbrado, recibos)", clients: ["Merco", "Whirlpool", "Milano"], priority: "critical" },
+    { theme: "SUA module modernization (RFC-based, Excel export)", clients: ["Milano", "Galdisa"], priority: "high" },
+    { theme: "Analytics & reporting dashboards for management", clients: ["Merco", "Milano"], priority: "high" },
     { theme: "SLA framework with urgency levels", clients: ["Merco"], priority: "high" },
     { theme: "API / integration layer", clients: ["Criogas", "Galdisa"], priority: "medium" },
-    { theme: "Analytics & HR dashboards", clients: ["Merco"], priority: "high" },
+    { theme: "Accounting integration (auto pólizas to ERP)", clients: ["Milano"], priority: "medium" },
+    { theme: "Time & attendance integration with existing infra", clients: ["Milano"], priority: "medium" },
   ],
 };
 
