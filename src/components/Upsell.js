@@ -10,10 +10,11 @@ const fmtDate = (d) => {
 const detectCrehanaSignals = (summary) => {
   if (!summary) return [];
   const signals = [];
+  const toText = (arr) => (arr || []).map((i) => typeof i === "string" ? i : i.text);
   const all = [
-    ...(summary.opportunities || []),
-    ...(summary.negatives || []),
-    ...(summary.positives || []),
+    ...toText(summary.opportunities),
+    ...toText(summary.negatives),
+    ...toText(summary.positives),
     summary.executive || "",
   ];
   const text = all.join(" ").toLowerCase();

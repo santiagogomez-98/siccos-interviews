@@ -39,12 +39,14 @@ export default function CrossAnalysis({ data }) {
   completed.forEach((c) => {
     const shortName = c.cliente.split(",")[0].split(" ").slice(0, 2).join(" ");
     (c.summary.positives || []).forEach((p) => {
-      if (!allPositives[p]) allPositives[p] = [];
-      allPositives[p].push(shortName);
+      const t = typeof p === "string" ? p : p.text;
+      if (!allPositives[t]) allPositives[t] = [];
+      allPositives[t].push(shortName);
     });
     (c.summary.negatives || []).forEach((n) => {
-      if (!allNegatives[n]) allNegatives[n] = [];
-      allNegatives[n].push(shortName);
+      const t = typeof n === "string" ? n : n.text;
+      if (!allNegatives[t]) allNegatives[t] = [];
+      allNegatives[t].push(shortName);
     });
     (c.summary.opportunities || []).forEach((o) => {
       if (!allOpportunities[o]) allOpportunities[o] = [];
@@ -199,13 +201,13 @@ export default function CrossAnalysis({ data }) {
                   <div>
                     <div style={{ fontSize: 11, fontWeight: 600, color: "var(--green)", marginBottom: 4 }}>Positives</div>
                     {c.summary.positives.map((p, i) => (
-                      <div key={i} style={{ fontSize: 11, color: "var(--text)", padding: "2px 0", borderBottom: "1px solid var(--border)" }}>{p}</div>
+                      <div key={i} style={{ fontSize: 11, color: "var(--text)", padding: "2px 0", borderBottom: "1px solid var(--border)" }}>{typeof p === "string" ? p : p.text}</div>
                     ))}
                   </div>
                   <div>
                     <div style={{ fontSize: 11, fontWeight: 600, color: "var(--red)", marginBottom: 4 }}>Pain Points</div>
                     {c.summary.negatives.map((n, i) => (
-                      <div key={i} style={{ fontSize: 11, color: "var(--text)", padding: "2px 0", borderBottom: "1px solid var(--border)" }}>{n}</div>
+                      <div key={i} style={{ fontSize: 11, color: "var(--text)", padding: "2px 0", borderBottom: "1px solid var(--border)" }}>{typeof n === "string" ? n : n.text}</div>
                     ))}
                   </div>
                   <div>

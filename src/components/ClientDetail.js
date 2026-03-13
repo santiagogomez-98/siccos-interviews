@@ -149,13 +149,13 @@ export default function ClientDetail({ client, onBack }) {
             <div className="insight-card pos">
               <h3 className="positive">Positives ({s.positives.length})</h3>
               <ul>
-                {s.positives.map((item, i) => <li key={i}>{item}</li>)}
+                {s.positives.map((item, i) => <li key={i}>{typeof item === "string" ? item : item.text}</li>)}
               </ul>
             </div>
             <div className="insight-card neg">
               <h3 className="negative">Pain Points ({s.negatives.length})</h3>
               <ul>
-                {s.negatives.map((item, i) => <li key={i}>{item}</li>)}
+                {s.negatives.map((item, i) => <li key={i}>{typeof item === "string" ? item : item.text}</li>)}
               </ul>
             </div>
             <div className="insight-card opp">
