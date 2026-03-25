@@ -11,16 +11,17 @@ const daysUntil = (d) => {
   return Math.ceil((new Date(d + "T00:00:00") - new Date("2026-03-10T00:00:00")) / 86400000);
 };
 
-const WEIGHTS = { core: 2, support: 1.5, minor: 1, blocker: 3 };
-const sumWeights = (items) => (items || []).reduce((s, i) => s + (WEIGHTS[i.w] || 1), 0);
+const WEIGHTS = { core: 2, support: 1.5, blocker: 2 };
+const POS_BIAS = 2.0; // corrects for interview format bias toward negatives
+const sumWeights = (items) => (items || []).filter((i) => i.w !== "minor").reduce((s, i) => s + (WEIGHTS[i.w] || 1), 0);
 
 const getSatisfaction = (summary) => {
   if (!summary) return null;
-  const wPos = sumWeights(summary.positives);
+  const wPos = sumWeights(summary.positives) * POS_BIAS;
   const wNeg = sumWeights(summary.negatives);
   const total = wPos + wNeg;
   if (total === 0) return null;
-  return Math.round((wPos / total) * 100) / 10;
+  return Math.min(10, Math.round((wPos / total) * 100) / 10);
 };
 
 const satisfactionColor = (score) => {
