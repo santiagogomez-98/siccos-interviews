@@ -54,33 +54,33 @@ export default function CrossAnalysis({ data }) {
     });
   });
 
-  // Curated cross-client themes
+  // Curated cross-client themes (11 interviews)
   const themes = {
     positives: [
-      { theme: "Integrated platform — all-in-one (payroll + SUA + timbrado)", clients: ["Criogas", "Galdisa", "Merco", "Corp. Admin. Sur", "Milano"] },
-      { theme: "Fast payroll calculation & multi-user capability", clients: ["Merco", "Criogas", "Galdisa", "Corp. Admin. Sur"] },
-      { theme: "User-friendly, intuitive interface — easy to learn", clients: ["Merco", "Criogas", "Milano"] },
-      { theme: "Automatic regulatory updates", clients: ["Criogas", "Corp. Admin. Sur", "Milano"] },
-      { theme: "Independence from IT/systems team", clients: ["Milano", "Corp. Admin. Sur"] },
+      { theme: "Integrated platform — all-in-one (payroll + SUA + timbrado)", clients: ["Criogas", "Galdisa", "Merco", "Corp. Admin. Sur", "Milano", "Shriners", "ITESM"] },
+      { theme: "Fast, accurate calculations — confrontas confiables", clients: ["Merco", "Criogas", "Galdisa", "Corp. Admin. Sur", "Bimbo", "CEMEX", "Shriners"] },
+      { theme: "Centralization at scale — replaces 10-15 people with 3", clients: ["CEMEX", "Bimbo", "Corp. Admin. Sur", "ITESM"] },
+      { theme: "Long-term loyalty — customers advocate and fight to keep Siccos", clients: ["Shriners (22yr)", "CEMEX (18yr)", "Corp. Admin. Sur (7yr)"] },
+      { theme: "Support improved (Michelle, Cristian highly rated)", clients: ["Merco", "Galdisa", "Criogas", "Bimbo", "CEMEX", "ITESM", "Liverpool"] },
+      { theme: "Automatic regulatory updates without manual intervention", clients: ["Criogas", "Corp. Admin. Sur", "Milano", "Shriners"] },
     ],
     negatives: [
-      { theme: "Slow processing at scale (timbrado, confronta, recibos)", clients: ["Merco", "Whirlpool", "Milano"], severity: "high" },
-      { theme: "Support quality & advisor rotation", clients: ["Merco", "Whirlpool", "Galdisa"], severity: "high" },
-      { theme: "No 24/7 support — blocking for night operations", clients: ["Milano"], severity: "high" },
-      { theme: "SUA module outdated (per-register vs per-RFC, PDF-only)", clients: ["Milano", "Galdisa"], severity: "medium" },
-      { theme: "Bugs / unresolved tickets persisting months", clients: ["Criogas", "Corp. Admin. Sur"], severity: "medium" },
-      { theme: "Parameter replication across entities not automated", clients: ["Corp. Admin. Sur"], severity: "medium" },
-      { theme: "Bajas don't auto-update calculated payroll", clients: ["Milano"], severity: "medium" },
+      { theme: "Catastrophic performance at scale — days to process for largest clients", clients: ["Liverpool", "CEMEX", "Merco", "Whirlpool", "Milano"], severity: "critical" },
+      { theme: "Cédulas don't match IMSS format — massive monthly rework", clients: ["Bimbo", "CEMEX", "Whirlpool", "Galdisa"], severity: "critical" },
+      { theme: "No SIPARE (línea de captura) — disco payments are risky", clients: ["Bimbo", "CEMEX"], severity: "critical" },
+      { theme: "Confrontas incomplete / limited — can't fully validate payments", clients: ["Liverpool", "ITESM", "Corp. Admin. Sur"], severity: "high" },
+      { theme: "Bugs after regulatory updates (UMA, subsidio, vacaciones)", clients: ["Criogas", "Corp. Admin. Sur", "ITESM"], severity: "high" },
+      { theme: "Support historically inconsistent — advisor rotation", clients: ["Merco", "Whirlpool", "Galdisa", "Bimbo", "Liverpool"], severity: "high" },
+      { theme: "Lack of client training & knowledge transfer", clients: ["Shriners", "Liverpool"], severity: "medium" },
     ],
     opportunities: [
-      { theme: "Performance optimization at scale (calc, timbrado, recibos)", clients: ["Merco", "Whirlpool", "Milano"], priority: "critical" },
-      { theme: "SUA module modernization (RFC-based, Excel export)", clients: ["Milano", "Galdisa"], priority: "high" },
-      { theme: "Analytics & reporting dashboards for management", clients: ["Merco", "Milano"], priority: "high" },
-      { theme: "SLA framework with urgency levels / 24-7 support", clients: ["Merco", "Milano"], priority: "high" },
-      { theme: "API / integration layer", clients: ["Criogas", "Galdisa"], priority: "medium" },
-      { theme: "Accounting integration (auto pólizas to ERP)", clients: ["Milano"], priority: "medium" },
-      { theme: "Time & attendance integration", clients: ["Milano"], priority: "medium" },
-      { theme: "Potential full payroll migration", clients: ["Whirlpool"], priority: "low" },
+      { theme: "Performance optimization — existential for largest clients", clients: ["Liverpool", "CEMEX", "Merco", "Whirlpool", "Milano"], priority: "critical" },
+      { theme: "SIPARE integration — eliminate disco risk", clients: ["Bimbo", "CEMEX"], priority: "critical" },
+      { theme: "Official IMSS format cédulas — eliminate monthly SUA rework", clients: ["Bimbo", "CEMEX", "Whirlpool", "Galdisa"], priority: "critical" },
+      { theme: "API / integration layer (Workday, SuccessFactors, cloud)", clients: ["Shriners", "ITESM", "Criogas", "Galdisa", "CEMEX"], priority: "high" },
+      { theme: "Robust confrontas — full panorama incl. pensión, invalidez, prima de riesgo", clients: ["ITESM", "Liverpool", "Corp. Admin. Sur"], priority: "high" },
+      { theme: "AI-powered automation & modern tech adoption", clients: ["ITESM"], priority: "medium" },
+      { theme: "Structured account reviews & proactive communications", clients: ["Liverpool", "ITESM", "Bimbo", "CEMEX"], priority: "medium" },
     ],
   };
 
