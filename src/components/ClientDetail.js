@@ -93,8 +93,8 @@ const generatePDF = (client) => {
   doc.setFontSize(9); doc.setFont("helvetica", "bold");
   doc.setTextColor(...(sentColors[s.sentiment] || [33, 33, 33]));
   doc.text(`Sentiment: ${s.sentiment.toUpperCase()}`, LM, y);
-  doc.setTextColor(...(riskColors[s.riskLevel] || [33, 33, 33]));
-  doc.text(`Risk: ${s.riskLevel.toUpperCase()}`, LM + 55, y);
+  doc.setTextColor(...(riskColors[s.computedRisk || s.riskLevel] || [33, 33, 33]));
+  doc.text(`Risk: ${s.computedRisk || s.riskLevel.toUpperCase()}`, LM + 55, y);
   y += 4;
 
   // ─── EXECUTIVE SUMMARY ───
@@ -103,7 +103,7 @@ const generatePDF = (client) => {
 
   // ─── RISK ASSESSMENT ───
   if (s.riskNote) {
-    addSection("Risk Assessment", riskColors[s.riskLevel] || [220, 38, 38]);
+    addSection("Risk Assessment", riskColors[s.computedRisk || s.riskLevel] || [220, 38, 38]);
     addText(s.riskNote, 10, "normal", [50, 50, 60]);
     if (s.churnSignals?.length) {
       y += 2;
@@ -168,7 +168,7 @@ export default function ClientDetail({ client, onBack }) {
             {s && (
               <>
                 <span className={`badge ${s.sentiment}`}>{s.sentiment} sentiment</span>
-                <span className={`badge ${s.riskLevel}`}>{s.riskLevel} risk</span>
+                <span className={`badge ${s.computedRisk || s.riskLevel}`}>{s.computedRisk || s.riskLevel} risk</span>
               </>
             )}
           </div>
@@ -248,7 +248,7 @@ export default function ClientDetail({ client, onBack }) {
 
           {s.riskNote && (
             <div className="summary-box" style={{
-              borderLeft: `3px solid ${s.riskLevel === "high" ? "var(--red)" : s.riskLevel === "medium" ? "var(--yellow)" : "var(--green)"}`,
+              borderLeft: `3px solid ${s.computedRisk || s.riskLevel === "high" ? "var(--red)" : s.computedRisk || s.riskLevel === "medium" ? "var(--yellow)" : "var(--green)"}`,
             }}>
               <div style={{ fontSize: 10, color: "var(--text-muted)", textTransform: "uppercase", marginBottom: 4 }}>
                 Risk Assessment

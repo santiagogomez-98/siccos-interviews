@@ -104,7 +104,7 @@ export default function CrossAnalysis({ data }) {
   }, {});
 
   const risks = completed.reduce((acc, c) => {
-    const r = c.summary.riskLevel;
+    const r = c.summary.computedRisk || c.summary.riskLevel;
     acc[r] = (acc[r] || 0) + 1;
     return acc;
   }, {});
@@ -191,7 +191,7 @@ export default function CrossAnalysis({ data }) {
                   </div>
                   <div style={{ display: "flex", gap: 6 }}>
                     <span className={`badge ${c.summary.sentiment}`}>{c.summary.sentiment}</span>
-                    <span className={`badge ${c.summary.riskLevel}`}>{c.summary.riskLevel} risk</span>
+                    <span className={`badge ${c.summary.computedRisk || c.summary.riskLevel}`}>{c.summary.computedRisk || c.summary.riskLevel} risk</span>
                   </div>
                 </div>
                 <p style={{ fontSize: 12, color: "var(--text)", lineHeight: 1.6, marginBottom: 10 }}>

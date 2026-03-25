@@ -8,6 +8,33 @@ import { interviews, FX_RATE } from "./data/clientData";
 import allClientsRaw from "./data/allClients";
 import "./App.css";
 
+const WEIGHTS = { core: 2, support: 1.5, blocker: 2 };
+const POS_BIAS = 2.0;
+const sumW = (items) => (items || []).filter((i) => i.w !== "minor").reduce((s, i) => s + (WEIGHTS[i.w] || 1), 0);
+
+const calcSatisfaction = (summary) => {
+  if (!summary) return null;
+  const wPos = sumW(summary.positives) * POS_BIAS;
+  const wNeg = sumW(summary.negatives);
+  const total = wPos + wNeg;
+  if (total === 0) return null;
+  return Math.min(10, Math.round((wPos / total) * 100) / 10);
+};
+
+const calcRisk = (summary, satisfaction, vigencia) => {
+  if (!summary) return null;
+  const days = vigencia ? Math.ceil((new Date(vigencia + "T00:00:00") - new Date("2026-03-10T00:00:00")) / 86400000) : Infinity;
+  const sent = summary.sentiment;
+  let risk = "low";
+  if (sent === "negative" || satisfaction < 5) risk = "high";
+  else if (satisfaction < 6.5 || sent === "neutral") risk = "medium";
+  if (days <= 60) {
+    if (risk === "low") risk = "medium";
+    else if (risk === "medium") risk = "high";
+  }
+  return risk;
+};
+
 function App() {
   const [view, setView] = useState("summary");
   const [selectedClient, setSelectedClient] = useState(null);
@@ -27,7 +54,11 @@ function App() {
   const interviewData = useMemo(() => ({
     interviews: interviews.map((iv) => {
       const base = allClientsRaw.find((c) => c.id === iv.id);
-      return base ? { ...base, ...iv, npsScore: null } : { ...iv, npsScore: null };
+      const merged = base ? { ...base, ...iv, npsScore: null } : { ...iv, npsScore: null };
+      const sat = calcSatisfaction(merged.summary);
+      const risk = calcRisk(merged.summary, sat, merged.vigencia);
+      if (merged.summary) { merged.summary.computedRisk = risk; merged.satisfaction = sat; }
+      return merged;
     }),
     FX_RATE,
   }), []);

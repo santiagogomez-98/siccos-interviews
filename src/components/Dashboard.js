@@ -30,6 +30,21 @@ const satisfactionColor = (score) => {
   return "var(--red)";
 };
 
+const computeRisk = (summary, satisfaction, vigencia) => {
+  if (!summary) return null;
+  const days = daysUntil(vigencia);
+  const sent = summary.sentiment;
+  let risk = "low";
+  if (sent === "negative" || satisfaction < 5) risk = "high";
+  else if (satisfaction < 6.5 || sent === "neutral") risk = "medium";
+  // Renewal within 60 days escalates risk one level
+  if (days <= 60) {
+    if (risk === "low") risk = "medium";
+    else if (risk === "medium") risk = "high";
+  }
+  return risk;
+};
+
 const crossHighlights = {
   strengths: [
     { theme: "Integrated platform (payroll + SUA + timbrado) — all-in-one", clients: ["Criogas", "Galdisa", "Merco", "Corp. Admin. Sur", "Milano", "Shriners", "ITESM"] },
@@ -156,7 +171,7 @@ export default function Dashboard({ data, onSelectClient }) {
                         )}
                       </td>
                       <td><span className={`badge ${c.summary?.sentiment}`}>{c.summary?.sentiment}</span></td>
-                      <td><span className={`badge ${c.summary?.riskLevel}`}>{c.summary?.riskLevel}</span></td>
+                      <td><span className={`badge ${c.summary?.computedRisk || c.summary?.riskLevel}`}>{c.summary?.computedRisk || c.summary?.riskLevel}</span></td>
                     </tr>
                   );
                 })}
