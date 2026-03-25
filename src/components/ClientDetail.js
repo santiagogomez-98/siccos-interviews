@@ -16,88 +16,132 @@ const statusLabel = {
   scheduling: "Scheduling", not_contacted: "Not Contacted",
 };
 
+const WEIGHT_ORDER = { blocker: 0, core: 1, support: 2, minor: 3 };
+const sortByWeight = (items) => [...items].sort((a, b) => (WEIGHT_ORDER[a.w] ?? 3) - (WEIGHT_ORDER[b.w] ?? 3));
+const txt = (item) => typeof item === "string" ? item : item.text;
+
 const generatePDF = (client) => {
   const s = client.summary;
   if (!s) return;
   const doc = new jsPDF({ unit: "mm", format: "a4" });
-  const W = 190;
+  const W = 175;
+  const LM = 15;
   let y = 20;
-  const itemText = (item) => typeof item === "string" ? item : item.text;
-  const weightLabel = (item) => typeof item === "string" ? "" : ` [${item.w}]`;
 
-  const addLine = (text, size, style, color) => {
-    doc.setFontSize(size || 11);
-    doc.setFont("helvetica", style || "normal");
-    doc.setTextColor(...(color || [17, 24, 39]));
-    const lines = doc.splitTextToSize(text, W);
-    if (y + lines.length * (size || 11) * 0.45 > 275) { doc.addPage(); y = 20; }
-    doc.text(lines, 10, y);
-    y += lines.length * (size || 11) * 0.45 + 2;
+  const checkPage = (needed) => { if (y + needed > 275) { doc.addPage(); y = 20; } };
+
+  const addText = (text, size, style, color, indent) => {
+    const x = indent || LM;
+    doc.setFontSize(size || 10); doc.setFont("helvetica", style || "normal"); doc.setTextColor(...(color || [33, 33, 33]));
+    const lines = doc.splitTextToSize(text, W - (x - LM));
+    checkPage(lines.length * (size || 10) * 0.42);
+    doc.text(lines, x, y);
+    y += lines.length * (size || 10) * 0.42 + 1.5;
   };
 
-  const addBullets = (items, color) => {
-    items.forEach((item) => {
-      const txt = `• ${itemText(item)}${weightLabel(item)}`;
-      doc.setFontSize(9);
-      doc.setFont("helvetica", "normal");
-      doc.setTextColor(...(color || [17, 24, 39]));
-      const lines = doc.splitTextToSize(txt, W - 5);
-      if (y + lines.length * 4 > 275) { doc.addPage(); y = 20; }
-      doc.text(lines, 13, y);
-      y += lines.length * 4 + 1;
-    });
-    y += 3;
+  const addSection = (title, color) => {
+    y += 5;
+    doc.setDrawColor(...color); doc.setLineWidth(0.6);
+    checkPage(10);
+    doc.line(LM, y, LM + 40, y);
+    y += 5;
+    addText(title, 11, "bold", color);
+    y += 1;
   };
 
-  // Header
-  addLine(client.cliente, 18, "bold");
-  addLine(`${client.id} · ${client.producto} · ARR: ${fmtUSD(client.billingUSD || 0)} · Renewal: ${fmtDate(client.vigencia)}`, 10, "normal", [107, 114, 128]);
-  if (client.keyContact) addLine(`Contact: ${client.keyContact}`, 10, "normal", [107, 114, 128]);
+  const addBullet = (text, color) => {
+    doc.setFontSize(9); doc.setFont("helvetica", "normal"); doc.setTextColor(...(color || [33, 33, 33]));
+    const lines = doc.splitTextToSize(text, W - 8);
+    checkPage(lines.length * 3.8);
+    doc.text("•", LM + 2, y);
+    doc.text(lines, LM + 7, y);
+    y += lines.length * 3.8 + 1;
+  };
+
+  // ─── HEADER ───
+  doc.setFillColor(79, 70, 229); doc.rect(0, 0, 210, 36, "F");
+  doc.setFontSize(18); doc.setFont("helvetica", "bold"); doc.setTextColor(255, 255, 255);
+  doc.text(client.cliente, LM, 16);
+  doc.setFontSize(10); doc.setFont("helvetica", "normal");
+  doc.text(`Customer Interview Brief  ·  Siccos M&A Due Diligence`, LM, 24);
+  doc.setFontSize(9);
+  doc.text(`${fmtDate(client.fechaReunion || "")}  ·  Contact: ${client.keyContact || "N/A"}`, LM, 30);
+  y = 44;
+
+  // ─── KEY FACTS ───
+  const riskColors = { high: [220, 38, 38], medium: [217, 119, 6], low: [5, 150, 105] };
+  const sentColors = { positive: [5, 150, 105], neutral: [217, 119, 6], negative: [220, 38, 38] };
+  const facts = [
+    ["Contract", client.id],
+    ["Product", client.producto],
+    ["ARR (USD)", fmtUSD(client.billingUSD || 0)],
+    ["Renewal", `${fmtDate(client.vigencia)} (${daysUntil(client.vigencia)}d)`],
+    ["Hosting", client.hosting || "N/A"],
+  ];
+  doc.setFillColor(245, 245, 250); doc.roundedRect(LM, y - 4, W, 20, 2, 2, "F");
+  let fx = LM + 4;
+  facts.forEach(([label, val]) => {
+    doc.setFontSize(7); doc.setFont("helvetica", "normal"); doc.setTextColor(120, 120, 140);
+    doc.text(label.toUpperCase(), fx, y + 2);
+    doc.setFontSize(9); doc.setFont("helvetica", "bold"); doc.setTextColor(33, 33, 33);
+    doc.text(val, fx, y + 8);
+    fx += 35;
+  });
+  y += 22;
+
+  // Sentiment & Risk badges
+  doc.setFontSize(9); doc.setFont("helvetica", "bold");
+  doc.setTextColor(...(sentColors[s.sentiment] || [33, 33, 33]));
+  doc.text(`Sentiment: ${s.sentiment.toUpperCase()}`, LM, y);
+  doc.setTextColor(...(riskColors[s.riskLevel] || [33, 33, 33]));
+  doc.text(`Risk: ${s.riskLevel.toUpperCase()}`, LM + 55, y);
   y += 4;
 
-  // Badges
-  addLine(`Sentiment: ${s.sentiment}  |  Risk: ${s.riskLevel}`, 11, "bold");
-  y += 2;
+  // ─── EXECUTIVE SUMMARY ───
+  addSection("Executive Summary", [79, 70, 229]);
+  addText(s.executive, 10, "normal", [50, 50, 60]);
 
-  // Executive Summary
-  addLine("EXECUTIVE SUMMARY", 11, "bold", [79, 70, 229]);
-  addLine(s.executive, 10);
-  y += 3;
-
-  // Risk Assessment
+  // ─── RISK ASSESSMENT ───
   if (s.riskNote) {
-    addLine("RISK ASSESSMENT", 11, "bold", [220, 38, 38]);
-    addLine(s.riskNote, 10);
-    y += 3;
+    addSection("Risk Assessment", riskColors[s.riskLevel] || [220, 38, 38]);
+    addText(s.riskNote, 10, "normal", [50, 50, 60]);
+    if (s.churnSignals?.length) {
+      y += 2;
+      addText("Churn Signals:", 9, "bold", [220, 38, 38]);
+      s.churnSignals.forEach((sig) => addBullet(sig, [150, 40, 40]));
+    }
+    if (s.retentionSignals?.length) {
+      y += 2;
+      addText("Retention Signals:", 9, "bold", [5, 150, 105]);
+      s.retentionSignals.forEach((sig) => addBullet(sig, [5, 120, 80]));
+    }
   }
 
-  // Churn & Retention
-  if (s.churnSignals?.length) {
-    addLine("CHURN SIGNALS", 10, "bold", [220, 38, 38]);
-    addBullets(s.churnSignals, [220, 38, 38]);
+  // ─── KEY STRENGTHS ───
+  addSection(`Key Strengths (${s.positives.length})`, [5, 150, 105]);
+  sortByWeight(s.positives).forEach((item) => addBullet(txt(item), [33, 33, 33]));
+
+  // ─── PAIN POINTS ───
+  addSection(`Pain Points (${s.negatives.length})`, [220, 38, 38]);
+  sortByWeight(s.negatives).forEach((item) => {
+    const isCritical = typeof item !== "string" && item.w === "blocker";
+    addBullet(txt(item), isCritical ? [180, 20, 20] : [33, 33, 33]);
+  });
+
+  // ─── OPPORTUNITIES ───
+  addSection(`Opportunities (${s.opportunities.length})`, [37, 99, 235]);
+  s.opportunities.forEach((item) => addBullet(txt(item), [33, 33, 33]));
+
+  // ─── FOOTER ───
+  const pages = doc.internal.getNumberOfPages();
+  for (let i = 1; i <= pages; i++) {
+    doc.setPage(i);
+    doc.setFontSize(7); doc.setFont("helvetica", "normal"); doc.setTextColor(160, 160, 170);
+    doc.text(`Siccos M&A Due Diligence  ·  Confidential  ·  ${new Date().toLocaleDateString("en-US")}`, LM, 290);
+    doc.text(`Page ${i} of ${pages}`, 185, 290);
   }
-  if (s.retentionSignals?.length) {
-    addLine("RETENTION SIGNALS", 10, "bold", [5, 150, 105]);
-    addBullets(s.retentionSignals, [5, 150, 105]);
-  }
 
-  // Positives
-  addLine(`POSITIVES (${s.positives.length})`, 11, "bold", [5, 150, 105]);
-  addBullets(s.positives, [17, 24, 39]);
-
-  // Negatives
-  addLine(`PAIN POINTS (${s.negatives.length})`, 11, "bold", [220, 38, 38]);
-  addBullets(s.negatives, [17, 24, 39]);
-
-  // Opportunities
-  addLine(`OPPORTUNITIES (${s.opportunities.length})`, 11, "bold", [37, 99, 235]);
-  addBullets(s.opportunities, [17, 24, 39]);
-
-  // Footer
-  y += 5;
-  addLine(`Generated: ${new Date().toLocaleDateString("en-US")} · Siccos M&A Due Diligence`, 8, "normal", [156, 163, 175]);
-
-  const fileName = client.cliente.replace(/[^a-zA-Z0-9]/g, "_").replace(/_+/g, "_") + "_Interview.pdf";
+  const fileName = client.cliente.replace(/[^a-zA-Z0-9]/g, "_").replace(/_+/g, "_") + "_Brief.pdf";
   doc.save(fileName);
 };
 
@@ -112,7 +156,7 @@ export default function ClientDetail({ client, onBack }) {
         <div>
           <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
             <button className="back-btn" onClick={onBack}>&larr; Back</button>
-            {s && <button className="back-btn" onClick={() => generatePDF(client)} style={{ background: "var(--primary)", color: "#fff", border: "none" }}>↓ Download PDF</button>}
+            {s && <button className="back-btn" onClick={() => generatePDF(client)} style={{ background: "var(--primary)", color: "#fff", border: "none" }}>↓ Interview Brief</button>}
           </div>
           <h2 style={{ marginTop: 12 }}>{client.cliente}</h2>
           <div style={{ display: "flex", gap: 8, marginTop: 8, flexWrap: "wrap" }}>
