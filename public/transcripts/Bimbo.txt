@@ -1,0 +1,1108 @@
+de negocio y pues la charla es un poquito dirigida a ustedes, pero espéramos hasta que se
+conecte el eti y este con su amor.
+Sergió.
+Sergió.
+Bueno, no sé si se va a ir a poder conectar.
+A ver, dame un par de minutitos, no te lo escribo, para ver si puedes sumar y si
+me iniciamos.
+Sí, mil gracias.
+Afín.
+Están en la sala de espera, listo.
+Llam.
+Bueno, está desde el eti, bueno, está desde Sergió, ¿cómo están?
+Bueno, está desde Sergió, un gusto, gracias por sus pasos y gracias por el tiempo que nos
+están brindando.
+Santiago es mi parner de negocio y pues quisieramos tener una breve charla con ustedes sobre
+pues.
+Producto, servicio, operación, próximo crecimiento y pues algunas plataformas que interactúan en
+operación en un día a día.
+Buenillo.
+Un gusto.
+Sergió alto.
+Leticia.
+Espero que estén muy bien empezando a la semana.
+Creo que un poco, como les dije, es la idea de estar en una conversación.
+Tenemos un par de preguntas ya establecidas, pero más que guiarnos por estas preguntas,
+un poco lo que quieras, que se llama un open mic, mi team y en donde podamos empezar a
+hablar sobre todo el proceso de nominan sí, sabiendo que obviamente con nosotros tienen un
+producto bien, bien particular y de manera entender cómo nos vamos a poder seguir apoyando.
+A ver, creo que para mí tal vez un poco lo más importante y por donde siempre me gusta empezar es
+tal vez entender cómo es su proceso de nominan hoy en día, ¿no?
+Más allá de chicos que otras herramientas tienen cómo funciona, cómo lo han venido
+automatizando en el tiempo, qué personas interviene, cuáles son los dolores más grandes de la operación
+y de esa manera, creo que podemos iniciar a discutir ya más allá, tal vez sobre la plataforma.
+Gracias, sentido.
+A mejor, en el primer contexto, nosotros no ocupamos chicos como plataforma de nominan,
+sólo ocupamos para la parte de la líquida, si me da seguridad social,
+es escenario a nosotros y justo lo que ocupamos es las actualizaciones que se realizan,
+parte de él, de su vez, verdad que se van reflejadas en la parte de chicos.
+Entonces, esa es nuestra propiedad con respecto a su aplicación,
+o sea, sí, y ya no quiera complementar, pero para eso para poderme jugar un poquito en este sí,
+no ocupamos mucho en la parte de la nominan.
+Perfectivamente, hoy es un producto un poco lo más del tema de los productos de seguridad social
+y actualmente es como lo hemos tenido trabajando en cuanto al servicio y ciençamiento del producto.
+No es integral, y en ustedes ten más procesos dentro del mismo producto,
+pero hoy nada más que esta parte.
+No, total, está perfecto.
+Un poco lo que me gustaría entender es cómo esta parte de su día social convive con todo este ecosistema de nominar
+para lograr hacer un fin de mes real, que es un poco lo objetivo,
+qué tan conectado está, qué tan fácil de resulta que el proceso se ha fragmentado,
+no, y este tipo de cosas para entender cómo funcionará el día a día, la operación.
+En ETC nos ayuda justo como paramos, pero lo hacemos otra vez de integración,
+no archivos o te quiste para informar la información de la nominación hacia así cosa.
+Sí, correcto.
+Como bien comentar, escribimos nosotros, no tenemos nominas en el sistema,
+solamente lo ocupamos para generar el pago del seguro social y para enviar movimientos al alimz,
+lo que es altas bajas y cambios.
+No tenemos integración automática, todos lo hacemos por medio de archivos tequiste,
+que bajamos de nuestro sistema de nominar y lo importamos manualmente al sistema.
+Ya después hacemos la conexión para el envío de movimientos,
+y pues ya hay que ir hasta la base de datos completa con todos los cambios,
+altas bajas y cambios, pues operamos el pago al seguro social.
+Por medio de discos también, no hemos tenido la actualización para hacer un pago
+por línea de captura, y tampoco tenemos otro medio de pago que no sea el disco hacia el banco.
+Perfecto.
+¿Qué también le sensamos unión de las integraciones,
+y un pago que tan cómoda o nación del uso de chicos en largo el tiempo?
+Bien, lo un poco la fecha.
+Un poco, tal vez, la forma en lo que lo podemos plantear es
+si ustedes tienen que describirle lo que de chicos, en este caso,
+la parte de seguridad social, algún colega que le dirían que le dirían que es bueno,
+que le dirían que es malo sobre el producto.
+¿Cómo lo presentarían?
+Es un sistema bueno, este semejanza del sua.
+Siento que, si tú me preguntarás,
+soy siento contado a honestidad que nos hace falta actualizaciones para que,
+para que este sistema no se cree de nivel del sua,
+el sua es un poquito para mí un poquito prehistórico, el trabajar por medio del sua.
+Y si coste manejar un ritmo más rápido, pero no creo que, por ejemplo,
+sedulas no tenemos con el inceso un poquito arcaico de temas de formatos,
+de tener todo estándarizado a su proceso de sua.
+Para así, con nosotros tenemos un cálculo rápido, pero sin embargo,
+para empatar con el sua o con el seguro social o con cualquiera claraciones,
+pues tenemos deficiencias que tenemos que seguir operando en el sua.
+Nosotros abrir un disco, bajacé, dudas, bajar reportes,
+para que podamos así complementar el proceso con seguridad social.
+Entonces, creo que ahí siento que le está faltando esa actualización
+para hacer a semejanza del sua y seguir dando esto.
+Actualizaciones que dajen a los de todo lo que nos da un sua
+y creo que el sua ya brinca una línea separado que ahorita nosotros no tenemos
+y seguir trabajando con un sua disco para pago,
+siento que nos estamos quedando para seguir avanzando de ese nivel,
+ya para la línea.
+Y el sistema es rápido, sí.
+Pero siento que puede dar más de lo que ahorita nos está dando.
+En cuanto a cálculos, muy bueno, muy rápido,
+tiene buenos tiempos, muy en confrontas, muy oportunas.
+Siempre comparamos los pagos y no nos ha salido algún detalle de que estamos pagando malo.
+O sea, muy certero en el tema de confrontas y validación de datos
+que hacemos nosotros con el pago a seguridad social contra la información
+que el mismo seguro nos da que son las emisiones.
+En cuanto a eso, si podemos ser que es confiable,
+si corre muy rápido las confrontas,
+si la información que nos das muy verídica,
+entonces, en cálculos, muy bien.
+Va perfecto, perfecto, perfecto.
+Algo muy ser y entender también es como es la relación con el equipo de soporte
+y tal vez un poco la forma en la que podamos atacar este punto
+es tal vez pensando en la última vez que tuve un problema y sobre un ticket.
+Como fue el paso a paso desde que se levantó hasta que justamente esto se resolvió,
+¿qué tal les ha ido a lo largo de los años en sí con los diferentes problemas
+y qué tan acompañado se sientan?
+Las últimas consultas que hemos tenido con Michel,
+que es la chica que nos está dando el soporte de chicos,
+ha cambiado mucho, ha sido muy buena.
+Yo te estoy diciendo a la mejor de un año para acá
+que si Michel nos ha estado acompañando,
+pero anteriormente si hemos tuvimos un tema muy fuerte de levantarmos el ticket
+hasta que no buscábamos a Yesica o buscábamos a nuestra contra parte,
+nos atendía, nos apoyaba.
+Nosotros es como, empezo, tenemos un sistema de seguridad muy fuerte,
+pero al final es el vincular chicos con nuestra gente de sistemas y una servidora.
+Creo que al final la ejecución siempre es por parte de una servidora y yo no soy de sistemas.
+Si ciertos nos acompañan el tipo de chicos, pero al final, a mí me cuesta,
+a veces se entender, oye, beta, la base de datos, obete acá al final.
+Creo que esta parte es la que yo ejecuté, se me complica porque no soy la experta.
+Pero bueno, el acompañamiento está, la atención de Michel,
+porque anteriormente hubo otros que nos atendían y no muy buen,
+pero Michel muy bien, nos ha estado acompañando, nos está dando esa atención muy buena,
+personalizada, nos busca, creo que ya nos está ubicando esta chica.
+Te digo para mí es nueva, pero su atención muy buena.
+anteriormente hubo otro chico que también era buscar,
+que también nos acompaño, pero hemos tenido ciertos cambios ahí con ellos,
+bueno, más bien ellos han tenido ciertos cambios con su gente,
+que nos ha costado a lo largo de estos años que hemos trabajado con chicos
+adaptarnos, no todos nos han dado el mismo servicio.
+Entiendo, entiendo.
+Hoy en día, ¿cuál sería esa calificación del servicio?
+O sea, entiendo que a través de los años ha venido fluctuando,
+pero si nos paramos en hoy,
+no sé, pensamos en un puntajo en un odio que ese te viene a la cabeza,
+la atención.
+Hoy en día, hoy en día, de este último año,
+que arrancamos hablando de Agosto para acá,
+yo le daría una nueva Michel, nos está conociendo, nos está acompañando,
+pero si tú me dijeras, pues, cuestionado,
+da un resultado de los últimos cinco años,
+yo te diría que yo le pondría en siete.
+Ok, nos ha venido muy gravemente,
+creomente, pero pues, igual tome pequeños gavos.
+Estaba buenísimo entender eso.
+Si tenemos que resumir, calves entre espuntos,
+la manera en la que ese nuevo paso un día es en tu cabeza, ¿cuál sería?
+Te digo más oportuno en la atención de tickets,
+es, por ejemplo, te va a poner un ejemplo.
+Nosotros tenemos con ustedes, con chicos garantizados,
+movimientos mensuales para enviar a la seguridad social.
+Tenemos ahí, ¿cierto?
+No tenemos límite, pero siempre tenemos un saldito ahí,
+que tenemos que tener para estar mandando.
+Nosotros cada biimestre, pues,
+nuestra base de datos es muy amplia,
+y si hemos tenido ocasiones de buscar,
+irme siete de la noche, seis,
+y darnos cuenta que el saldo ya no,
+es el que necesitamos para enviar movimiento,
+y escorre, le no llegué, ayúdame por los movimientos,
+no se me van a ir.
+Creo que, por ejemplo, hace de cliente que somos esa,
+esa automatización de movimientos que tenemos,
+que tener disponibles como grupo bimbo,
+pues, no tendría yo que estar llamando,
+decir, o levantando un ticket, o sea,
+oye, los movimientos, porque, al final,
+sería como una operación transparente para nosotros,
+pero, sin embargo, se dio eso, ¿no?
+Si nos ayudaron, pero al final,
+es de levantar el teléfono,
+es de levantar el ticket, es de busca yésica,
+busca antes a quien estaba,
+porque, al final, aquí yo está la 12 de la noche,
+yo tengo que enviar los movimientos,
+entonces, creo que esa parte, ¿no?
+Te digo funcionamiento, es básico,
+pero, pues, si nos hemos llegado a torar de,
+oye, levanta el ticket, pues, espérate,
+porque hasta mañana está disponible la persona
+para que te ayude, entonces, espérate al otro día.
+Esos pequeños detalles que siento que,
+que no son seguidos, pero, cuando se da,
+creo que no tendrían ni por quedarse,
+porque tendría que ser una atención ahí,
+como estar al pendiente de,
+de las necesidades de cliente que somos nosotros.
+Perfecto, perfecto, perfecto.
+Tal vez volviendo un poco a la parte del proceso,
+a lo que me parece muy interesante es,
+hoy en día, ¿cuáles son esos puntos
+en donde ustedes dicen,
+mucha nivel operativo?
+Esto me está consumiendo demasiado tiempo
+y sería genial que la puerta formal
+se ilusionara de esta manera.
+Si vemos toda la operación y todo el proceso,
+¿dónde están esas oportunidades de mejoras?
+Los dos comunidades que te hice hace ratito,
+lo que es el suave, ¿no?
+Sabemos que es un sistema único,
+sistema autorizado por el ins,
+para poder operar,
+porque, de hecho, el ins nos dice varias sesiones.
+El único sistema que yo avalo es el suave,
+pero sabemos que el ins le dio un permiso así,
+y por eso está operando con este permiso.
+Entonces, el ins, a la avanzar y decir,
+ya no pagues con discos,
+porque los discos son editables,
+los discos no son por esos seguros para el pago,
+por eso te genero un cipare,
+una línea de captura que podría ser más segura para el pago
+y que puede ser más rápida en transferencia
+y más nos dicen lo que puede que sorería,
+masivamente podemos pasar las 450 líneas de pago
+que tú tienes para pagar por los registrarles
+que llevamos.
+Llevamos un año, un año solicitando
+esta apoyo así como decir,
+bueno, y cuando voy a tener esa línea,
+cuando me vas a dar ese servicio que él sua,
+que si yo me regreso,
+ya te diría, pues el suave no tiene un costo,
+que yo lo cupe,
+y si yo me voy a cipar,
+pues no voy a tener ese costo.
+Entonces, ese costo beneficio que de cicos no me da,
+nosotros nos está quitando mucho,
+pero mucho tiempo de trabajo,
+porque imagínate,
+esa segura como empresa,
+yo tengo una empresa barcel
+que tiene alrededor de 170 registros patronales,
+pero que de sus 170 casi 80 discos de pago se repiten,
+y que yo los pego que forman en diferentes carpetas,
+armas hasta siete carpetas para pasarse
+en el equipo de tesorería,
+para que él pueda transferir.
+O sea, imagínate el riesgo que yo,
+como empresa estoy absorbiendo,
+si por un error,
+yo pongo dos veces un disco de pago,
+de sobreguía lo va a pagar doble.
+Entonces, es una validación que me quita,
+al equipo prácticamente un día,
+de estar segmentando esos discos de pago
+para que yo los pueda pasar con,
+o no por turna, con fianza
+y decir, no tengo ningún disco repetido.
+Y luego mi equipo de tesorería
+pasar siete carpetas,
+en lugar de un solo archivo con 177 líneas de pago.
+Entonces, es un área de oportunidad
+que no sabes cómo le hemos pedido así cos,
+para que nos ayude a actualizar,
+porque al final siento que nos estamos quedando ahí,
+haciendo cosas manuales,
+en algún momento vamos a caer
+y espero toco manera que no,
+pero podemos caer un error,
+que no nos va a costar y espesos, ¿no?
+Es un área de oportunidad enorme
+y las otras son asédulas.
+Al final, ímse es una parte gobernamental
+que ni yo como empresa,
+la voy a hacer que cambie y le hemos pedido,
+o sea, porque tus reportes no son semejantes alins,
+las sedulas el resumen,
+todo lo que debería de ser igual al suave,
+porque si tus chicos es una semejanza del suave,
+pues los reportes quedan asícos,
+deberían ser identicos al suave,
+no deberían de haber excepciones,
+y sin embargo,
+toda la vida hemos tenido reportes y aparentes sencillos,
+y no llegamos,
+imagínate,
+mi equipo,
+yo tenemos que abrir 460 discos cada mes
+y bajar sedulas del suave.
+O sea,
+es un trabajo que a mí no me da,
+a mí nada más de general trabajo
+y no me da ninguna productividad del sistema,
+porque tener los discos,
+pero voy y le va al suave.
+Entonces, para mí eso es,
+tengo acá un automóvil
+que no ocupo,
+porque me tengo que regresar al bochito,
+que es decimena, que es el suave.
+Entonces, ¿no es manera que modamos
+o no dejemos de generar esas sedulas
+porque al final cualquiera aclaración,
+cualquier cosa que le insupida,
+no me permite mandar reportes de chicos,
+me dice,
+yo quiero mi reportes del suave,
+y si vienes a aclarar,
+quiero mi reportes del suave,
+o sea, cualquier auditoría,
+cualquier licitación,
+cualquier cosa
+de trámite gubernamental,
+enesar con cualquier dependencia
+que nos pida lo del seguro social,
+es dar reportes del suave.
+Y al final,
+yo no puedo dejar de generarlos,
+porque es un entregable tanto para mi cliente,
+para que tenga la seguridad de que se separan el insudo,
+van a atender
+y no le van a dar el servicio
+y no le van a poner trabajo.
+Y pues creo que esas dos áreas de oportunidad
+que ahorita tiene el sistema,
+a nosotros nos está generando muchísimo
+y nos viene generando desde que lo tenemos
+y muchísimo retrabajo.
+Hoy perdón.
+Perfecto, perfecto, no.
+Gracias por ese...
+¿Cómo tip, Tareven,
+en esos detalles?
+¿No se ha algo de tu lado que tienes?
+No, no.
+Sí, gracias.
+Y gracias a mí,
+por los comentarios.
+Estoy bien extraño,
+y es algo que,
+pues ya lleva más de un año
+que hace por levantar por la mano
+como cliente,
+porque es una funcionalidad de estando
+hasta donde nosotros tenemos conocimiento
+desde el producto estándar,
+que es de suad,
+tiene una funcionalidad estándar,
+que es la general proceso por si pare.
+Entonces,
+tocamos base con ustedes para decir,
+hoy pues necesitamos
+y lo necesitamos por un riesgo
+que existe ya operativamente hablando
+que tiene que ver con la generación del Pao.
+De hecho,
+tuvimos que buscar alternativas de forma interna
+para no generar el cambio
+en el proceso de Pao por disco de Pao,
+pero asumiendo ciertos riesgos
+de que el día de mañana
+esta entidad financiera diga,
+yo ya no voy a generar el proceso
+a través de discos de Pao.
+Por ya nos pasó,
+ya la que ocupábamos,
+nos dijo,
+yo ya no voy a poder hacer procesos
+a través de disco de Pao,
+y el banco vino y dijo,
+hay una solución que se llama Cipari,
+y podemos adaptarnos
+a que eso sucede,
+y el desarrollo te obligue
+y todo,
+pero necesitamos que ustedes
+los generen ese proceso.
+Entonces, eso sí es una preocupación grande
+por parte de nosotros,
+porque el día de mañana
+puede venirle a ese proceso desde el día de día
+y yo ya no te voy a aceptar
+los discos de Pao
+y no tenemos una solución
+que nos avale
+para poder generar este proceso
+y tendríamos que implicar
+ahí algunas actividades adicionales.
+Entonces,
+justo lo que nosotros hemos venido
+solicitando es
+que se tenga esa solución
+de generar este proceso de Cipari
+para que podamos,
+nosotros ya hacer uso
+de este mecanismo,
+y de hecho hasta,
+es más deficiente,
+según lo que nos comparte
+nuestro tipo de teoría
+y más seguro
+para poder cerrar este proceso
+del Pao.
+De ahí hacia atrás,
+y como comentarle,
+quiero que el sistema
+es bueno,
+aquí,
+también cuando necesitamos
+de alguna condición
+de poderosa situación,
+pues existe este canal de comunicación
+que, como bien,
+también comparte,
+tendrá cierto tiempo
+que hemos venidos
+generando estos puntos
+de encuentro principalmente con Jessica,
+es como nuestro primer punto de contacto
+para cualquier situación
+y cualquier punto de escalamiento, ¿no?
+Pero si, si disfrutaría,
+si se lleve o se ejecute esta tarea,
+porque si nos implica un red du grande
+y he determinado un momento,
+entonces las tapomas
+y otras decisiones
+al proceso
+que nosotros actualmente tenemos
+en relación.
+Y el otro que sabemos
+que a nivel de requerimientos
+o a nivel de controles,
+pues ahí traíamos como un,
+como un precedente de decir,
+y pues necesitamos el formato
+que necesitamos en mecanismos de haya,
+como ciertas condiciones
+que hemos venido levantando,
+se detuvo en algún momento
+por algunas condiciones,
+también que tiene que ver con el esquema documental
+o la evidencia documental,
+lo traamos en standby,
+pero si nos interesa mucho,
+el poder contar con este proceso
+como menciona el Latino de las edulas
+y los formatos que hoy las autoridades nos visitan.
+Entonces, sabiendo,
+obteniendo nosotros el conocimiento
+de físicos,
+tiene un licenciamiento
+para poder ejecer el proceso
+del Pago de Seguridad Social,
+como Antearnativa,
+a estas organizaciones que manejamos
+una cierta volumetría,
+un cierto estándar de proceso de tiempos,
+pues si nos es apremiente
+que nos iban a ayudar con esos temas.
+Eso es lo que yo reforzaría
+del comentario de lo que ha compartido
+el nivel de procesos en Diego,
+y si me gustaría,
+si hemos ido
+ya algunos puntos de conversación,
+pero si me gustaría
+que pudiamos tener claridad,
+si es o no es,
+o sea si es viable
+o de plan no es viable
+porque también con base
+en esta decisión,
+vesicos,
+o en otros también tendrían
+si tomara una decisión, ¿no?
+Bueno, me queda clar este parte
+y lo crítico que es para,
+para el negocio.
+Creo que, un poco en este orden de así,
+si bien creo que la respuesta puede
+ver hacer la misma,
+un poco me gustaría plantearlo diferente, ¿no?
+Y tal vez, pensando en lo que se viene para el negocio,
+necesidades de crecimiento,
+fuera de esto que acabamos a hablar,
+que entiendo lo crítico que es,
+que otras cosas
+tienen que cambiar en la plataforma
+para acompañarlo a estas procesos de crecimiento,
+de iniciativas internas que pueden estar teniendo,
+o incluso de gaps que hayan detectado
+en el proceso de decisión de personas como un todo, ¿no?
+Tal vez un poco lo que me gustaría entender acá es,
+como de nuestro lado,
+fuera de atacar este,
+este tema que sin lo para duda,
+es crítico, ¿no?
+Los podemos acompañar
+en su proceso de decisión de personas,
+viendo lo como un todo.
+Sí.
+Ya no entendí,
+eso te he ajustado, ¿no?
+A la pregunta de ando,
+es que esto es decir que es crítico
+y esto es decir,
+la razón es porque seguramente
+usted lo conoce imperfectamente bien.
+Con todo el tema del REPS,
+tú tienes que comprobar
+la autoridad que estás cumpliendo
+con tus obligaciones, ¿no?
+Nosotros tenemos,
+justamente servicios internos
+y para dejar a esta vida,
+entre las autoridades,
+un reporte que nos ofrece
+y costa no cumplir con los que ofrece su
+asaparelos,
+no son los correctos, ¿no?
+Por los oficiales.
+Por eso hemos insistido mucho en el reporte
+y vuelve a insistir en la pregunta,
+si esa reporte se va,
+se va a poder contar con él,
+porque usted es,
+pues, propiamente,
+tiene un sistema que está validado
+por las seguridad sociales,
+que también hemos estado
+por las seguridad sociales,
+que también hemos solicitado algún momento,
+ese aval, ¿no?
+donde o ese documento donde indique
+que, justamente, de su sistema,
+está validado por las seguridad sociales.
+Entonces, por ahí hemos podido
+adecado con Jessica,
+pero nos decía que,
+justo tienen que tocar base
+antes con la seguridad social
+cuando en el instituto
+para que les de las autorizaciones
+para ese formato, ¿verdad?
+Pero, como comenta,
+esto es un reto a los internos
+para nosotros,
+él está volviendo a abrir los discos
+de pago en el suafra
+que nos da los formatos.
+La pregunta,
+y me suma la pregunta de algo,
+es posible que usted lo tengan
+más adelante o cual sería el escenario.
+¿Por qué esto?
+Por temas, ¿no?
+de todo esto que hablamos,
+de todo el tema de servicios,
+pues, es importante tener nosotros,
+tenemos que ir dejando evidencias,
+mes a mes,
+de esos compromisos
+para que, en cuanto llegue a la autoridad,
+que nos sabemos en qué momento nos puede llegar,
+que, ahora antes, sus clientes,
+ahora entienden a entender la mi situación,
+pues tenemos que tener esa información lista, ¿verdad?
+Y lo vamos haciendo nosotros, pues,
+con ese mechanismo,
+y lo ya es guardando esa reportería,
+para que, cuando llegue
+otro tema de comprobantes,
+cualquier revisión externa,
+pues, podemos probar la proporción
+de las autoridades.
+Y me suma esta pregunta,
+¿no es que no escuché,
+mal bien, sentí como que, otra vez,
+la pregunta de qué más podemos,
+¿cuál son nuestros problemas?
+Sí, mira, bueno, yo aquí le conté esto,
+en esta parte de Santi.
+Hemos hecho algunas pruebas,
+primero del cipare,
+hemos hecho algunas pruebas con respecto a la conexión,
+tuvimos por ahí un primer tema
+que fue el poder tener acceso
+por que se genera el capcha.
+Entonces, en las pruebas,
+primeramente, no nos funcionaba,
+poder lograr pasar el capcha.
+Y después hicimos otras pruebas,
+con otros proveedores internos,
+para poder hacer las conexiones,
+porque son servicios a los que nos tenemos que conectar.
+Al final, ya nos dejó pasar el capcha,
+pero las pruebas quisimos alrededor de noviembre y diciembre,
+tuvimos un tema porque ya nos generaba la línea de captura.
+Entonces, estamos revisando ahorita todavía
+ese tema para poder obtener,
+sí estamos trabajando,
+llegó, no les hemos comunicado en este sentido,
+porque no queremos dar una expectativa ahorita,
+de hoy, y cuando ya está,
+y dime qué fecha.
+Sí, explico, entonces,
+queremos tener como ya las pruebas un poquito más avanzadas
+con respecto a esta parte de la línea de captura
+para poder decirles,
+oye, yo sé que con ustedes no hay tema,
+porque se han ofrecido, no?
+También, bueno, si quieres,
+pues, podemos hacer un ambiente y hacer una prueba, ¿no?
+Nosotros tenemos alguna empresa, pues, que también hace,
+pues, algunos servicios y entre ella,
+pues, hemos estado haciendo pruebas con estas empresas,
+que tenemos nosotros como empresas sermanas,
+obviamente, pues, para no impactar a alguien cliente, ¿no?
+Entonces, si estamos buscando trabajar en eso
+y tratar de liberar lo más rápido que podamos,
+pues, esta parte de la línea de captura, ¿no?
+Es, sí, yo lo trego ahí como, pues,
+como un seguimiento del año pasado,
+cuando me presento Andrés con ustedes,
+y yo yo va a la cuenta, ¿no?
+Entonces, no lo he dejado, lo trego ahí,
+yo en el tintero como pruebas para avanzar
+y cómo podemos, sí, generar la línea de captura.
+Al final, es algo que tendríamos que hacer, sí o sí,
+digo, en el sentido de que ya se está, como bien,
+comentan, o sea, al final,
+hay algunas instituciones bancarias que si lo aceptan
+todavía como taco por parte del disco de pago,
+pero, pues, el tiempo se nos puede terminar
+de un momento o otro, ¿no?
+Y si nosotros estamos forzando que esto suceda
+para que ustedes se sientan con la tranquilidad
+a la confianza de que, pues, bueno,
+se está haciendo una labor para poder integrar
+esta parte de la línea de captura, ¿no?
+Y por parte de las adultas, pues,
+por ahí traemos como les decía, un acercamiento,
+porque, dentro de lo que traíamos,
+nosotros como, pues, cumplimiento y aval,
+pues, no venía como en el formato,
+pero sí, estamos trabajando en esta parte también.
+Gracias, yesí.
+Y a la pregunta que nos hacía siempre,
+oiga a ustedes a tener acertamiento
+para compartir o hablar, ¿no?
+De nuestro producto.
+Si lo hemos hecho,
+ustedes nos han perdido que lo hagamos, ¿no?
+Y por favor, un compañía es que está en nuestro tamaño, ¿no?
+Entonces, sin duda, pues, si este compartimos
+lo que es, bueno, el producto a nivel,
+digamos, de volumen,
+porque su app no nos da mismo volumen en operación.
+Pero sí, sí, si notamos y hemos compartido
+estas áreas de oportunidad,
+que son las que les traemos a ustedes.
+Pero ya, ya, ellos tomaran o han tomado su decisión,
+así, se cambió, ¿no?
+Pero creo que es, para ellos también es relevante,
+todo esto.
+Entonces, nos compartimos justamente
+porque coincidimos en este sentido, ¿no?
+Y que esto, pues, hay que mejorarlo
+en esta parte.
+Y no sé si el resolvito pregunta Santiago.
+Si, no.
+Si, claro, si operativamente tenemos temas.
+Creo que los temas que se nos han presentado,
+rapizo, terminado, fue como hice en ETI.
+Pero, apente, nosotros tenemos un trato de movimiento,
+si, apente, no lo que habamos,
+porque decía que ya se me han cubierto
+y decíamos que hayan probado.
+Pero ¿por qué?
+Estas son los buscando y era complicado localizar a alguien
+para que nos habilitara, porque nos decía,
+no, es que tengo que ir a ver a mi era a financiera
+para ver que me den el visto bueno
+y a poderles abrir otra de los movimientos,
+todo este tema.
+Y si nos demoraba tiempo para ETI,
+entonces, en esos tiempos de espera,
+con nosotros, nos detenían los movimientos.
+Es un tema de atención, ¿no?
+En este sentido, que si se lleva un rato
+era complicado estarlo localizado,
+porque no teníamos una línea,
+yo tenía que de repente subir aquí,
+nos daba el servicio, ¿no?
+Pero aún así de repeteas que estaban juntas
+y no te podía contestar o ir a mi celular,
+esa es un tema.
+Y a lo que hemos hecho y que gracias a Yezi
+hemos retomado, también fueron unos desarrollos
+que incluso ya se habían pagado
+y no se le había dado continuidad de entregarle.
+Tenemos que estar buscando como para saber
+cuál es el estatus donde estamos,
+cómo van todo esto.
+Y la verdad es que le hemos retomado
+desde el año pasado, pero es fallésica,
+pero también eran las áreas de oportunidad
+que teníamos que estar localizando,
+incluso hasta el técnico,
+porque ni siquiera que nos daba el servicio,
+nos contestaba, ¿no?
+Entonces hoy en día,
+a Yezi que ya nos atinen,
+más puntualmente,
+pero sí son temas que veíamos y sufriamos,
+con ese letillo, creo que sí,
+si estábamos a ir en ese sentido.
+No, está buenísimo el contexto de eso.
+Creo que me quedaba bastante claro.
+Y sí, yo sabía,
+para que tu varias veces como,
+como que se podría digamos adicionar
+y donde esta más ayuda,
+pero si me quedaba claro como el dolor actual
+y eso debería ser la prioridad.
+Entonces, creo que alineados con ese frente.
+Realmente para ser un poco consciente
+con el tiempo lo que les diría es,
+bueno, primero,
+gracias por la disponibilidad.
+Pero también,
+me gustaría saber si hay algo,
+solo cual tienen que comentar,
+que no les haya preguntado aún,
+respecto al producto, al servicio,
+en sí, que crean que sea valido
+eso para la conversación,
+o crean que ya tocamos
+los puntos más importantes.
+Yo no más su María
+en las actualizaciones que,
+se le hacen al sua por todo este tema
+que siempre sale algo
+por parte del Infonaví.
+Las actualizaciones,
+a veces nos llegan a nosotros
+y nosotros regresamos y les decimos,
+hoy en cómodo con esto,
+la última que hemos tenido
+es la Infonaví.
+Y, bueno, yo sé que,
+el INSA caso actualización
+no dio previo,
+no, a decir, te doy 10 días
+o se acerca mucho a los pagos,
+la maneja tiempo es bien cortos,
+pero yo siento que si el sistema tiene
+esa compañía con el INSA o esa cercanía,
+lo que debería ser un sistema
+que debería de prevenir
+y no dejar,
+es que esperame que apenas se apuél su obra,
+yo actualizo el mío
+y dame otros días,
+porque, bueno, nosotros tenemos
+un calendario apretado,
+cerramos procesos
+así puntualmente
+y es que el sistema me diga
+tres días, cinco días,
+esperame, déjate meter tu actualización.
+Híjole, nos pone aquí a temblar,
+porque si no queda,
+si pagos no sale bien,
+si el sistema falla,
+pues, siempre tenemos que tener
+un plan bien,
+pero creo que por ser un sistema,
+como es,
+las actualizaciones deberían
+de venir en conjunto,
+ya salió el suave actualizado,
+pues, el psicoso al otro día,
+debería de estar ya
+dándonos a nosotros esa actualización.
+Pues, creo que ese es un punto
+que yo también tendría
+a la mano de,
+si sí ha llegado al canal
+con el suave,
+con el INSA,
+deberían ir como hermanos
+de la mano,
+y nosotros no pedirle la actualización
+y esperarles,
+porque, como te digo,
+aportunadamente, siempre salimos,
+pero el día que nos salgamos,
+pues, imagínate,
+o sea, tenemos un momento
+muy alto de pago a nosotros,
+y pues, no hay manera de decir
+no pago,
+porque el sistema no quedó, ¿no?
+Entonces, si no,
+que las actualizaciones
+no quieren tan justar
+y prevenir más los tiempos
+en ese aspecto,
+porque las actualizaciones siempre
+vamos a tener.
+No, esta monísmo,
+ese punto,
+y, digamos, poco leticia
+para tener ese nubro,
+claro, de nuestra parte,
+más o menos,
+cuáles es ese tiempo,
+porque, en medio,
+que toma las actualizaciones
+que a todos parecibidos,
+si lo resumimos a días,
+¿cuáles es ese delay que estás viendo?
+Por decirte,
+yo tendría que,
+si la actualización sale en el Sua,
+de Dios,
+siempre sale los primeros días del mes
+para pagar el 17.
+Yo tendría que tener máximo
+el 5 días del mes,
+ya tendré esa actualización
+para seguir arrancando
+con nuestros procesos de validación.
+Si yo la tengo el día 10,
+para el 17,
+ya estamos corriendo, o sea,
+ya estamos con los,
+y es,
+y estamos en los talones.
+Entonces, sí,
+te digo, o sea,
+si yo te dijeron,
+lo ideal sería,
+hoy saco el Sua,
+mañana se cos, o sea,
+si el primero del mes
+salió Sua,
+se el 2 del mes,
+chicos,
+deberían estar anunciando
+aquí esta actualización,
+aquí te las necesitas correr esto,
+empezar toda la planeación,
+y no ser nosotros el que, digamos,
+oye, ¿cómo vas con esto?
+Cuando la tengo,
+porque todo el sistema
+hay que probar,
+porque, al final,
+nosotros no salimos
+de, hoy se actualiza,
+mañana métela
+y genera el pago, ¿no?
+O sea, son validaciones,
+son confirmadas.
+O sea, es un proceso de,
+cuando hay alguna actualización,
+muy grande para validar
+que todo quede bien,
+y que nada se se mueva,
+que nada se,
+se haya quedado,
+porque, al final, pues,
+se mueven cosas muy delicadas,
+y una parametrización mal,
+o una actualización mal ejecutada,
+pues no,
+no hay manera
+que nosotros podamos
+pagar algo
+que nosotros no estemos validando.
+Entonces, para mí,
+lo ideal es,
+hoy sale en el sua mañana,
+tendríamos que tenerla nosotros ya,
+para instalarla en el sistema,
+y no tenerla,
+en el suelo, ¿por qué?
+Es una planeación,
+déjame hacer una base de edad,
+déjame destaburar mi base de edad,
+déjame terminar un cálculo previo,
+ya hasta aquí cortamos,
+al siguiente día ejecutala,
+porque te digo esto,
+una planeación siempre,
+un plan de discos previos,
+pago previo,
+y ahora sí corre la actualización,
+porque si algo sale,
+algo se nos mueve,
+pues, algo tenemos que tener, ¿no?
+No, perfecto.
+Perfecto, me queda
+muy claro esa parte.
+Pues nada, equipo,
+de verdad, mil gracias por,
+por el tiempo,
+y creo que ya notamos todos los puntos
+para asegurar de que estemos en línea.
+Entonces,
+mil gracias por el espacio.
+Santiago, ¿no? ¿saben qué?
+¿Y quién es todo?
+Santiago, ¿te quedes en el lugar de Andrés?
+No.
+Yo estoy en el lugar de Andrés.
+Ah, ¿o qué ni es?
+Sí.
+Ok, y nada más de destacarla
+que tuvimos para hacer el seguimiento,
+para que no solo se queden,
+dicen por ahí,
+buenas intenciones.
+Sí, no.
+O sea, final,
+primero que nada,
+pues les agradecemos
+porque queremos escuchar
+una versión,
+no nada más,
+y ustedes hemos tocado
+algunos otros clientes,
+queremos escuchar,
+pues, primero,
+como esta su operación,
+que le hace falta
+la plataforma,
+que necesitamos como también nosotros,
+como chicos,
+mejorar,
+para que la plataforma cumpla
+con funcionalidades
+que ustedes requiere.
+Sí, me explicó.
+Y no digo nada más,
+ustedes llegó al final
+hay otros clientes
+que también, pues,
+nos están externando
+a lo mejor,
+puntos muy parecidos, ¿no?
+Entonces,
+lo importante es tomar esto,
+obviamente,
+para llevarlo,
+nosotros vamos a subir
+a un consejo,
+para que se tomen decisiones,
+obviamente, pues,
+la directriz,
+ahorita,
+principal,
+y lo que estamos buscando es,
+en primera instancia
+de los puntos que comentaron
+sobre el tema del chipare,
+obviamente,
+las células,
+yo lo veo, sí,
+pero en un segundo plano,
+no es tan rápido,
+que vayamos a tomar como,
+pero en prioridad,
+si le estamos dando como
+prioridad a la parte del chipare,
+que si lo traemos de ahí,
+en puerta trabajando, ¿no?
+Pero sí, es,
+pues, dar la continuidad
+de estos puntos,
+este serio.
+Ok, gracias, ella, sí.
+Y yo solo una consulta,
+ahorita,
+con la reforma de la reducción
+de la jornada,
+este van a,
+ustedes preven algo
+que venga cambios
+en la seguridad social.
+O sea, lo,
+lo comento,
+por si también están van
+a programar a una charla,
+que es otro de los temas,
+que, de repente,
+también tenía psicosis,
+y lo dejaron de hacer,
+es bien,
+justamente,
+de los socios buenos,
+de los que ocupamos, ¿no?
+Con sus clientes,
+nos daban,
+justamente, pláticas,
+ya sea presenciales,
+no sé si ahora,
+sea más,
+por ti,
+o algunos,
+o si en virtual,
+donde nos daban
+hacer tesoría,
+justamente,
+de lo que viene, ¿no?
+Entonces,
+la reforma,
+de la opción de jornada,
+preven algo,
+tiene nago en mente,
+durante el año,
+de, de, de dar charlas,
+o algo hacia,
+hacia nosotros,
+unos sus clientes, ¿no?
+Sí, estamos retomando,
+algunos temas,
+de webinars,
+de hecho, digo,
+la semana pasada,
+hicimos un webinar,
+de hosting,
+pero estamos retomando,
+forma generar webinars,
+obviamente, vamos a,
+ahorita, a,
+a tener un webinar,
+seguramente,
+no tengo ahorita todavía,
+la fecha,
+pero estamos considerando,
+los días o finales,
+de, de, de,
+abril,
+para el tema de la jornada,
+reducida,
+y también estamos,
+planeando un tema,
+por ahí, por el tema de las,
+bueno, digo,
+a lo mejor,
+ustedes no les impacta,
+pero a los clientes,
+que llevan,
+la parte de la nomin así,
+con toda la parte,
+pues obligatoria,
+sobre el tema de las,
+tener las chicas,
+del personal,
+no, electrónicas, ¿no?
+Que ya eso,
+por la Secretaría de Trabajo
+y Proficción Social,
+pues, están mandando como,
+algo ya obligatorio,
+o mandatorio,
+que los empleados,
+tengan chicas, ¿no?
+Dentro de ustedes,
+pues, no les afecta,
+porque, pues,
+no les manejan la parte de la
+novina con chicas,
+entonces, pero,
+sí, estamos buscando,
+hacer web en art,
+y estamos invitando,
+de acuerdo,
+al tema del proceso,
+que ustedes manejan con chicas,
+para que esto, pues,
+ustedes sean participes, ¿no?
+Pero, sí,
+cuando tenga ya definida la fecha
+y la liga de la invitación,
+para el tema de la jornada,
+reducida,
+de las 40 horas, pues,
+con gusto,
+se las compartimos.
+¿Ok?
+¿La corolle, sí?
+Por ser a mi,
+me voy a comentar,
+muchas gracias también,
+estáis por el espacio,
+para que desvaluíos,
+pero, ¿no?
+Sí.
+¿Sería más valloso darle continuidad?
+Sí, la vamos a dar continuidad.
+Cuenta con ello.
+Un abrazo aquí, por favor.
+Sí, por favor.
+Gracias, cuídense,
+bonita tarde, bye.

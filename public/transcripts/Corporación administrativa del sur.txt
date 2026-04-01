@@ -1,0 +1,542 @@
+¿Nos temas de producto, servicios, cómo han crecido y qué esperan crecer?
+¿Qué les gustaría, no? Entonces, Adelato se pega por favor.
+Super. Pedro, pues nada, Pedro, ¿qué le diais un poco con cómo lo dice?
+Ya es ir por varios preguntas, pero le diais que sea más una conversación
+en donde tú nos puedas contar tal vez de una manera más libre
+que preguntas específicas, como te sientes con la plataforma
+también, un poco que te gustaría ver a nivel de evolución.
+Tal vez un poco para iniciar que gustaría empezar a hablar de cómo funcionó
+en día su proceso de denomina, ¿no?
+¿Cómo luce una semana, un mes de cierre y entender muy bien qué otras herramientas
+están interactando en el proceso, qué personas del equipo y cómo les va con este
+proceso, ¿no? ¿Y cómo chicos está solucionando los problemas que tienen en el área?
+Ok, mira, nosotros en un inicio de la idea de que nos costó un poco
+el programa porque estábamos acostumbrados al trabajo.
+Cuando nosotros empezamos con la implementación, ¿no sé cómo?
+7 años, un poquito más, yo creo.
+Empezamos con temas para metrizar una información que queríamos visualizar
+de acuerdo a las necesidades de la empresa.
+Al día de hoy te pudiera decir que la mayoría de la información
+que ocupamos dentro de las nóminas no los dalsicos,
+teníamos temas de las nóminas especiales que eran los finiquitos,
+igual nos ayudaron ahí y se generaron unos parámetros para que se ajustaran a nuestra necesidad.
+Ahorita, en el proceso, yo tengo, por ejemplo, temas de la confronta.
+En el proceso de confronta, se supone que nos comparan la información de la empliidad
+contra nuestro, con nuestra información del sistema.
+Pero, para mí, al día de hoy, me sigue sin generar los reportes de las altas
+que generen el sistema.
+Es decir, yo doy de alta ahorita, no sé, 25 de febrero del 26.
+Doy un alta, pero el sistema no es el suo y no lo reporte en una emisión.
+Cuando yo hago una confronta, el sistema no me arroja el trabajador que tengo de más.
+Me da una diferencia de todas aquellas que tengan incidencias,
+pueden ser incapacidades, faltas.
+Pero el trabajador nuevo solamente me aparece en el reporte de trabajadores
+que están en bicicos, pero que no están en la ema.
+Te de diferencias en importe en pesos, no me lo da.
+Y eso ya tiene, creo que desde que empezamos a utilizarlo al día de hoy,
+la roja es a diferencia. Si te arroja las de sistema,
+que te dice el nombre del trabajador, el número de trabajador,
+está de más en el sistema, contra tu emisión, pero en pesos no te lo da.
+Ok.
+Es decir, dentro de todo lo demás, las formas de pago, las polisas,
+toda la referencia de las nómenas, el cálculo,
+tampoco tenemos problemas, los tabuladores de infuestos tampoco.
+En actualizaciones, el único tema ahí que tenemos es con nuestro equipo de...
+de sistema para poderlos actualizar, porque se actualiza a repred
+y después se actualiza de manera local.
+Perfect, perfecto, perfecto.
+Utilizando alguno de herramientas para sinar personas o algo para el estilo
+o digamos que el psicóso se está volviendo el centralidad.
+No, sí. Si cosas es el paquete completo.
+Nosotros no manejamos ningún otro paquete para nómina
+que ese adicional del psicóso anteriormente ocupábamos el lebicón
+para el seguro social.
+Pero el psicóso se maneja todo, entonces, altas, bajas
+o los movimientos de los seguros sociales respecto de el psicóso.
+Las variables, que es un tema de nóminas, también lo hace directamente el psicóso
+y con los parámetros que necesitas.
+Entonces, realmente no tenemos ningún otro programa para timbrao de igual,
+ocupamos el psicóso, entonces es tampoco bien lo dejamos de utilizar
+un tercero para que el proveedor sea psicóso.
+Buenísimo, buenísimo, buenísimo.
+A lo que me gustaría también entender es si tienes que inscribir
+le algún colega que es psicóso, un colega que no lo conoce,
+que le dirías que resaltarías de la plataforma
+y que tal vez sería una advertencia que le darías sobre la misión.
+Luego ya lo acabamos de hacer porque antes de la renovación
+de nuestra licencia, se iba por regreso otra vez al nuevo.
+Entonces, a la hora de referenciar el sistema como tal
+para poderlo renovar, nos solicitaron...
+A mí un psicóso es integral.
+La base de datos que tengan más ahorita en nóminas,
+son variadas, sebanales, quienzenales o nóminas especiales
+que se utilicen en una sola base de datos.
+Para mi otro programa que me lo parte en tipo de nómina,
+me genera un poquito más de trabajo.
+Entonces, como el programa es muy integral.
+Entonces, a la persona que nos estuvo entrevistando para darle
+lo que teníamos con el psicóso, una de las ventajas que teníamos
+ese son, que es integral, seguro, social y el proceso de nóminas.
+Claro.
+Entiendo, entiendo.
+Perfecto.
+Fue a día, digamos, en si el proceso y todo lo que estás haciendo,
+¿cuál es esa funcionalidad que tú dices es crítica
+y si no existiera sería un problema para nosotros?
+¿Cuál es el mayor valor que les está generando la plataforma
+en este momento?
+La facilidad y los tipos.
+¿Ok?
+El proceso de nómina lo hace un tiempo muy...
+Decíclo así, es muy fácil,
+porque la mayoría de la información de la carga
+es el sistema y el sistema te da todo.
+Perfecto.
+Perfecto, perfecto.
+Y no sé si hay alguna tarea en todo el proceso de nómina
+que hoy en día sigan haciendo de manera manual,
+no se había excel,
+a mano, algo por el estilo,
+porque la plataforma aún no lo se está acompañando ahí.
+Es algo que nos esté haciendo el psicósofo de igual,
+nada más, es el proceso de confronta.
+Realmente nosotros hacemos la confronta entre lo que yo voy a pagar
+y el dato de la emisión,
+para conocer la emisión, no sé, 100 mil pesos
+y en la confronta tengo a diferencia 98, 2000 pesos,
+pero resulta que esos 2000 pesos se integran mis incidencias
+más el trabajador que te digo,
+que muchas de las veces cuando me mandan el reporte de PDF
+de las diferencias no me arroja la cantidad que yo ocupo,
+si no me da una diferente,
+y la diferencia es en el reporte que te decía,
+las altas que tengan el sistema,
+pero no me generando en dinero la confronta,
+esa es mi diferencia,
+el único que hacemos manual,
+es todo lo demás,
+mientras la incidencia no sea de ese tipo,
+de lo arroja el sistema,
+te lo da igual, ni diferencias,
+son 2000 pesos,
+los mismos de las 1000 pesos me parecen en el reporte.
+Perfecto, perfecto, perfecto.
+Es decir, ya todo el proceso está agitilizado,
+sobre este último tema,
+que nos sigue siendo muy específico.
+Sí, sí, es un caso especial.
+Tigo, si no sea una incidencia de ese tipo,
+que sea en las últimas altas en el mes,
+no tiene diferencia el sistema,
+el sistema te da el número que tienes como variación,
+y nos sirve sobre todo para las aclaraciones del seguro social.
+Cuando nos manda alguna diferencia entre lo pagado
+y lo que se solicitó,
+podemos generar ese reporte.
+Perfecto, perfecto, perfecto.
+A lo que también creo que es crítico,
+que nos cuentes un poco,
+es ya entrando a todo el frente de servicio,
+como es la comunicación con el equipo,
+cuando ustedes necesiten algo,
+que tan fluida es,
+y tal vez podremos pensar un poco
+en la última vez que tuvieron un problema,
+como fue ese paso, paso hasta que,
+quedó resuelto,
+y que tan constantes,
+ahí que me pudiera yo quedar,
+porque tengo una,
+tuvo una solicitud de en febrero del año pasado,
+por el tema,
+empezaron a cancelar los tiros,
+el subsidio entregado al trabajador,
+y se quedó como un subsidio para la ICR,
+entonces yo le solicite a equipo,
+decir cosas que me ayudaran
+con la formulación de mi sistema,
+para que el subsidio, por ejemplo,
+me lo quitará,
+es decir, tengo problemas con el timbrado de nómina,
+porque en algunas de los cálculos de sistema,
+me arrojó un subsidio mayor,
+algo que debería de otorgar,
+es decir, yo tengo derecho a otorgar ahorita
+en este año,
+pero con el núcleo de este tema,
+en una análisis,
+me puede arrojar hasta mil pesos,
+ese es un dato de formulación.
+Cuando yo quiero timbrar,
+el sistema me dice,
+tienes una error en el timbrado,
+porque el subsidio,
+otorgado,
+es mayor al que debería le ser.
+Claro.
+Entonces, muchas de las veces,
+o eso,
+no es una base de datos,
+un poquito grande,
+si te hablo de una razón social,
+que es rarsarás,
+entonces,
+yo analizad mi informa,
+así yo,
+por un lado,
+los generó la nómina,
+el proceso de nómina,
+si erró la,
+si erró la mía,
+y al cerrar la nómina,
+yo ya no lo puedo editar.
+El timbrado,
+toma andar un histórico,
+es decir,
+una importación por sistema de dato histórico,
+para poder eliminar ese dato.
+Y ya con ese dato,
+ya me lo genera,
+en algún momento yo se nos solicite,
+a vez de un acuerdo,
+como se llama el compañero de psicos,
+que se lo pedí,
+esto te gofen febrero del 25,
+y al día de hoy,
+en alguna base creo que me lo generó,
+pero no lo implementó en todas mis bases.
+Entonces, ahorita,
+yo sigo obteniendo ese error.
+Ok.
+Y por la mayoría de las,
+de las incidencias
+que tenemos,
+las pedimos directamente a la plataforma,
+y con el servicio que tenemos,
+de este,
+por decirlo así,
+del soporte premium,
+los comunicamos directamente
+a la línea de chat que nos dan,
+mandamos la incidencia del ticat
+y notábamos mucho en contestarnos,
+el tema es,
+digo en algunos datos,
+tengo ahorita, por ejemplo,
+con este armando,
+el tema de la parametrización
+de la poliza,
+pero ese tema especial
+no es directamente del sistema,
+sino son de las necesidades
+o de las cuentas que yo ocupo,
+en mi programa,
+que no se adapta
+a la poliza modelo que tenía.
+Entonces digo,
+ese no es,
+no es tema,
+sino es un parámetro
+que estaban revisando ellos
+para que se pudiera ajustar
+a lo que nosotros ocupamos.
+Perfecto.
+Me queda clara,
+me queda clara su parte.
+A lo que también aparece,
+importante entender es,
+que tan real activo
+es el equipo al comunicarse contigo,
+cuando hay algo nuevo,
+o hay algún tema que puede llegar a afectarles,
+que tanto te enteras por tu cuenta
+o es,
+a raíz de que el equipo te busca,
+de manera directa.
+No,
+raíz de la información
+que se nos siga presentando
+y hace directamente de,
+no se tablo a lo mejor de la actualización
+de un formabilitema,
+de ICDR,
+para el SAT,
+por el diario visual
+y, media también,
+se hacen las actualizaciones,
+si cual nos manda
+alguna publicación para
+de cual sea esas condiciones.
+Entonces,
+realmente no hemos tenido necesidad
+de estarle llamando para
+adaptarse a lo que nosotros ocupamos
+y no se va actualizando el sistema,
+que era lo que yo te decía.
+Las actualizaciones
+son necesidades de acuerdo
+a las legislaciones,
+lo hace directamente
+chicos,
+junto con su equipo
+y nosotros nada más nos adaptamos
+aquí en la solución que tengan,
+se adapte a la necesidad.
+¿Qué se tenga?
+Va perfect, perfect.
+Creo que la otra parte de las preguntas
+tiene que ver un poco más con estas necesidades,
+tal vez más, actuales y futuras
+que puedas llegar a tener en tu área.
+¿Qué me gustaría entender?
+Partiendo un poco de
+el entorno actual,
+el crecimiento de la empresa,
+¿cómo tendría que evolucionar la plataforma?
+Para acompañarlos bien
+en todo el proceso.
+¿Qué cosas, dices Puchas?
+Esto sería increíble tenerlo
+para robustecer un montal en el proceso.
+Es como tal la ahorita
+dentro de las necesidades
+que tenemos
+y las condiciones
+con las que pagamos a los colaboradores
+para nuestra nomina.
+No hemos tenido la necesidad de ajustarnos a nada,
+sino ya el sistema
+que está adaptado
+para hacer todo lo que necesitamos.
+¿Qué es ahorita, digo,
+si me llegan al cielo y ya necesito
+no según reporte adicional
+que me vieron el sistema,
+a la mojobra que ocupamos el excel,
+pero...
+Es muy raro.
+Entiendo.
+Entiendo.
+¿Y oír?
+Creo que un poco lo
+la otra pregunta
+y ni en la raíz de esto
+es si pudieras cambiar
+una cosa en la plataforma.
+¿Cuál sería?
+Creo que te perdimos.
+Así.
+Sí, sí, sí.
+Lo siento.
+Permeten.
+Sí.
+Sí.
+Sí.
+La vez...
+El interno está un poco...
+Diciado.
+Y...
+A ver si así ya.
+Ya...
+Sí.
+Ya.
+Adelante.
+Santiago, yo creo.
+Entonces, ha hecho la última pregunta.
+Va.
+Un poco como usted...
+Entrenderé si pudieras cambiar
+algo de la plataforma.
+¿Qué sería?
+Si pudiera cambiar algo de la plataforma.
+Es que no lo pudiera cambiar nada.
+Es que no pudiera cambiar nada.
+Serían como unos...
+Necesitaríamos para nosotros
+para me utilizar algunos candados
+que ya...
+En la base de datos,
+como se separan,
+es decir,
+yo tener un parámetro
+para mi base de datos.
+El tema es que no se puede replicar
+para...
+para las demás.
+¿Todo es de ir?
+No sé, de una razón social.
+No las puedo...
+No las puedo dejar igual a otra base.
+Si no es por sistema.
+Entonces,
+eso sí y luego me cuesta
+y te hablo la mejor de una solicitud
+que hice hace...
+A inicios de año,
+del tema del parámetro
+de unos friquitos.
+Yo manejo las razones sociales
+de las agencias
+y dentro de las agencias.
+Para mí ya estaba parametrizado
+el tema de mis grabados y excelitos
+en pagos por separación.
+Pero en la base de datos
+que solicite que era Garzaga,
+reyes, gastantes,
+garzagas,
+no estaba así.
+Entonces,
+ese tipo de configuraciones
+y muchas de las veces
+la ocupamos en una base
+y nos queda
+para nuestra necesidad
+del tema es
+en la...
+una base
+y existe.
+Entonces, la mayoría de las veces
+son las solicitudes que hacemos
+al equipo de psicoso.
+Ya, ya me queda que...
+Pues eso sí me...
+si nos gustaría,
+porque tengo...
+a la mejor y el corticio
+a lo mejor de datos
+a que me reyes
+el métro cierta información
+y la quipro replica.
+El tema es
+que no lo puedo hacer sin tu auto.
+Sí.
+Sí.
+Te...
+ellos nos ayudan
+y se meten a nuestra base de datos
+y ya buscan los parámetros
+que...
+que ocupan
+y ya lo pueden replicar.
+Claro.
+Entiendo.
+Entiendo, entiendo.
+Está buenísimo.
+O sea, yo creo que aquí
+tal vez más
+para cerrar lo...
+lo único que me gustaría saber
+un poco, Pedro, es...
+cuál fue...
+tal vez un poco la razón
+que llevó a la empresa
+a constructar psicos.
+¿No?
+¿Qué fue eso?
+Sí.
+Era un crítico a la hora de tomar
+la decisión
+y si esa expectativa se ha
+venido cumpliendo no en el tiempo
+y también un poco
+si no te pregunte algo
+sobre la experiencia,
+sobre el producto
+que quisieras comentarnos
+feliz también de que nos cuentes.
+¿Qué es eso?
+¿Qué lo buscan?
+Para tomar de casa.
+Perdón, perdón, perdón.
+Lo primero sería así, digamos,
+en el proceso de selección
+de la plataforma,
+cuál fue esa característica
+o cuál fue esa razón
+por la que eligieron asicos.
+¿No?
+Y si esas expectativas iniciales
+que tenían desde el proceso
+de compras están cumpliendo ahora
+y para cerrar
+si me faltó preguntarte algo
+sobre tu experiencia
+con la plataforma
+o algo para el estilo
+que nos quieras comentar,
+también feliz de escucharte.
+A ver, mira,
+nuestra necesidad de un inicio
+fue el volumen de trabajadores.
+anteriormente teníamos
+el doble de volumen
+de trabajadores que conen
+que manejamos ahorita.
+La monerita estamos manejando
+a 1.500.
+Claro.
+Y anteriormente la base de datos
+era mucho mayor
+y esa necesidad
+nosotros la teníamos en noi.
+Y no, no,
+ese programa
+no nos pudo recuperar.
+Bueno, de personal.
+Entramos con psicos
+y con psicos no tenemos ese problema.
+El único problema que ahorita
+he tenido,
+y te estoy hablando de la,
+a la mejor es intermitencia
+en la conexión
+del proveedor de timbrado
+o cuando hago mi timbrado,
+es el mes pasado
+en el de timbrados de nómina.
+Sí.
+Y no sé si se perdió la conexión
+pero cuando yo hago la confronta
+entre las emblemas
+timbrados que tenga en el SAT
+contra lo que yo tengo
+en mi sistema, me aparece
+o me aparecieron
+folios duplicados
+y anteriormente
+se no lo hacía el sistema.
+Entonces es muy raro
+pero ahorita sí tengo
+una duplicidad de timbrados.
+Yo me voy al sistema,
+el sistema me arroja
+el folio de huide
+para mi sobre de nómina.
+Me voy que la realidad.
+¿Dónde estoy comparando
+mis folios generados
+contra mis timbrados
+en sistema?
+Claro.
+Y ahí me está arrojando
+una duplicidad de folios.
+Es decir, me ha pasado
+ya dos veces.
+Va.
+Perfecto.
+Perfecto.
+Perfecto.
+Está buenísimo.
+Creo que con eso
+estamos más que bien
+pedro, muchas gracias por tu tiempo.
+Ok.
+Va.
+Te mandamos un abrazo
+que estás muy bien.
+Muchas gracias, Pedro.
+Gracias.
+Gracias.
+Gracias.
+Bye.

@@ -20,6 +20,58 @@ const WEIGHT_ORDER = { blocker: 0, core: 1, support: 2, minor: 3 };
 const sortByWeight = (items) => [...items].sort((a, b) => (WEIGHT_ORDER[a.w] ?? 3) - (WEIGHT_ORDER[b.w] ?? 3));
 const txt = (item) => typeof item === "string" ? item : item.text;
 
+const TRANSCRIPT_MAP = {
+  "S-06679": "Merco", "S-06751": "Galdisa", "S-06623": "Criogas",
+  "S-00734": "Whirlpool", "S-06297": "Corporación administrativa del sur",
+  "S-06771": "Milano", "S-00482": "Bimbo", "S-00567": "CEMEX",
+  "S-00127": "Hospital Shriners para niños", "S-00552": "Liverpool",
+  "S-02727": "Tech de Monterrey",
+};
+
+const generateTranscriptPDF = async (client) => {
+  const name = TRANSCRIPT_MAP[client.id];
+  if (!name) { alert("Transcript not available for this interview."); return; }
+  try {
+    const resp = await fetch(`${process.env.PUBLIC_URL}/transcripts/${name}.txt`);
+    if (!resp.ok) { alert("Transcript file not found."); return; }
+    const transcript = await resp.text();
+    const doc = new jsPDF({ unit: "mm", format: "a4" });
+    const W = 175, LM = 15;
+    let y = 20;
+
+    // Header
+    doc.setFillColor(33, 33, 33); doc.rect(0, 0, 210, 32, "F");
+    doc.setFontSize(16); doc.setFont("helvetica", "bold"); doc.setTextColor(255, 255, 255);
+    doc.text(client.cliente, LM, 14);
+    doc.setFontSize(9); doc.setFont("helvetica", "normal");
+    doc.text(`Interview Transcript  ·  ${fmtDate(client.fechaReunion || "")}  ·  Contact: ${client.keyContact || "N/A"}`, LM, 22);
+    doc.text(`${client.id}  ·  ${client.producto}  ·  ARR: ${fmtUSD(client.billingUSD || 0)}`, LM, 28);
+    y = 40;
+
+    // Transcript body
+    doc.setFontSize(9.5); doc.setFont("helvetica", "normal"); doc.setTextColor(40, 40, 40);
+    const paragraphs = transcript.split(/\n+/).filter(Boolean);
+    paragraphs.forEach((para) => {
+      const lines = doc.splitTextToSize(para.trim(), W);
+      if (y + lines.length * 4 > 280) { doc.addPage(); y = 20; }
+      doc.text(lines, LM, y);
+      y += lines.length * 4 + 3;
+    });
+
+    // Footer on all pages
+    const pages = doc.internal.getNumberOfPages();
+    for (let i = 1; i <= pages; i++) {
+      doc.setPage(i);
+      doc.setFontSize(7); doc.setFont("helvetica", "normal"); doc.setTextColor(160, 160, 170);
+      doc.text(`Siccos M&A Due Diligence  ·  Confidential  ·  Full Transcript  ·  ${new Date().toLocaleDateString("en-US")}`, LM, 290);
+      doc.text(`Page ${i} of ${pages}`, 185, 290);
+    }
+
+    const fileName = client.cliente.replace(/[^a-zA-Z0-9]/g, "_").replace(/_+/g, "_") + "_Transcript.pdf";
+    doc.save(fileName);
+  } catch (e) { alert("Error loading transcript: " + e.message); }
+};
+
 const generatePDF = (client) => {
   const s = client.summary;
   if (!s) return;
@@ -156,7 +208,8 @@ export default function ClientDetail({ client, onBack }) {
         <div>
           <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
             <button className="back-btn" onClick={onBack}>&larr; Back</button>
-            {s && <button className="back-btn" onClick={() => generatePDF(client)} style={{ background: "var(--primary)", color: "#fff", border: "none" }}>↓ Interview Brief</button>}
+            {s && <button className="back-btn" onClick={() => generatePDF(client)} style={{ background: "var(--primary)", color: "#fff", border: "none" }}>↓ Brief</button>}
+            {s && TRANSCRIPT_MAP[client.id] && <button className="back-btn" onClick={() => generateTranscriptPDF(client)} style={{ background: "#333", color: "#fff", border: "none" }}>↓ Transcript</button>}
           </div>
           <h2 style={{ marginTop: 12 }}>{client.cliente}</h2>
           <div style={{ display: "flex", gap: 8, marginTop: 8, flexWrap: "wrap" }}>

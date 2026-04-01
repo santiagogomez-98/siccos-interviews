@@ -1,0 +1,772 @@
+Bueno, a todos los órdenes, por cualquier cosa que se les ofrezca aquí estamos, ¿verdad?
+Igualmente, muchas gracias. Yo estoy parte del equipo de SMEs.
+Ah-huh. Creo que antes hablábamos con Rolando, que era mi jefe para salir a la compañía
+y Homerot está tomando sus funciones, pero él llegó 4 o 5 años en la empresa
+y pues yo, si bien Daniel le coopera, mi equipo yo en especial soy el Fronting
+ante SMEs y todos los temas con el IMS.
+Ah, súper bien, súper bien. Pues, ya agradezco, pues el tiempo que nos brindaron aquí
+o que nos están brindando para esta pequeña charla.
+Más que una entrevista es una charla que queremos hacer aquí mi compañero Santiago y yo.
+Bueno, más Santiago, pues nos va a hacer algunas preguntas y lo que más estamos buscando
+más que se vuelva a unas respuestas, pues así una conversación un poco más fluida
+y que queremos conocer cosas y le comentaba a Daniel en el correo, ¿cómo se siente con el producto,
+el servicio, cómo ha sido la comunicación, algunas herramientas que ocupan paralelas
+que buscarían en un crecimiento, pues no sé, en uno o dos, tres años
+y que la plataforma pudiera cubrir para poder seguir avanzando
+y brindarles mejor servicios, ¿no?
+Total, creo que eso va a ser un poco la idea en vuestro equipo estar con ustedes
+y que bueno que nos acompañan.
+Un poco la propuesta sería, tengo algunas preguntas guías, podamos empezar con eso
+y deshonera, detonamos un poco la conversación hacia el final.
+Felices de que un poco se alarguen y agandipta y ven cualquier tipo de respuesta
+porque se hace un poco la intención, ¿no?
+Realmente entender cómo se siente con la plataforma de una manera completamente integrada.
+Entonces, si quieren, empiezo de una.
+Tengo entendido que ustedes tienen sólo el apartado de seguridad social,
+pero un poco lo que me gustaría entender inicialmente es cómo luce su proceso de nomina como un todo,
+verdad, en un desrecurrente y de qué manera ásicos con el módulo está ayudándoles
+por así decirlo, cumplir con el proceso a cabalidad
+y también entender que otros sistemas están interactuando,
+que personas interactúan en el proceso y como hacen uso de chicos en el día a día.
+Es más entender cómo está posicionando la herramienta hoy en la empresa.
+¿Qué danis si quieres comenzar tú y luego ya yo complemento este miwali
+y nada más para darles contextos y cómo utilizamos únicamente para el Pao de Seguridad Social
+para el envío de los movimientos, creo que también para los envíos, ¿no?
+No, el envío de movimientos se hace por la plataforma Terra.
+Nosotros utilizamos otros sistemas para enviar los movimientos.
+Bueno, si quieres dar contextos tú danis y no ya lo complemento.
+Sí, hola, buenos días.
+Nosotros ponemos más, utilizamos el chicos para el Pao de Cuota sobre los patronales
+y en Simfonavid, mensual y vimestralmente.
+Y la nómina es a través de otro sistema.
+La nómina con el otro sistema lo es para que trabajamos a la parte un psicot,
+por ejemplo, bajamos de ese sistema a los movimientos que van a limos
+y ese sistema tiene cuando lo hicieron y hicieron los layaus como parasicos.
+Entonces se bajan directamente ese sistema y lo subimos a psicot los movimientos
+y posteriormente lo enviamos a limos.
+Y pues también bajamos, por ejemplo, ese sistema lo retenido en Infonavid
+en nómina para empatarlo con lo que nosotros tenemos cargado en psicot
+y utilizamos otro programa para que los discos de Pago, que son Punto Sua,
+no los convierta en un excel, todo unificado para poderlo leer
+como para poder hacer una confronta, porque no contamos con...
+O sea, no, al menos que el psicosa que se reporte aún no lo conozco,
+entonces utilizamos otro sistema para convertir esos discos.
+Pero en sí, el psicot utilizamos pues para el Pao de limos y infonavid.
+Perfecto. ¿Qué tan complejo es el día de día en las praciones?
+Y un poco tienen varios tools segmentados por lo que entiendo
+que tan fáciles llevar el proceso de esta manera,
+que tan como se han sentido con esto y como esperarían que esto evolucía en el tiempo?
+Yo la verdad no tengo ningún problema, tengo muchos años trabajando así
+y no tengo ningún problema, es decir, el problema es que como es una gase de datos muy grande,
+o sea, estamos hablando de más de 20.000 empleados,
+el correr cálculo de discos, cálculo y discos de Pago,
+toma alrededor de un día completo, 12 horas, vamos a decir,
+o sea, es muchísimo tiempo el que tarda, es lo único complejo
+y también que los reportes, por ejemplo, las células mensuales de mestrales,
+no podemos usarlas que salen de psicos, tenemos que convertir en el suave 1 a 1
+para que tenga el formato de limos, porque las células de psicos
+no nos desacepla, por ejemplo, tenemos un equipo de construcción que tiene obras
+y ellos cada vez despeden los pagos del suave,
+las células y el comprote bancario
+y no nos aceptan el formato de psicos,
+ese es el único problema, también que tenemos, los formatos
+y también el reporte de obras, en si psicos ya nos saca un reporte
+pero tampoco para el equipo de construcción ni un cliente acepta ese formato,
+se tiene que ser el formato igual al suave,
+eso es lo que yo veo la desventaja que tenemos,
+también que muchos clientes también de construcción,
+y si no te dan ese documento, no se paga la obra y saben,
+ustedes son millones de pesos, ocupan el cipar.
+Entonces, que hacemos antes del pago, el equipo de construcción le pide el disco de pago,
+sabe el cipar, aunque no sea ese el que es el pago,
+porque es el pago del disco de pago, presentan el cipar.
+Obviamente, pues también tiene que ser el mismo formato de limps,
+no aceptan formatos de reportes de psicos,
+ese es la única desventaja que yo veo un poco en el sistema.
+Perfecto, me quedaba bastante clar esa parte,
+está buenísimo,
+a lo que me gustaría también entender es como va a vendir a la relación con el equipo de psicos,
+y creo que un poco tal es para terrizar esto más a un evento puntual,
+tal vez va la pena que nos cuenten un poco,
+la última vez que te hubiera un problema como fue el proceso de solución,
+desde que se reportó hasta que ya quedaron tranquilos,
+y como les ha ido de manera recurrente con este tipo de temas,
+¿no? ¿Qué tan acompañado suciente por parte del equipo?
+Sí, de hecho muy bien hacer las personas que en menos signados,
+antes teníamos otro procesor,
+y ahora cambiamos con una chica que se da Michele, con los dos,
+trabajados sin problemas de hecho,
+como los se quedan grabados en el tímiz,
+porque los miris que hacemos ahí,
+yo les escribo si tengo un problema y inmediatamente se me conté esta ni me dice,
+sí, te entiendo, normalmente me tique,
+y de hecho levanto el tique y me marca,
+y la verdad va muy de la mano y siempre muy serviciales y todo muy bien,
+y el último problema que tuvimos, pues de hecho fue el día de ayer,
+no sé si Pedro quedó más contexto,
+el problema que tuvimos ayer,
+es tuvimos desde las 10,
+más o menos hasta las 12 pasadas,
+sin poder solucionarlo, no le hemos podido solucionar,
+generamos más de 300 discos de pago,
+al día de ayer se pagaron 340 tantos,
+y uno de los discos de pago estaba mal generado,
+estaba mal, en la sección de validad de chicos estaba el ronio,
+y en el del subo también estaba el ronio,
+lo que hacía el disco de pago,
+todo estaba bien, pero una sumatoria la hacía mal,
+y no se logró detectar,
+y todavía no se logró detectar el error,
+pero pues si no se estuvo la chica acompañando,
+esas horas se tratan de resolverlo,
+pero no se ha resuelto.
+Bajo, porque eso es un día importante.
+Sí, la realidad es que la atención se ha sido buena,
+a mí lo que sí me gustaría tener una reunión
+y ver si estamos nosotros como semen,
+es como un grupo aprovechando 100%
+o las emocionalidades de chicos,
+el tema del si parece ha sido
+algo que nos gustaría,
+que creo que tenemos un ticket abierto no de a mí,
+para ver si podemos realizar el si parece de chicos.
+Creo que se levantó el tiempo,
+no hay un si un ticket abierto,
+pero si hay un correo que ha estado homero
+mandando de cómo va ese avance,
+lo que sí, pues de nada nos va a servir
+si la línea de captura va a salir con el formato psicoso
+porque los clientes quieren el formato del impiso,
+es el literal el si padre del impiso.
+Sí, hay la realidad es que hay muchos clientes
+que no sé si sea el tema de que no estén familias
+a vosotros con el impiso,
+o ya les ha tocado que el impiso no acepta el formato
+en algunas hotelaciones que,
+y cuando tienen tanto movimiento en tres grandes,
+creo que ahí es un debate llamo
+para que no se verte en él,
+el formato ustedes,
+pero si no nos gustaría el tema del si padre
+es uno que nos está costando
+o nos gustaría atacarlo por este año,
+el tema de las obras de construcción
+que también es,
+está algo que nos pega en el área comercial
+porque no nos hace tan a veces el pago
+y ahí andamos botellando.
+Creo que son los dos puntos en cuanto a la atención,
+pero es todo bien.
+Ahí dan y no sé si vale la pena también mencionar
+que utilizamos un programa de despacho
+para leer los discos que no sé si costa
+también puede hacer esa lectura
+de transformar los discos de suave en el CF.
+Sí, utilizamos un sistema
+que de los auditores externos
+que hay unos compartidos en su sistema,
+que le pones los discos de pago en ese sistema
+y nos carroja un Excel con tres pestañas,
+una que trae los asegurados en detalle
+todo lo que trae una cédula,
+pero en Excel los movimientos
+y un resumen de liquidación por compañía también
+y ese Excel lo utilizamos cada mes
+para las revisiones
+porque si no hay manera de tener ese reporte.
+Y lo de las obras,
+continuando perdón, perdón.
+Con lo de las obras,
+porque muchos clientes ya tienen como
+una plataforma digital donde se suben
+las cédulas,
+entonces como que es en automático
+que tiene que ser ese format
+y también cuando hay notificaciones de limps
+y que piden llevar las cédulas,
+pues tienen que ser con el formato intu,
+o sea, no aceptan el otro formato.
+Va buenísimo.
+Creo que creo que eso es claro
+y estamos tomando.
+Estamos tomando todo para validarlo.
+Tal vez un poco avanzando en las preguntas,
+porque creo que esta parte ya ya me queda clara.
+Es justamente en este
+sistema de herramientas que tienen
+que otros proveedores están interminiendo
+y demás para el flujo.
+O sea, para ahí un poco por lo que he mencionado,
+espero entiendo que
+utilizan algunos otros sonoros
+para algunas funciones muy en específico,
+pero si me gustaría entender como
+ese tech stack completo para así decirlo
+que utilizan hoy en día
+para poder conectarlo.
+Me refieres, por ejemplo,
+al proveedor que utilizamos
+para enviar movimientos?
+Sí, en sí, como...
+Sí.
+Que como viven movimientos,
+como está finalmente como...
+Ok, he utilizado...
+...y nada y demás.
+Sí, utilizamos un...
+Bueno, es que como es el línea,
+se llama Terra,
+y tienen un portal en línea donde ahí
+ellos se conectan con el IMS y ahí
+enviamos los movimientos a través de un programita
+que tenemos en nosotros.
+Depositamos, literal, la masarra.
+Tramos el tech stack,
+entonces te lleva al menos de cinco minutos.
+Mandamos los tech stack de altas bajas cambios,
+y en ese mismo sistema,
+barfamos las emisiones,
+y de ese mismo sistema,
+tú conjuntas un empleado
+y te da el afil,
+pero el afil del IMS no...
+no un formato de ellos.
+O sea, te están en las dados directamente con el IMS.
+Es como si entraras al IMS,
+pero en lugar de entrar,
+registro por registro,
+lo tienen en todo una sola base de datos.
+Pero todo es formato IMS,
+todo es exactamente como el IMS.
+No hay nada diferente.
+Y ¿no es como uno de los otros?
+Nunca lo hemos probado,
+y hubo una junta hace mucho cuando estaba a Nelvisa,
+y no me acuerdo,
+porque yo no entero,
+solamente me lo platicó,
+que estuvieron analizando,
+y el porqué no lo hablamos supe,
+pero nunca lo hemos probado.
+¿Sería bueno hacer un ejercicio
+para que lo valide?
+Los afiles también bajan con el formato de IMS.
+O sea, sí, el afil.
+¿Tal cual?
+¿Qué?
+Y las emisiones también no les mandan?
+También bajan las emisiones.
+Las emas y las egos.
+¿Y cómo cargan, por ejemplo,
+los certificados y la fiel?
+Se cargan en chicos.
+Si quieres,
+después agendamos un espacio
+por la explicarte,
+y ya lo deciden ustedes
+y lo quieren saber,
+porque se tiene en chicos.
+¿Y qué tan...
+¿Y qué tan rápido?
+Yo tengo,
+porque a veces,
+como lo que te comento de la base de datos de chicos,
+y que, por ejemplo,
+para ver chicos,
+necesitamos estar en la VPN
+y que es un día se cae,
+no hay chicos.
+Y terror funciona con una red,
+o sea, red internet normal.
+Es algo que me refiere.
+Y también bajas reportes de movimientos,
+supongo que también chicos.
+Pero sí,
+estaría bien validado para ver...
+O sea, alternativas.
+Sí, dos alternativas.
+Sí, agendamos un espacio
+si quieres te busco
+y buscamos un espacio para la próxima semana.
+Está ya la tengo un poquito complicada,
+pero buscamos un espacio
+para explicarte el proceso en chicos.
+¿Va? ¿Le parece?
+¿Va?
+Pero sigo nos contando, por favor,
+te interrupí.
+Ah, y, pues,
+del otro programa,
+pues nada más es el SAP,
+que es el denomina.
+Es lo...
+es lo único que te tensaos.
+Buenísimo.
+Buenísimo,
+me queda claro
+cómo estás estructurado el tech stack.
+Creo que algo también
+bien, bien interesante.
+Es...
+Tal vez un poco partiendo de
+cómo cambiar era área
+en los próximos dos, tres años
+y la misma compañía.
+Pensando como en ese crecimiento
+y en esos cambios,
+cómo tendría que evolucionar
+la plataforma justamente
+para acompañarlos bien
+en ese proceso.
+Creo que aquí en la llamada
+ya nos hemos dado cuenta de algunas cosas,
+pero si nos enfocamos
+puntualmente
+cómo podemos generar más valor
+si me gustaría saber.
+¿Dónde sería?
+Contramente.
+Este...
+más valor en el...
+en el producto.
+O sea, yo...
+Yo que lo espero,
+yo así estoy contenta
+porque...
+pues si...
+ese...
+más rápido,
+porque está toda la base de datos juntos,
+pero...
+pues si...
+hay detallitos de, por ejemplo,
+de los discos de pago que a veces salen con error
+y está difícil detectar donde esté el error.
+Y por ejemplo, nos pasó una vez
+un error que un empleado
+tenía dos números
+de empleado diferente
+pero el mismo número de seguro social
+en el mismo registro patronal
+y si coste cómo quiera lo subió
+y el pago lo generó y...
+bueno, un plamae con el pago pero
+la mejor que haya más...
+este...
+que cuando subas información
+pucalide un poco más también
+para los discos de pago.
+Y pero lo yo,
+me imagino que soy ya como de base datos
+porque todavía sigo pensando
+en el disco que hubo ayer
+de no sé lo que pasó.
+Pero bueno, yo en realidad tengo el sistema bien
+me gustaría que fuera más rápido
+al cálculo si me gustaría
+pero hablando con el de IT
+de hecho me...
+me pusieron un eje...
+un...
+un actualización
+para que se correría más rápido
+y si se avanzó aún más rápido
+pero si se atarda
+pero pues es...
+es por lo mismo de la base datos.
+Y pues también si me gustaría
+que tuviera eso de los discos de pago
+que te lo lea en Excel
+estaría muy bien que te sacaron un reporte.
+Sí, creo que...
+lo que esperamos
+en próximos años pues es que sea más...
+creo que en todos
+utilizamos qué procesamiento sea más...
+más aquí que no se tarde tanto
+el poder tener reportes
+ya sea como lo...
+lo he explicado en toda nela
+de un reporte en Excel
+de todos los pavos que estamos procesando
+que tenemos en una carpeta
+o dentro del mes o de psicoso
+pues poderlo exportar
+y poderlo manipular.
+Bueno, que sale un reporte
+de esa información
+que al final cuando te queremos
+son los discos de suave
+el estandarizarlos
+los reportes
+para que sea más sencillo
+de la intea de la información animes
+y que no nos estén cuestionando
+si pagamos con otro sistema
+o pagamos con ellos
+y pues ya creo que eso
+sería los tres puntos
+que si estaban buscando...
+buscando obtener
+y como comentario
+o sea, es raro que pase...
+si es raro que pase a mi
+un error como el que nos sucedió ayer
+pero...
+pues...
+ayer que nos le dio
+pues no leíamos una delusión en tiempo
+creo que, pues,
+si es ser importante
+analizar que fue lo que pasó
+y ver que no vuelo a ocurrir
+pues nuevamente
+porque si nos afectó un poco
+en el pago ya que, pues,
+era el último día
+no estamos...
+no estamos habilitados
+para resolverlo
+y pues tuvimos que ir
+por otra solución
+que puede pagar como ese ellipse
+así se dios
+poder un poquito a la diferencia
+pero...
+no se hubiera gustado
+en...
+el poder haberlo toque...
+ese tema
+está buenísimo
+no, creo que...
+creo que si nos daba bastante color
+de...
+de un poco como...
+con podemos abordar esto a...
+a futuro
+creo que...
+hay otros temas bien importantes
+que me gustaría entender y...
+a ver, por lo general,
+entiendo que están satisfechos
+con la plataforma
+pero si me gustaría entender
+no sé si
+eso lo tiene en la cabeza, no...
+en el momento en el que se tomó la decisión
+de conectar a chicos
+porque se contrató a...
+a chicos
+¿verdad?
+cuál fue ese, digamos,
+como diferencial
+o más que diferencial
+cuál fue esa razón inicial
+con la que se dice la contratación
+y si se ha venido cumpliendo
+esta expectativa largo del tiempo
+si, así, si quieres
+yo te...
+bueno, que...
+yo te dije mucho tiempo aquí
+pero...
+la forma inicial
+en la que se lleva
+va...
+el pago del sua
+era...
+bueno, se me tiene
+muchas ubicaciones,
+muchas plantas
+de muchos registros patronales
+actualmente tenemos
+306 activos,
+registros patrones activos
+en...
+305 creo
+y cada...
+bueno, antes no había
+tanto registros patrones
+pero si había...
+muchos registros
+y cada registro patronar
+se pagaba
+en cada ubicación
+¿sí?
+entonces...
+pues...
+era mucho...
+margen de rod
+porque...
+es...
+la forma de manip...
+cada persona
+al vacía
+y lo que se tras papelaba el pago
+entonces...
+la forma inicial
+es que...
+en el 2008
+se apunto un equipo de...
+expertenimiento
+personas que...
+superan de ins
+y se trajeron
+toda la información
+para unificar
+ya que no tuviera...
+por ejemplo, que cada planta
+tuviera su propio suba
+pues no, ya lo hicieron
+todo unificado
+y por eso
+se hizo chicos
+y para...
+lo contrataron
+para tener todo
+centralizado
+aquí en Monterrey
+para que los pagos
+hiciera un solo equipo
+la religión,
+un solo equipo
+el envío
+todo
+y pues...
+sí se ha cumplido
+con su función
+porque la verdad es que...
+hacerlo...
+suba por su lado
+ahorita esperamos...
+tres personas
+esperamos...
+el psicós
+y si lo haría...
+suba, pues...
+me imagino que ocupan
+hace un equipo de...
+y es personas...
+quince personas
+porque es
+muchísima información
+entonces, pues sí...
+psicós
+y ha cumplido su función
+perfecto
+perfecto perfecto
+está...
+está buenísimo a eso
+no sé si...
+hay algo más...
+tal vez un poco
+sobre la experiencia
+con...
+con la plataforma
+que les gustaría contar
+me pero...
+no les he preguntado
+directamente.
+¿Alguna experiencia?
+Sí, o sea...
+en si algo que...
+les parece importante
+agregar a la conversación
+pero no se los pregunta
+directamente...
+ya sea sobre...
+la experiencia
+con la plataforma,
+el servicio...
+y demás
+o creen que ya cubrimos
+no...
+no, pues...
+yo la verdad digo...
+estoy muy contenta
+porque pues...
+este...
+funciona muy bien
+y saca todo
+unificado
+nada más la...
+la única es eso
+de las...
+de que las cedulas
+de pago
+cada mes nos tenemos
+de convertir
+uno a uno
+en el...
+en sua
+para que los se rehatchen
+las puedan utilizar
+eso sería todo
+y...
+ah bueno y que...
+aprovechando
+en...
+las nuevas versiones de sua
+cuando quieres
+enfrentar discos
+o sea hacer
+un discos de diferencia
+no aceptar
+ya discos y cos
+dice que el discos
+o encertado
+no fue generado
+por su
+creo que había
+ya un correo ahí
+y acá
+bien
+eso es todo
+pero bueno, en general
+yo...
+lo veo todo bien
+ahí danis
+los discos de diferencias
+y los podemos generar
+por medio de psicoso
+no
+y si ya lo...
+ya de hecho ya
+tenemos meses
+que los estamos
+sacando de...
+de psicos
+pero antes los hacíamos
+a través de sua
+era también
+digo no es
+no es
+algo...
+difícil sacarlo de psicoso
+pero si es
+muy tedioso
+o sea
+yo me tardaba menos
+de nacerlo sinceramente
+en sua porque
+cambiaba la rt de psicoso
+lo...
+corría un disco
+y lo...
+y estaba de carpeto
+y le ponía de vio
+lo...
+le regresaba la prima
+y aún no le ponía
+pagó, lo sacaba
+de la carpeto
+o sea
+cinco minutos
+y ahorita en psicoso
+la rada le digo
+no es difícil
+pero si me tardó
+una hora
+porque
+se reliquiación
+por cambio de prima
+calcula diferencias
+rt, calcula diferencias
+saca los entregables
+saca el pagón
+eso es si es un poco
+más tardado, si
+por eso yo preferir
+hacerlo por sua
+pero no hay un problema
+si se hace psicoso
+pero por sua ya no se puede
+porque marca eso
+que el disco
+no fue creado por
+sua
+por sua
+o sea
+si se puede sacar por si cos
+ahí podríamos
+decir la compatibilidad
+no
+y en los sentos
+si
+si
+compatibilidad
+si
+puede ser
+ok
+de mi lado
+nada más si me gustaría
+el
+creo que cuando habido
+cambios en el sua
+importantes
+como lo que tuvimos
+de la reforma de
+del infonavid
+o sea
+si
+pudieron
+haberme por un poquito
+el tiempo
+no es tu o mal
+al final salimos
+el tiempo
+la actualización
+salió bien
+pero sí
+sí
+pues preocupaba el hecho
+de que
+puede ser
+lanzada la actualización
+la pudiéramos
+aplicar en tiempo
+nosotros y pues
+ahí ya no habíamos
+batallando
+creo que
+ese tema
+pues si me gustaría
+o bueno
+creo que sea lo que pudiera
+mejorar
+y también el
+ya no tengo problemas
+ni si
+si
+bueno
+a menos a menos
+a menos a menos
+ni están llevando
+los comunicados
+de actualización
+de si ustedes tienen
+alguna reunión
+con tus clientes
+de aspectos
+de reformas
+de
+el infonavid
+de algún
+tema importante
+pues y si
+yo como empresa
+pues me gustaría
+el silotín
+que nos hemos lucrado
+y pues no tengo una
+cadera de sistema
+pero
+pues no sé si
+si lo mereo.
+como identificado a mí, siquiera había percatado tu correo pero ya te registramos y para
+que también los comunicados te esté llegando a ti, ¿vale?
+Ah, muy bien. Perfecto. Pero, Daniela, de verdad, mi iglesia es para el espacio.
+Y nada, ojalá tengan una muy buena semana, respondo una abrazo.
+Lo pases, gracias.
+Muchas gracias, gracias Daniela, estamos en contacto, bye.
+Bye, Daniel.

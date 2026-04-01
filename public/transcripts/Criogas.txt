@@ -1,0 +1,554 @@
+¿Cómo buenísimo? Entonces, si quieren, inicio un poco con lo primero y es, me gustaría
+entender cómo funciona su proceso de nomino hoy en día, cómo luces este proceso, semana
+semana, mes con mes y cómo chicos es una parte importante de este proceso. Me gustaría
+entender si es que hay otras herramientas o no, que interactúan con chicos o de que
+manera el equipo está interactuando con la plataforma en el día a día.
+Pues sí creo que la primeira es abajada.
+No me voy a hacer eso.
+Seguro ahí.
+Se salió a ver toda.
+Tenemos temate con exción.
+Estaba como en sala de...
+Ah, y esto.
+Te hubo tema con mi computadora, pero ya...
+Pasan nada.
+No, no te preocupes.
+Yo creo que no sé si nos alcanzaste a escuchar la pregunta
+y si no, para que yo otra vez la haga Santiago.
+Dale, entonces.
+Un poco lo que nos gustaría entender inicialmente
+es cómo es el proceso de nominado en día la compañía,
+cómo funciona de esto, semana, semana, mes con mes
+y un poco como chicos interactúa
+en este proceso con ustedes para llorarlo a su completitud.
+También entender si es que hay otras herramientas
+son conectadas al proceso y también chicos
+como se interactúan con ellas.
+Un poco lo que nos gustaría hacer es entender
+cómo es ese uso a partir de su cierre de nominado.
+No te escuchamos.
+Ah, creo que...
+¿Ya me escuchan?
+Perfecto.
+Bueno, nosotros tenemos los nominas de mandal y quincenal.
+El proceso, pues, realmente la aplicación es muy buena
+a principios de mes de año de enero, tuvimos muchos problemas
+con el tema de las actualizaciones.
+Y hay cositas que hubo que decácculos errómios
+que estaban realizando.
+Pero, bueno, con estíquete,
+y de verdad se han ido solucionando,
+pero por la momento ahorita los está funcionando.
+Pues bien, también tenemos para alimentar la nominado,
+nosotros utilizamos el del Einstein,
+que se sincroniza con los chicos.
+Es una parte de cómo se alimenta la nomina de semana y quincenal.
+Perfecto, perfecto, perfecto.
+¿Cuántas personas del equipo vienen de interactuar con la plataforma?
+¿Cómo para tener ni idea de qué tantas personas
+están entrando a revisar los procesos?
+Bueno, es que chicos lo dividimos en el área de nomina y en el área de recursos.
+En el área de nomina, actualmente solamente dos personas utilizamos
+todo lo que tiene que ver con nomina y temoría social.
+Y en el apartado de recursos humanos,
+que es de reflectamiento altas y bajas,
+son tres personas.
+O sea, eso estaré muy como cinco y bueno, soporte.
+Y también crece que está muy bien.
+Es súper bueno, súper bueno, súper bueno.
+Y un poco en esa línea de preguntas,
+si les digo un poco, ¿cómo escribirían chicos
+a alguien que no conoce la plataforma?
+¿Qué les dirían? ¿Qué destacarían?
+¿Qué tienen las cosas sobre eso?
+¿Qué es un sistema de nomina que está decorizado comienzo?
+Que nos ahorra un paso para los estar
+interesando a las mismas plataformas que tiene instituto.
+Y es un sistema de nomina de cálculo muy rápido.
+Buenísimo.
+Ahí, ahí también, si tú quieres agregar algo,
+yo también feliz de ir tomando doble notas.
+Entonces, está buenísimo.
+¿Qué es esa funcionalidad de la plataforma que más usan todos los días
+y que si desapareciera les generaría un problema?
+¿Qué es eso que valoren más hoy en día de chicos?
+Bueno, en lo que yo utilizó sería que algo
+en los movimientos al menos.
+Nosotros somos muchos movimientos en el transporso de Less.
+Y estas incominaciones apareciera pues sería un tema
+que pueda tener.
+Bueno, ¿qué podemos tener en nomina de donde ya no sea tan fácil
+usar el sistema?
+Perfecto. Perfecto.
+Y a lo que me interesó bastante,
+si hoy en día tienen alguna tarea o algún proceso
+que sigan haciendo en Excel o en algún otro sistema o a mano,
+porque en ese frente la plataforma todo,
+no les acompaña ahí al 100%.
+Bueno, esta actualmente estamos realizando la revisión
+de qué sería justo porque nos falló varias veces
+en el transcurso de menos de enero.
+Entonces, le hemos realizado manuals
+para prevenir este tipo de situaciones,
+pero este otro cálculo manual,
+bueno, creo que si hay una mejora que se puede hacer,
+bueno, el punto de vista es con la forma en cómo ser,
+el escargar la información,
+porque nosotros podemos van a validar la información
+con los conceptos de nomina,
+pero no hay como un reporte o demás que se puede encontrar,
+donde se pueda descargar la información directamente
+de los XML e quimbrados para saber los conceptos.
+En la clave del concepto,
+no tenemos que entrar nosotros a otra aplicación que tenemos
+para poder descargar esos conceptos.
+Perfecto, me queda claro.
+Hay algo más o ese es el principal a nivel,
+procesos que siguen manteniendo por,
+digamos, como de manera simultánea.
+Bueno, yo me voy a esperar al último,
+pero uno de los temas que tenemos,
+tenemos algunos sistemas que giran alrededor de él,
+sobre todo el catalogo de empleados,
+empleados puestos y departamentos.
+Entonces, ahí sí, creo que uno de los temas de psicosis
+que no podemos extraer un API para hacer el interés,
+algo de otros sistemas.
+Entonces, ahí sí, generalmente descargamos un Excel
+a consulta que ya tenemos de psicosis,
+los cargamos en otros temas de manera masiva, ¿no?
+O sea, ahí sí haría falta un API, ¿no?
+Total.
+Y la parte de ese.
+Y pregunto es que cual sería en esos sistemas más críticos
+para entender a qué les gustaría conectar
+justamente toda la información de psicosis.
+Bueno, yo lo poco en la parte del sistema
+que tenemos de documentación empresarial,
+la gestión de documentos.
+Entonces ahí sí tenemos que tener actualizado la parte
+de empleados y puestos.
+Total. Entendido.
+Y otra cosa que nos pasó con psicosis,
+tenia integrados y consulta en el modelo de vacaciones.
+Lestimosamente nunca lo pudimos echar a andar,
+nos fallaba mucho.
+Y nos decidimos parecer un desapolle interno.
+Entonces, es otro que tenemos que conectar
+de que estáis incratizado en nuestro modo de vacaciones como.
+La parte de psicosis.
+Vale, vale, me queda aclarar esa parte.
+Un poco lo que me gustaría saber y, bueno,
+creo que ya esto lo mencionaron respecto a los cálculos en enero.
+Pero si sea algún momento en donde la plataforma no lo se acompaño
+como lo necesitaban en algún punto.
+Creo que ya me menciono en el incidente en enero,
+pero no se si tengan algo más o un poco en la cabeza.
+Bueno, igual hubo hay un tema con el cálculo de las vacaciones
+que las dupas de las dupas, es decir,
+en la primera semana y quinterna del año,
+este como que volvió la excelencia al culo a todos los empleados
+vacaciones, es cuando la prima vacaciones.
+Y sí se levantó ticket, pero no me lo solucionaron.
+No me dijeron el porqué salió ese error.
+Ya la verdad es con los posibilidades,
+hubo alguna autorización o algo apolitaro.
+Ya no me ha aparecido, ¿no?
+Pero sí sucedió que fue como un error.
+La verdad es que un error es muy un poco,
+pero cuando sucede pues si como que impacta mucho,
+entonces el cálculo,
+porque la verdad no se ocurre con la persona,
+si no se ocurre con todos,
+entonces está ahí en un porco poco,
+pero ocurre a toda la noche.
+Entiendo, entiendo, entiendo.
+Buenísimo, mi vida es por ese input.
+Algo también me gusta preguntar es,
+en este, digamos, como último año,
+hay algún momento donde hayan quedado sorprendidos para bien
+con la plataforma,
+y yo que hayan encontrado que frente a otros proveedores
+o demás, muestra una mejor asustancial.
+Bueno, lo que si no te es que la actualización
+de la prueba reforma en el income limit,
+fue muy rápida la actualización,
+a pesar de que entre indigencia a febrero,
+pero en enero ya desde septiembre
+ya estaba la actualización y el sistema.
+Entonces, si es el rápido de las actualizaciones,
+igual no hay nada más que cuando fue la actualización,
+de intimidado 1.2 del cetray,
+igual estuvo muy rápido,
+entonces como que las actualizaciones,
+en cuanto sale, la propuesta cuando la reforma
+que la aplicación no sea exigida en ese tiempo,
+ya que encuentro actualizado el sistema para cuando ya
+ya exigirán o ya está actualizado.
+Boa buenísimo.
+¡Mil gracias por eso!
+No sé, de tu lado ya,
+si tienes algo que comentará ahí o avanceu al siguiente.
+No, porque también la parte de su aporte de mí
+no está mucho lo se me hace bastante.
+Aquí, generalmente,
+por donde nos parece que lo ocurre,
+no, no miramos si te tiene que hacer un día.
+Claro.
+A veces, su aporte,
+pero generalmente me parece.
+Bueno.
+Super.
+Justo les quería preguntar de eso.
+¿Cómo es la comunicación con el equipo de chicos
+cuando no existen algo?
+Y cómo les va en esa interacción?
+Tal vez un poco,
+cómo me gustaría verlo es,
+la última vez que tuvieron un problema,
+cómo fue ese paso a paso
+desde reporta solución
+y cómo se sintieron con ese proceso.
+Bueno, yo,
+en los últimos reportes,
+pues, por lo mismo, ¿no?,
+de que el cálculo se presenta en un día
+y que sería cuando
+necesita algún error,
+se tendrán un chat donde
+si nos dan la asistencia,
+que es, cuando es suriente,
+pues, sí, es el mismo día, ¿no?
+Y sí, sí, eso funciona el tema.
+Entonces, creo que sí,
+en su aporte es muy bueno.
+Va.
+Buenísimo.
+Buenísimo, buenísimo.
+Y también algo que me gustaría entender es
+que tan proyectivo es el equipo hoy en día, ¿no?
+Cuando veo algo nuevo,
+cuando veo lo que les puedo afectar,
+suelen enterarse,
+porque les cuenta el equipo
+o se enteran,
+bueno,
+tal vez,
+en el trascú,
+esto es así como natural
+de los eventos,
+que tan proyectivo es el equipo
+al comunicarse con ustedes.
+Y este no se mía,
+correos,
+me enleguí,
+o sea,
+en día,
+o cuando entramos,
+bueno, yo,
+a las formas de los tickets,
+es igual,
+ahí tenemos avisas también.
+Tensí, generalmente,
+los envía las correos
+de las actualizaciones
+que van a hacer.
+Perfecto.
+Perfecto, perfecto.
+Ya pasando tal vez un poco más
+hacia el futuro,
+teniendo un poco en cuenta
+como el crecimiento
+que va a tener
+el área
+y en si la empresa
+en los próximos años,
+¿cómo se tiene que adaptar
+la plataforma
+para acompañarlos
+en ese proceso?
+¿Qué creen que es algo crítico
+en este caso
+para ustedes
+que necesitan?
+¿No?
+Pues, considero que
+las actualizaciones
+que se realizan
+como lo que tienen
+hacer, como que,
+pruebas antes,
+para ver si
+todo está en orden,
+no sé cómo que se igual,
+enviarás como que
+ha habizo,
+pues, porque si nos años
+se ponen las actualizaciones,
+no, pero cuando ya
+se implementan
+lo mejor,
+como quedaran miso
+para que
+uno raren
+dañase pruebas
+y evitarlo
+a algún tema
+que pueda suceder
+como uno ya tiene que realizar
+o cuando
+se simplemente
+esa actualización
+de eso.
+Va perfecto.
+¿Y qué funcionalidad
+es un poco necesitarían
+para este proceso
+de la compañía?
+O sea, como que les gustaría
+como ver en la plataforma.
+Para que se adapte
+justamente a esas necesidades
+futuras o actuales
+que tienen.
+Bueno, para
+algo, por ejemplo,
+se me viene a la mente
+es cuando
+se actualizaron
+las parlas
+donde
+tienen veces,
+si nos envía
+la aplicación
+un aviso.
+Tierra
+forma.
+Perdimos a
+ya.
+Ya estás.
+De vuelta.
+Para más o menos.
+Cuando
+la plataforma
+nos avisa cuando
+actualiza
+los
+YNPC.
+Entonces,
+ese tipo
+de aviso
+que tiene
+la plataforma
+estaría bien para
+otras actualizaciones
+las cuales
+se realizen
+como que
+analizarnos
+que ya están realizadas
+en la música
+porque si nos
+envía en correos
+pero también
+estaría bien que
+la línea de plataforma
+vengo a avisar
+va a estar
+buenísimo
+está buenísimo
+está buenísimo
+y creo que también
+algo que me parece
+importante
+acá es
+si te pueden cambiar
+una sola cosa
+respecto a
+así cosas
+ya sea
+de la forma
+en la que
+el equipo trabaja con ustedes
+o sea,
+la comunicación
+o el mismo producto
+que sería
+una
+interesesora
+que es eso que les gustaría
+cambiar
+prácticamente ya.
+Yo es la pirores.
+Entonces,
+¿sabes también
+nada más para
+abordar los comentarios
+es
+si consideramos
+como
+especialista
+en nómina
+parcáculo de nada
+era nuestra valencia
+entonces
+ya
+pero también tiene su
+módulo de recursos
+humanos como para
+gestionar
+lo de desarrollo de
+talento,
+llevarla
+la parte de los
+contratos
+la parte de los
+contratos es específico
+veinte que
+si se exploró
+pero no se implementó
+a mí se me hizo un poquito
+engorroso,
+realmente nos usaré
+lo ambiente
+y lo dejaron prácticamente
+este
+y
+también
+según yo recuerdo
+tiene su módulo
+de
+seguimiento
+de
+capacitaciones
+pero creo que también
+está muy cortito
+o eso me comentaron
+los
+sobres finales.
+Entonces, vamos a explorar
+cómo se puede mejorar
+la parte
+o la domina que llena bien
+pero la parte de
+talento
+de talento
+es el desarrollo más
+y hoy en día
+como se ilusionan
+esos problemas
+de talento
+ya que no
+digamos acá
+no los están encontrando
+al cien por ciento.
+No con correo
+proceso, pero se lleva
+por fuera
+y también
+nosotros desarrollamos
+un
+uso aparente uno
+para llevar
+la parte de
+el
+seguimiento
+del
+joven
+vacaciones.
+Nada parte del
+de vacaciones
+de
+cuando van a contratar
+el
+problema.
+A
+des como
+gestion
+de
+respetamiento.
+A
+un
+dale.
+Es
+perfecto.
+Me quedaba
+bastante claro esa parte.
+Y creo que
+tal vez lo último
+y la última pregunta
+es
+cuál fue
+la respuesta anterior.
+Pero
+qué fue eso que
+lo hizo contratar
+la plataforma
+y por qué fue tan
+determinante en el proceso
+de lección del proveedor.
+Bueno,
+es porque
+cuando estamos
+en todo
+el proveedor
+lo que
+si pueden
+poner que
+el punto de trampa
+para que le soldara
+puede que
+era
+que estaba relacionado
+con un cien.
+Ese fue
+el punto
+y por qué
+tenés esto
+puede también
+muy rápido
+que
+en un cien rápido
+para hacer
+el calculo masivo.
+Pero si
+el punto es
+porque estaba
+en
+tal vez
+el lado con un
+buenísimo.
+Me quedaba
+bastante claro esa parte.
+Creo que
+de mi lado aquí
+eso es todo
+no sé si
+tengan en la cabeza
+algo mas
+respecto a la experiencia
+que tiene con la plataforma
+que le gustaría
+contarme
+o algo por el estilo
+o si
+creen que ya
+cubrí
+un poco todo
+con las plantas
+y les hice
+feliz de escucharlos
+si no
+ni gracias por el tiempo
+y
+estamos del otro lado.
+a Óctil
+Vale.
+Un revisionero
+más de traveled
+además,
+los los los los los los
+los los los los los los los
+los los los extremely
+les
+No, no son

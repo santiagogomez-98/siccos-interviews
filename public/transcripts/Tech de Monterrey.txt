@@ -1,0 +1,725 @@
+Gracias. Gracias. Gracias.
+Muchas gracias por su tiempo.
+El espacio, pues es muy enrequisador y nos va a ayudar a nosotros también para
+tener una visión más amplia de lo que están esperando, de lo que buscan, servicio, producto, crecimiento.
+Entonces, pues el espacio entro a Santiago es mi compañero, partner de negocio.
+Y pues él está interesado y conocer un poquito más sobre ustedes y alguna
+información que nos pudiera servir a nosotros para poder pues seguir avanzando y
+pues britar mejor servicio, mejores productos, ¿vale?
+Muchas gracias Jessica. Sergio, digo Santiago, un gusto.
+Ahora se le tobar soy diferente aquí de el área de nómina que incluye las
+obligaciones laborales sin se imponabí. Y pues ya tenemos aquí rato
+trabajando con ustedes aquí, año y como líder del equipo de esta área de
+obligaciones laborales sin se imponabí. Y erica que nos ha estado apoyando muy
+enfocada en temas desicos que en nuestra experta aquí y también este, pues ahora
+sí que es la que nos va dando también y ayudando en la pauta de lo que hay que
+ir evolucionando aquí con con el equipo y con ustedes. Entonces pues un gusto
+Santiago es la verdad es que ya habíamos tenido acercamiento previamente de
+temas que nosotros observamos que podíamos evolucionar y mejorar.
+Y la verdad es que la operación nos gana, la operación diaria, a veces
+decimos nos come y ya no le dimos seguimiento, pero nos daba mucho
+gusto que se generan estos espacios para nosotros son muy enriquecedores y
+ojalá decirle, podamos poner a esta sesión luego una agenda de seguimiento
+que nos permita poder avanzar, porque si no le damos seguimiento, se nos queda
+ahí los temas y se nos estancan. Y la verdad para nosotros, pues el hecho
+de generar esta alianza con ustedes creemos que puede ser más fructípera
+y sin sonar arrogantes, porque creo que somos un, pues un cliente
+bastante exigente, ¿no? Entonces traemos ahí una operación muy demandante de
+muy alto volumen con una, pues con una operación muy suigenerista, porque
+no sé si anteplático y es y que a nuestra forma de operar para
+Tec de Monterey y grupo educativo en cuestiones de cátedra es muy
+grandante y ahorita para cada profesor cátedra que tengo que puede llegar a
+tener más de 10 contratos, cada contratos con su sueldo asignado con sus
+pagos variables independientes, luego eso transformarlo a un solo
+movimiento de links es todo un reto. Entonces, cuando viene en periodos
+académicos iniciales, que es enero, febrero, enero empiece a preparatoria
+de febrero profesional y posgrado, en el sistema se nos generan más de
+40 mil contratos de profesores cátedra que se tienen que habilitar,
+que luego eso se convierte en mil altas ante links, que a la mejor en
+alta son 15 mil, pero en contratos puedo llegar hasta 40, 50 mil,
+debemos tener hasta 60 mil contratos de cátedra en inicio de periodo académico.
+Entonces, esa operatividad nos demandaba mucho análisis, mucho enfoque,
+mucha validación, mucha precisión de lo que tenemos que hacer para
+estar en cumplimiento. Y bueno, ¿te días si un panorama muy general?
+Ahora si les daba la palabra angelica y aerica?
+Sí, pues ahora sí que, como ven, comentar una orita y así que,
+bueno, antes de uno, teníamos los datos no sé, yo estoy como coordinadoras
+de gladias de inicio de una vez, y pues ahora sí que ahora ordené aquí también
+una compañía de aerica, nos decía y así que estuviera también
+el equipo funcionar, que si esta manera o no se ve por ahí lo más,
+las herramientas de psicócrata que decís, ¿no? Y bueno, ¿qué está?
+Aquí está el equipo y a la orden de lo que les podamos apoyar.
+Buenísimo, gracias a ser angelica.
+Yo, a ver, en mi cabeza tengo varias cosas y justamente,
+creo que te acaste algo muy importante y es la complejidad de la operación
+de nominar, sí, en diferentes empresas y entiendo que por esta
+nacionalidad del sistema educativo es bastante más pesada en ciertos
+periodos, a lo que me gustaría poder entender muy bien es como es
+este proceso de nominar de principio a fin, ¿no?
+Tal vez un mes más recurrente, que en un mes en donde tienen que dar
+un montón de contratos para entender muy bien qué otros sistemas
+están interactuando en este momento. Yo creo que algo muy importante
+para que un proceso salga bien es tener las herramientas correctas,
+y eso es lo que ustedes tienen muy buen pulterramientas,
+pero si me gustaría entender cuáles son y cómo se están conectando
+entre si en su proceso quién es estar interveniendo en el mismo proceso
+de pagos y cómo es ese uso en el día a día.
+No sé si me puedan comentar un poco sobre eso,
+para contextualizar aún más en dónde están ustedes.
+Así, claro, la verdad es que hay todo un mapa de habilitadores que
+tenemos, no tengo aquí a la mano, he dicho mapa, pero la verdad es
+muy extenso, muy grande el texto de Monterey para toda la operatividad
+de nominar, hoy lo que nosotros estamos utilizando es SA,
+en la versión de Employee Central los suces factor para toda la
+administración de personal, ¿sí? Esa solución se encuentra en la
+nube, luego toda esa información migra o bremizo a nuestro servidor
+de HCM que le llamamos que también es SA, pero migra solamente la
+información es trítamente necesaria para procesar la nomina, ¿sí?
+Entonces, tenemos la solución de administración de personal en la nube,
+la solución de nomina en la parte de un premis en SA, HCM y
+tenemos conexión a múltiples perifericos, uno de ellos,
+actualmente a través de lo que llamamos nosotros,
+técnicamente tablas intermedias, y es la forma en como nuestro
+sistema de nominas se conecta con psicos para poder tener toda la
+operatividad y la funcionalidad que utilizamos para todo el
+envío de movimientos hacia Linz. Hay más perifericos, web con
+caja de ahorro, con otros habilitadores que forman parte de
+autorgar también servicios a colaboradores para visualizar el
+servicio, para el timbrado, para todo lo que es el proceso operativo
+de la nomina. Sin embargo, en conexión de psicose ahorita es
+o sea, o lo que nos interesa ahorita como que es para que
+tengas esa visión muy acotada, básicamente así es como
+operamos. Justo en las sesiones anteriores o algo que
+nos habían comentado es que ya había una evolución de psicos
+para conectarse a los RPS a través de APIs, y yo creo que
+digo nosotros no hemos levantado la mano, pero creo que tendría
+que ser la siguiente evolución que nosotros estamos pensando
+porque a un futuro muy cercano ya estamos pensando migrar
+la nomina completa a la 9. Entonces, todas esas conexiones
+que tenemos a los diferentes perifericos, pues tienen que evolucionar
+de cierta manera, y yo estoy segura que ahorita en el análisis
+que el equipo técnico está haciendo de todas esas conexiones, pues
+va a salir en tema de psicos y cómo evolucionamos esa
+conexión también, ahora que nos vayamos a la 9. Creo que
+básicamente es eso, San Diego, no sé si tengas alguna
+duda en respecto. No, está buenísimo, está buenísimo.
+Tal vez un poco lo que me gustaría entender más detalles
+en todo ese proceso, que me comentas un poco, donde están
+los dolores operativos más grandes hoy en día, donde estás
+espuntos en donde creo que luego de la zapis, claro, puede
+llegar a solucionar el montón, porque a pificar es
+automatizar muchas cosas, pero dejándolo de esa parte
+de la zapis, me gustaría entender operativo, en el momento
+de donde están consumiendo más tiempos y no les gusta tanto
+como fluye el proceso por esas partes.
+Aquí se les ha dado la palabra a mí y a élica.
+Ok, aquí. Gracias.
+Pero mi tango no está muy bien.
+Está muy bien. Hablamos esto. Está todo amplio para
+la iniciativa aquí, muy bien.
+¿Y surpreme a hablarte?
+De gusto meterte a todo ese proceso, ¿qué tenemos?
+¿Dónde hoy en día están como estos dolores más grandes
+a nivel operativo? ¿Qué les quita más tiempo?
+¿Es un poco lo que me gustaría entender?
+Tenemos de la vista que traemos un, un, un, un, un,
+un, Dios, más y más.
+Por ejemplo, por aquí uno de los puntos que traemos,
+un, un, un trato de dolor, ¿sí?
+Este, cuando usó un, el periodo de mostrar,
+no hace el periodo de mostrar, ¿sí?
+Las emisiones observamos que estaban más tiempos
+en descargar acá, enchipó, ¿qué?
+Y el portal de dich, ¿sí?
+Entonces, esto ya es un tema que ya anteriormente había
+levantado la mano porque si observábamos
+que si entrábamos en la página de ins,
+ahí si observábamos las emisiones,
+y en cada enchipos no la temían a ustedes,
+¿sí?
+Es un, es un tema correlacional,
+al tema de las emisiones que no las podíamos descargar
+como en tiempo, como que sentimos que no está equiparado
+en el tiempo en el que le eché las tienes y las tienes,
+¿sí? Y de la mano, de la mano va,
+el tema de mostrar la respuesta de dicha.
+Nosotros somos nuestras operaciones,
+nos fundamos los movimientos radiatorios,
+y al siguiente día, nosotros tenemos que llegar a bailar
+que es un movimiento radiatorios,
+este, evidentemente, registrados y aceptados por mí.
+En este caso también observamos que hay un poco
+de distancia, ¿sí?
+Y si llevábamos, por ejemplo, a un movimiento,
+porque por un generalista me está pidiendo un movimiento
+de alta de fiscal laborador,
+y yo voy a decir cosas y si no lo tiene,
+pero sí como que tengo que adoptar todas las instancias,
+no voy a leche, y ahí efectivamente sí lo tengo.
+Entonces, este es como que es el periodo del tiempo,
+y es el que, de cierta manera,
+es un punto de olor para nosotros,
+porque si quisiéramos que si costo viera,
+pues, en el mismo tiempo que el cual se pone,
+después de saber los patrones,
+tanto en los movimientos como las emisiones,
+es que pude tener acceso a esa información,
+de manera directa de si posi,
+y no tener que salir,
+porque vengan de una encaja que tenemos nuestros posipos,
+es que todo lo hemos integrado,
+todo lo trabajamos dentro del mismo sistema,
+y esto es lo que nos hace es que tengamos que salir
+dentro de nuestros sistemas,
+y todos para poder venir a la información,
+y observamos que pudiera darse
+desde el principio de que queden sigos.
+Va perfecto, en que lo que estoy anotando
+para tener la información presca,
+pero está súper.
+A lo que me gustaría entender,
+también de todo esto es...
+Si hoy tienes ustedes, tienen que describirle,
+que es chicos, a alguien que no la conoce,
+que les diría que resultaría en la plataforma,
+y sobre que la proyectiría en ese proceso.
+Yo creo que,
+yo diría que es un sistema,
+en el que salvo este un poquito,
+que estoy comentando ahorita en Santiago,
+en el que no tengo que salir,
+a otros sistemas para poder mandar mis movimientos,
+hacer mis pagos,
+revisar mis acusos,
+todo el relacionado con el ínsico a los pagos,
+lo puedo hacer de manera integrada en el mismo sistema.
+Creo que es algo que el característico
+y que de cierta manera,
+no te ayuda a los patrones de tener todo en una misma,
+en un mismo software.
+Está buenísimo, está buenísimo.
+Y entrando en esta misma línea de preguntas,
+a lo que me gustaría entender es,
+no sé si tal vez pensando en el último año,
+hay algún momento en donde ustedes digan chicos,
+no estúan la altura de lo que necesitábamos
+para este momento.
+Y también, en este mismo año,
+si hay algún momento en donde hayan sido sorprendidos para bien,
+por lo que está haciendo la plataforma.
+Me gusta entender cómo esas dinámicas
+que tienen despectativas sobre la plataforma.
+De un reclutado, de un reclutado,
+de un reclutado, de un reclutado,
+de un reclutado, de un reclutado,
+te quieren saber que no te platico nada más,
+vamos a identificar las ideas,
+porque lo de los más importantes,
+ahora me inicio de todo el reclutado.
+Te platico que ahora, en flogrero,
+que es sexualista de luma,
+y, pues, ya tienen que mandar un movimiento,
+ese criatorio de los colaboradores
+que tienen un impacto con ese cambio,
+de lo que aquí en institución son,
+es un importe considerado,
+vamos a considerarlo, vamos a considerarlo.
+Estes son miles.
+Entonces, ¿qué sucedió?
+¿Qué, cuando quisimos instalar
+o quisimos hacer las modificaciones del luma,
+no lo podemos hacer por sí,
+porque no estaba mejor dicho,
+no sé si me puedes explicar un deténicamente
+que fue lo que sucedió ahí en este caso.
+Sí, lo que podemos que aquí,
+de las formas no es anticiparnos.
+Siempre, anticiparnos
+para cualquier sustitución de paz,
+entonces, en ese dispecial,
+nosotros, en el enero,
+antes de ver a flogrero,
+está multiplicando los cambios de luma.
+Todo lo que generará,
+el cambio de luma, pobada,
+esta vez, de todo eso,
+lo realizamos en esta nombia,
+se trasladas y cos,
+y cuando lo randarán mis chicos,
+hubo el detalle de los topados,
+que los que tienen bien ese rey topado,
+si no tomás el cambio de los datos,
+a siete los procesados.
+Entonces,
+bueno, por el mismo que siempre estamos anticipando,
+lo envolvemos a trabajar,
+lo que tenemos y ya a los topados,
+tenemos que ayudar a su voz,
+para ver qué es lo que está pasando,
+porque no tomás de todo,
+aunque yo no quería cargar el movimiento,
+me decía no ya se encuentra,
+pues sí, pero me lo ponés,
+con el estatus siete,
+y me estudiaba ahí,
+y pues ahí fue como que,
+si pedimos ayuda,
+pero no es como que fue lo que sucedió,
+y pues duimos el coquinto de lo mismo,
+el mismo que siempre estamos hablando,
+por no anticipada,
+y la verdad es que,
+de algo mejor,
+en esta parte,
+ustedes lo que veían era que,
+se iba a trabajar,
+y no tomás las repinarias de cubreiro,
+con el nuestro día,
+te iba a hablar,
+de los subimos que pasó,
+y sí, bueno,
+afectaciones que todavía están hace,
+que quito con lo del pago,
+de sobre el retrogrero,
+y un sarrastra.
+Sí, porque es un charco de el pago,
+tanto más,
+porque al final,
+lo que tuvimos que hacer,
+de nuestra parte,
+para resolver,
+pues que quedaras el movimiento,
+es que, si quedó con el 7 de los procesados,
+que en alguna manera,
+cambiaría el estatus,
+aún no,
+puede,
+de correr,
+a ver.
+Sí, o sea,
+menos que lo que ocasionó,
+porque su ocasión,
+la verdad es,
+es que,
+cuando se conoce con el estatus,
+es el 7 de aire,
+que con el 3D,
+ya no nos permitió hacer
+una habitación o poner un parche,
+y lo que comentábamos aquí,
+era que nos gustaría,
+para el siguiente año,
+no tener que vivir,
+ahora sí, como que,
+este proceso,
+porque,
+como se usó,
+la verdad es que siempre nos hemos
+adelantado,
+el año pasado también pasó,
+sucedió adelante,
+perdón, adelante,
+pasado, sucedió lo mismo,
+y no tuvimos ningún problema,
+o sea,
+realmente no está,
+los procesos,
+siempre tenemos que ir adelante,
+tenemos que participar,
+siempre,
+y recordábamos que,
+el año pasado,
+no hubiera sucedido nada,
+también nos anticipamos,
+lo que entendemos,
+es que usamos un parche,
+y ese parche no está como activo,
+es,
+lo que nos comentaron por ahí,
+era que,
+otras empresas,
+hasta que ya lo habían detectado,
+y,
+cuando se apreció a la macera,
+oye, pues,
+si a el mismo detesto
+y fue antes,
+que nos respondaban mal,
+es que nos compartiera,
+antes de,
+o,
+y poder,
+yo digo que,
+por ahí,
+si, casi,
+se teman pendiente de que,
+que, en siguientes años,
+no sucediera lo mismo,
+como comentara el cable,
+todavía,
+seguimos arrastrando
+estragos,
+esos movimientos,
+esos movimientos,
+no lo narramos por sícobos,
+lo narramos por otra vía,
+y lo tuvimos que traer,
+los asicos,
+impactar sícobos,
+en sus hijos retravados,
+este,
+que,
+en gran cantidad,
+en esa parte no,
+y ahorita,
+por ejemplo,
+en el pago,
+que hicimos del feoreo,
+a consecuencia de que,
+entendemos que,
+en ese proceso,
+este,
+el pago se tardó,
+se tardó más en procesar,
+porque está,
+identificando,
+ese movimiento,
+que traía a licionar,
+por ahí,
+sícobos,
+este,
+y bueno,
+eso, yo creo que,
+de lo que nos ha sucedido,
+verdaderamente,
+fuera de eso,
+no tendremos una
+otra,
+de otra tema,
+y,
+y,
+y,
+y,
+y,
+y,
+y,
+y, y, y, y, y, y, y, y,
+y,
+es importante comentar,
+es que,
+ya lo tenemos,
+en donde entretiendo todos,
+y es con primer información,
+todo esto,
+todo esto,
+todo esto,
+todo esto,
+todos los movimientos,
+para,
+y,
+iusen,
+lo sentíamos por tendrán,
+o que, o que?
+No, que, o que?
+Pues,
+Tengo ya los gustos que hemos abrazado con este proceso que tuvimos que hacer por fuera.
+Entonces, por eso, realmente, si era como que nos ayudaron a identificar cuando se van a realizar estos bachos,
+estas actualizaciones para poder hacerlo, oportunamente, porque, meramente, yo creo que a lo mejor,
+varios patrones, donde a nosotros, siguen estamos anticipados porque, pues, si es la operación altercual,
+siempre buscamos anticipados.
+Buenísimo, buenísimo.
+Creo que eso nos entrega bastante, bastante color.
+Núsela también va a ver un poco sobre el servicio.
+Y creo que, obviamente, toda la conversación ya, ya notadores,
+esto no es importante desde APIs, hasta estos temas puntuales, que son eventualidades que se han tenido.
+Pero si me gustaría entender cómo funciona el servicio en el día a día,
+y tal vez, la manera más cómoda hacerlo es la última vez que presentaron un problema y levantaron un ticket.
+¿Cómo se fue ese proceso de resolución en el día a día?
+¿Y qué tan cómo se sintieron en cuanto a tiempo, en cuanto a comunicación y en general a la dinámica que tienen con el equipo?
+Además, me gustaría, tal vez, un poco incluir acá, es qué tan proactivo es el equipo de chicos,
+cuando hay cambios, bueno, que ya justo le estamos hablando, ¿qué pueden llegar a afectarles?
+Y en sí, cómo se han sentido con el soporte, en su día a día.
+Bueno, y bueno, voy a comentar, yo sé que hablarlo del tema de...
+Sí.
+Y lo que hemos tenido de una desnocencia también en las actualizaciones,
+la verdad es que siempre hemos ido atendidos de manera excelente con las entes, los procesores.
+Y tengo que decirlo a veces en la cual era de la vez.
+A veces no estará...
+Ahí, ver mayores, es que ya el siguiente vez era un proceso y si no tocó que no recordó decir el nombre de especialista,
+pero él no se estuvo apoyando la verdad, que a veces hasta...
+Oye, es que ya era una gran tarde y teníamos que ir a comer, digamos, pero sí,
+la verdad siempre se estuvieron dando el apoyo ahora con el tema de la reportada informada,
+y fue de un dolor de cabeza, que siempre sin ponerse el parche,
+que siempre no.
+Entonces, nosotros siempre, como comentábamos, se te dobamos adelantados, y creo que es que...
+Es que, digamos, vamos porque la ley ha sido estesplicando,
+y entendamos que ya en el último momento por ahí he inciso algún cambio,
+y cuento, hemos que hacerlo antes de... Yo creo que todos los patrones.
+Y aquí estuvimos trabajando como que aprovejeron,
+pero la verdad es que en el tema de la atención siempre ha sido...
+Que vi, siempre es el excelente.
+La verdad es que en esa parte se no han obtenido ningún problema.
+Perfecto, perfecto, perfecto.
+Alguien te decesa también hablar un poco,
+es con las perspectivas de crecimiento que tienen de aquí a dos años,
+en general, de camis que están buscando,
+como les gustaría que volucionara el sistema,
+para que justamente cumpla con esas expectativas que tiene.
+Ya me queda claro la parte de vamos a muernos a la 9,
+a nivel nomina y eso va a requerir algunos ajustes,
+pero que otros cambios están esperando a nivel interno
+que implique una adaptación de nuestros sistemas
+para que justamente cumpla.
+Es un poco lo que me gustaría entender también.
+Yo lo que observo es que todavía,
+digo, tenemos por ahí hemos estado pidiendo y cotizaciones
+para un servicio que no tenemos con ustedes,
+que es la regulación de los arquificados.
+Y a veces, es antiguo observo que...
+Son cosas que ustedes pueden incluso...
+Pueden hacer nada más para un único cliente,
+sino son funcionalidades que nos sirven a todos los clientes de chicos.
+Entonces, mi percepción es como que levanta la mano,
+si me ayudas, pero pues al final todo lleva un costo.
+Y yo lo que observo muchas veces es que lo que levantamos la mano
+o las necesidades que nosotros expresamos y que requerimos,
+no solamente son necesidades únicas de cliente text,
+sino que pueden ser necesidades de otros clientes de chicos
+a los que tuya da servicio que puedes dar un pluso adicional,
+que como me veo yo como un cliente estratégico
+que te puede ayudar a potencializar esas funcionalidades
+y pues ser el conejillo de India en este proceso.
+Sin embargo, lo que hemos...
+pues ahora sí que necesidades que hemos levantado,
+pues hemos asumido a los costos que se requieren
+porque nuestro nivel de operación ha sido exige
+y no me puedo, a lo mejor de tener o esperar,
+hay una iniciativa interna de chicos para que luego se levanta
+y se haga un business case y les conviene,
+no les conviene cuando yo ya tengo una necesidad imperante
+para poder tener esa funcionalidad que estoy pidiendo.
+Y este tema de la, como se llama,
+de la actualización de los certificados,
+pues es igual que yo observo que más clientes pueden tener esa misma necesidad,
+creo que ustedes, estos ejercicios te digo,
+se me hacen muy buenos de este,
+como para que ustedes puedan tener esos levantamientos de oye,
+que es lo que nosotros como clientes estamos visualizando
+que necesitamos este evolucionar.
+Y en temas de las confrontas y de reportes este año,
+ayúdenme.
+Sí, en temas de las confrontas,
+yo comentaba con los chicos porque, por ejemplo,
+en los confrontas a la mujer,
+a mí me gustaría ver un panorama completo
+porque hoy la confronta solamente en la roja
+y los casos del colaborador es con diferencia.
+O sea, con patrón a mí me gustaría avisar
+y tener la certeza de que,
+si yo tengo por así decirte un número 50 colaboradores,
+solamente en la confronta,
+este me agroja los cinco colaboradores
+que tienen diferencia,
+pero yo quiero validar que, efectivamente,
+los otros en este 45 no tienen diferencia.
+O sea, como que hacer una confronta un poco más robusta
+en cuestión de reportiadores,
+de tal manera que con presa medellosa,
+hubiera digo entiendo y la metárea que es que,
+pues, me agrojó un reporteador donde me dice,
+únicamente, las diferencias,
+pero lo mismo que sería avisar,
+un panorama global, sí.
+Y, obviamente, lo mejor,
+un reporteador un poquito más robusto,
+que, a lo mejor, ya se sería como un control
+del poder identificarles que más no gustaría
+que hubiera en esa confronta.
+Perdón, gracias a la confronta.
+Hoy la confronta solamente me,
+para la amenaza de la confrontación,
+confronta y es de índice al cual.
+Y movimientos, sí.
+Pero, por ejemplo,
+los tasos en este cielo colaboradores
+no tienen atención de invadidez.
+No me voy a estar en atención de invadidez,
+sino, si me iré en mi pica,
+que la inició en la rama de gastos
+me encostencionados,
+no tienen nada y en mi psicósi tengo,
+o sea, eso hoy no me lo muestra.
+La prima del día en dos,
+tampoco me hacía una comparativa
+de que hoy la inició en tres de punto cinco
+y en mi psicósi es punto 56.
+O sea, este tipo de validaciones
+que, en cierta manera,
+pudieran robustecer esa confronta,
+creo que si pudiera ser de mucho valor
+que pudieran agrenarse.
+Está buenísimo, está buenísimo, está buenísimo.
+Sí, porque, por ejemplo,
+la protección es muy importante,
+e incluso en el frente de nomina que,
+que sí que igual nos acaba,
+pero es clave a asegurar que hayan visiblia
+de qué está pasando,
+y qué está pasando mes a mes
+en todos los cambios, no?
+Supongo que para todos,
+frente de nomina ya,
+directo a donde los están,
+los están cumpliendo con nosotros,
+pero me queda clara esa parte.
+Super bien.
+Creo que tal vez la última pregunta
+y, sobretodo, para ya hacer,
+muy reciente con el tiempo
+que estamos en los minutos pasados,
+que pena,
+es, me gustaría entender,
+si las expectativas se estenían
+sobre así cosas,
+en el momento de la contratación,
+se están cumpliendo hoy en día.
+Yo sé que puede ser ya una relación
+de hace un muy buen tiempo, no?
+Pero si me gustaría entender,
+primero, ¿cuál es,
+pero en las razones,
+para buscar esta solución
+y, según los días de razones,
+han seguido susteniendo en el tiempo,
+y las expectativas se han cumplido.
+Fíjate que la alianza con psicó
+sucedió cuando,
+en el tech evolucionamos
+a centralizar toda la operación
+de las obligaciones laborales
+y toda la nomina
+en un,
+en un Charles Service
+y,
+y pues, la expectativa justamente
+era tener
+esa herramienta que nos ayudará
+en el cumplimiento,
+da la volumetría
+que estábamos centralizando.
+Sí, creo que sigue cumpliendo,
+o sea, esa fue la,
+la principal,
+el principal objetivo de,
+de contar con psicó,
+creo que se sigue cumpliendo,
+sin embargo,
+hoy vemos que,
+necesitamos seguir evolucionando,
+en servicios,
+en funcionalidad,
+en tecnología,
+hoy,
+te voy a montarré como su cor,
+tecnológico,
+estamos adoptando
+tecnología de inteligencia,
+artificial,
+ya en nuestros procesos,
+justamente hace dos semanas,
+liberamos un,
+un nuevo servicio para nuestros
+colaboradores,
+que captan las incapacidades,
+de los colaboradores,
+y una inteligencia artificial,
+ya los lee,
+y los impacta
+en nuestro sistema de SAT,
+sin intervención humana.
+Estamos en un proceso,
+de estabilización de esa herramienta,
+y nos gustaría que nuestros aliados,
+como psicó,
+también tuvieran alternativas,
+de inteligencia artificial,
+que nos pudieran ayudar,
+también,
+a automatizar el proceso,
+que hoy tienen que,
+o sea, porque ya tienes una base de datos,
+robusta,
+ya tienes toda mi información,
+entonces creo que hay un potencial ahí,
+enorme por explotar,
+y que hoy,
+adoptar esas tecnologías de IA,
+pues vemos que son muy rápidas,
+o sea, antes generar un proyecto de este tipo,
+nos demandaba meses,
+ahorita,
+el tema del desarrollo de este robot fue muy rápido,
+estamos sumando,
+cuatro tecnologías diferentes,
+inteligencia artificial,
+RPA,
+HCEM,
+el Termarie ServiceNow.
+Entonces, queremos que es muy,
+o sea, que ahorita ya no hay fronteras para,
+para que las tecnologías convivan.
+Entonces, nos gustaría mucho que,
+tuvieramos pronto notices de alguna funcionalidad
+de inteligencia artificial,
+que sí connos puede ofrecer.
+Está buenísimo,
+está buenísimo, está buenísimo.
+Estas intuitivas de inteligencia artificial,
+creo que son superinteresantes,
+me gustaría entender un poco más cómo están,
+cómo están planteando,
+o sea, la búsqueda es construir estas capacidades,
+al interno,
+o que los proveedores lleguen con estas capacidades
+para integrarlas a sus esquemas de trabajo, ¿no?
+Poco viendo,
+son ambas.
+Sí, ambas,
+y con estos arramos,
+porque yo sí tengo otra sesión,
+que me están esperando.
+No estamos cerrados,
+es decir, siempre nuestros proveedores de servicios,
+también están en esa búsqueda de nuevas funcionalidades
+y automatizaciones,
+y estamos abiertos a lo que puedan desarrollar.
+Y,
+y, propiamente, por la operación que tenemos,
+pues, también nosotros,
+tenemos necesidades específicas,
+pero al final,
+lo que puedan ofrecernos
+para nosotros,
+siempre será bienvenido,
+estaremos muy abiertos a explorarlo
+y a ver,
+que tanto nos puede ayudar
+en nuestra operadividad.
+Superbóneo.
+Superbóneo.
+Superbóneo.
+Nada, a ver, creo que,
+para justamente ya,
+muchas gracias por la espacio.
+Y, ya tenemos notado,
+para dar recontinuadas.
+Entonces, una abrazo muy grande,
+y, de verdad, gracias por todos los impuestos.
+Gracias a ustedes.
+Gracias.
+Y que seguimos al pendiente,
+de desarrollar la agenda de seguimiento.
+Sí, claro.
+Están excelentes.
+Hasta luego.
+Hasta luego.
